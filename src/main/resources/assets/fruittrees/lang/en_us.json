@@ -1,0 +1,23 @@
+{
+  "item.fruittrees.mango": "Mango",
+  "item.fruittrees.golden_mango": "Golden Mango",
+  "item.fruittrees.enchanted_golden_mango": "Enchanted Golden Mango",
+
+  "item.fruittrees.pomegranate": "Pomegranate",
+  "item.fruittrees.golden_pomegranate": "Golden Pomegranate",
+  "item.fruittrees.enchanted_golden_pomegranate": "Enchanted Golden Pomegranate",
+
+  "item.fruittrees.pineapple": "Pineapple",
+  "item.fruittrees.golden_pineapple": "Golden Pineapple",
+  "item.fruittrees.enchanted_golden_pineapple": "Enchanted Golden Pineapple",
+
+  "item.fruittrees.dragon_fruit": "Dragon Fruit",
+  "item.fruittrees.golden_dragonfruit": "Golden Dragon Fruit",
+  "item.fruittrees.enchanted_golden_dragon_fruit": "Enchanted Golden Dragon Fruit",
+
+  "item.fruittrees.pear": "Pear",
+  "item.fruittrees.golden_pear": "Golden Pear",
+  "item.fruittrees.enchanted_golden_pear": "Enchanted Golden Pear",
+
+  "itemgroup.fruittrees": "Fruit Trees"
+}

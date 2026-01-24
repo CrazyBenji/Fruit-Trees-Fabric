@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "fruittrees",
+	"version": "${version}",
+	"name": "Fruit Trees",
+	"description": "Adds new fruit to liven up the Minecraft world",
+	"authors": [
+		"CrazyBenji"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/CrazyBenji",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fruittrees/textures/block/mango_sapling.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.benji.fruittrees.FruitTrees"
+		],
+		"client": [
+			"net.benji.fruittrees.FruitTreesClient"
+		],
+		"fabric-datagen": [
+			"net.benji.fruittrees.FruitTreesDataGenerator"
+		]
+	},
+	"mixins": [
+		"fruittrees.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
