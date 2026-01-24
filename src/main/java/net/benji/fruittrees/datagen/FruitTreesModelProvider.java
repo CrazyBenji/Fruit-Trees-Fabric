@@ -1,5 +1,6 @@
 package net.benji.fruittrees.datagen;
 
+import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.item.FruitTreesItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -18,7 +19,8 @@ public class FruitTreesModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerator) {
-
+        blockModelGenerator.woodProvider(FruitTreesBlocks.MANGO_LOG).logWithHorizontal(FruitTreesBlocks.MANGO_LOG).wood(FruitTreesBlocks.MANGO_WOOD);
+        blockModelGenerator.woodProvider(FruitTreesBlocks.STRIPPED_MANGO_LOG).logWithHorizontal(FruitTreesBlocks.STRIPPED_MANGO_LOG).wood(FruitTreesBlocks.STRIPPED_MANGO_WOOD);
     }
 
     @Override

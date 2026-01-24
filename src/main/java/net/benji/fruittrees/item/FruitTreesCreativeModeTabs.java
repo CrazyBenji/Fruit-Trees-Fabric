@@ -1,6 +1,7 @@
 package net.benji.fruittrees.item;
 
 import net.benji.fruittrees.FruitTrees;
+import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -28,6 +29,11 @@ public class FruitTreesCreativeModeTabs {
                             output.accept(FruitTreesItems.MANGO);
                             output.accept(FruitTreesItems.GOLDEN_MANGO);
                             output.accept(FruitTreesItems.ENCHANTED_GOLDEN_MANGO);
+                            output.accept(FruitTreesBlocks.MANGO_LOG);
+                            output.accept(FruitTreesBlocks.STRIPPED_MANGO_LOG);
+                            output.accept(FruitTreesBlocks.MANGO_WOOD);
+                            output.accept(FruitTreesBlocks.STRIPPED_MANGO_WOOD);
+                            output.accept(FruitTreesBlocks.MANGO_PLANKS);
 
                             output.accept(FruitTreesItems.POMEGRANATE);
                             output.accept(FruitTreesItems.GOLDEN_POMEGRANATE);

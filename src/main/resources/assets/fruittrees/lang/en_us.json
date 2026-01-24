@@ -2,6 +2,11 @@
   "item.fruittrees.mango": "Mango",
   "item.fruittrees.golden_mango": "Golden Mango",
   "item.fruittrees.enchanted_golden_mango": "Enchanted Golden Mango",
+  "block.fruittrees.mango_log": "Mango Log",
+  "block.fruittrees.stripped_mango_log": "Stripped Mango Log",
+  "block.fruittrees.mango_wood": "Mango Wood",
+  "block.fruittrees.stripped_mango_wood": "Stripped Mango Wood",
+  "block.fruittrees.mango_planks": "Mango Planks",
 
   "item.fruittrees.pomegranate": "Pomegranate",
   "item.fruittrees.golden_pomegranate": "Golden Pomegranate",
