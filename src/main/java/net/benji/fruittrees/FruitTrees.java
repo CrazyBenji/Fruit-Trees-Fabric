@@ -6,6 +6,7 @@ import net.benji.fruittrees.item.FruitTreesItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,5 +22,12 @@ public class FruitTrees implements ModInitializer {
 		FruitTreesItems.registerItems();
 		FruitTreesBlocks.registerBlocks();
 		FruitTreesCreativeModeTabs.registerCreativeModeTabs();
+
+		registerStrippables();
+	}
+
+	public static void registerStrippables() {
+		StrippableBlockRegistry.register(FruitTreesBlocks.MANGO_LOG, FruitTreesBlocks.STRIPPED_MANGO_LOG);
+		StrippableBlockRegistry.register(FruitTreesBlocks.MANGO_WOOD, FruitTreesBlocks.STRIPPED_MANGO_WOOD);
 	}
 }

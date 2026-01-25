@@ -15,6 +15,12 @@
   "block.fruittrees.mango_trapdoor": "Mango Trapdoor",
   "block.fruittrees.mango_button": "Mango Button",
   "block.fruittrees.mango_pressure_plate": "Mango Pressure Plate",
+  "block.fruittrees.mango_sign": "Mango Sign",
+  "block.fruittrees.mango_wall_sign": "Mango Wall Sign",
+  "block.fruittrees.mango_hanging_sign": "Mango Hanging Sign",
+  "block.fruittrees.mango_wall_hanging_sign": "Mango Wall Hanging Sign",
+  "item.fruittrees.mango_sign": "Mango Sign",
+  "item.fruittrees.mango_hanging_sign": "Mango Hanging Sign",
 
   "item.fruittrees.pomegranate": "Pomegranate",
   "item.fruittrees.golden_pomegranate": "Golden Pomegranate",

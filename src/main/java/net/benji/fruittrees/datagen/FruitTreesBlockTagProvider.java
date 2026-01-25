@@ -40,20 +40,40 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
         this.getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(FruitTreesBlocks.MANGO_PLANKS);
 
-        this.getOrCreateTagBuilder(BlockTags.WOODEN_SLABS);
+        this.getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(FruitTreesBlocks.MANGO_SLAB);
 
-        this.getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS);
+        this.getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+                .add(FruitTreesBlocks.MANGO_STAIRS);
 
-        this.getOrCreateTagBuilder(BlockTags.WOODEN_FENCES);
+        this.getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(FruitTreesBlocks.MANGO_FENCE);
 
-        this.getOrCreateTagBuilder(BlockTags.FENCE_GATES);
+        this.getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(FruitTreesBlocks.MANGO_FENCE_GATE);
 
-        this.getOrCreateTagBuilder(BlockTags.WOODEN_DOORS);
+        this.getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(FruitTreesBlocks.MANGO_DOOR);
 
-        this.getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS);
+        this.getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(FruitTreesBlocks.MANGO_TRAPDOOR);
 
-        this.getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS);
+        this.getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(FruitTreesBlocks.MANGO_BUTTON);
 
-        this.getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES);
+        this.getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(FruitTreesBlocks.MANGO_PRESSURE_PLATE);
+
+        this.getOrCreateTagBuilder(BlockTags.SIGNS)
+                .add(FruitTreesBlocks.MANGO_SIGN);
+
+        this.getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
+                .add(FruitTreesBlocks.MANGO_WALL_SIGN);
+
+        this.getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
+                .add(FruitTreesBlocks.MANGO_HANGING_SIGN);
+
+        this.getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
+                .add(FruitTreesBlocks.MANGO_WALL_HANGING_SIGN);
     }
 }

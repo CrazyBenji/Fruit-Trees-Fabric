@@ -42,6 +42,8 @@ public class FruitTreesCreativeModeTabs {
                             output.accept(FruitTreesBlocks.MANGO_TRAPDOOR);
                             output.accept(FruitTreesBlocks.MANGO_BUTTON);
                             output.accept(FruitTreesBlocks.MANGO_PRESSURE_PLATE);
+                            output.accept(FruitTreesItems.MANGO_SIGN);
+                            output.accept(FruitTreesItems.MANGO_HANGING_SIGN);
 
                             output.accept(FruitTreesItems.POMEGRANATE);
                             output.accept(FruitTreesItems.GOLDEN_POMEGRANATE);

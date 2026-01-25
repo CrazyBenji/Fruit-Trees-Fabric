@@ -11,8 +11,8 @@ import net.minecraft.tags.ItemTags;
 import java.util.concurrent.CompletableFuture;
 
 public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider {
-    public FruitTreesItemTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> completableFuture) {
-        super(output, completableFuture);
+    public FruitTreesItemTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> completableFuture, BlockTagProvider blockTagsProvider) {
+        super(output, completableFuture, blockTagsProvider);
     }
 
     @Override

@@ -1,4 +1,4 @@
-// 1.20.1	2026-01-24T19:00:24.1084655	Fruit Trees/Model Definitions
+// 1.20.1	2026-01-25T14:58:57.0789613	Fruit Trees/Model Definitions
 e5d38190a6e8dbc0cddd1532fc4111419f6110c9 assets\fruittrees\models\item\enchanted_golden_pear.json
 07ddd784ee494dd9876f511ff4362fe0b3eb14a3 assets\fruittrees\models\item\pineapple.json
 4047ad5bd55e78a0262faf9b640e9ee198c44839 assets\fruittrees\models\item\mango.json
@@ -12,8 +12,8 @@ be894c7647cd250f56f51a7d7e81cad45279bc34 assets\fruittrees\models\item\golden_ma
 43bac6628a2d03a43c1a49c6a74b56b7c0271fbb assets\fruittrees\blockstates\stripped_mango_log.json
 525dbee39bd2a9a701437593b41cbddf099b841a assets\fruittrees\models\item\mango_wood.json
 4b77073705fb95ec276e10517181f72f648a208e assets\fruittrees\models\item\golden_pineapple.json
-fde701b523496df092eb4df98c4944cc2b5942c0 assets\fruittrees\models\block\mango_log_horizontal.json
 bfd0438634bf981e97f902c37481a9f15509f001 assets\fruittrees\blockstates\mango_planks.json
+fde701b523496df092eb4df98c4944cc2b5942c0 assets\fruittrees\models\block\mango_log_horizontal.json
 fb8252294fd777a82e11704285306d1bd82c85e1 assets\fruittrees\models\item\dragon_fruit.json
 d8d571b51a2b133583b0bd10ebcff91bab728963 assets\fruittrees\models\item\enchanted_golden_dragon_fruit.json
 c916005e1be82f85e0874eeb3ff2779946fa91d9 assets\fruittrees\models\item\stripped_mango_log.json
@@ -24,8 +24,8 @@ c2997db1cbc166ce5e56e1403b16af8a02171cf9 assets\fruittrees\blockstates\mango_log
 f65595a3bd4277cf09f4a5948e80d5fd3346de61 assets\fruittrees\blockstates\stripped_mango_wood.json
 3953bffe7022d121844e2be0d8d5ad4b824273a0 assets\fruittrees\models\item\pomegranate.json
 750b24d3b7d5a358b7a015d33ef729d16d85f140 assets\fruittrees\blockstates\mango_wood.json
-09ed27101bbb79adfec1703c9835a88f965b587a assets\fruittrees\models\block\stripped_mango_log_horizontal.json
 caceb812c0706b1daaa0daa982fa5c9c9d359cf5 assets\fruittrees\models\block\mango_planks.json
+09ed27101bbb79adfec1703c9835a88f965b587a assets\fruittrees\models\block\stripped_mango_log_horizontal.json
 4b77073705fb95ec276e10517181f72f648a208e assets\fruittrees\models\item\enchanted_golden_pineapple.json
 f0bd1d37b680fd66cbe52da0a8e83b719c5d6205 assets\fruittrees\models\block\stripped_mango_log.json
 f342d486c21b38572b0bfefa448f47d744022db6 assets\fruittrees\models\item\pear.json
