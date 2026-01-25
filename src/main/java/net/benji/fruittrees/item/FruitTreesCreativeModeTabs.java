@@ -34,6 +34,14 @@ public class FruitTreesCreativeModeTabs {
                             output.accept(FruitTreesBlocks.MANGO_WOOD);
                             output.accept(FruitTreesBlocks.STRIPPED_MANGO_WOOD);
                             output.accept(FruitTreesBlocks.MANGO_PLANKS);
+                            output.accept(FruitTreesBlocks.MANGO_SLAB);
+                            output.accept(FruitTreesBlocks.MANGO_STAIRS);
+                            output.accept(FruitTreesBlocks.MANGO_FENCE);
+                            output.accept(FruitTreesBlocks.MANGO_FENCE_GATE);
+                            output.accept(FruitTreesBlocks.MANGO_DOOR);
+                            output.accept(FruitTreesBlocks.MANGO_TRAPDOOR);
+                            output.accept(FruitTreesBlocks.MANGO_BUTTON);
+                            output.accept(FruitTreesBlocks.MANGO_PRESSURE_PLATE);
 
                             output.accept(FruitTreesItems.POMEGRANATE);
                             output.accept(FruitTreesItems.GOLDEN_POMEGRANATE);

@@ -5,6 +5,7 @@ import net.benji.fruittrees.item.FruitTreesCreativeModeTabs;
 import net.benji.fruittrees.item.FruitTreesItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

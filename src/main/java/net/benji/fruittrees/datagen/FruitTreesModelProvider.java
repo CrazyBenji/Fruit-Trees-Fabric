@@ -21,6 +21,7 @@ public class FruitTreesModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerator) {
         blockModelGenerator.woodProvider(FruitTreesBlocks.MANGO_LOG).logWithHorizontal(FruitTreesBlocks.MANGO_LOG).wood(FruitTreesBlocks.MANGO_WOOD);
         blockModelGenerator.woodProvider(FruitTreesBlocks.STRIPPED_MANGO_LOG).logWithHorizontal(FruitTreesBlocks.STRIPPED_MANGO_LOG).wood(FruitTreesBlocks.STRIPPED_MANGO_WOOD);
+        blockModelGenerator.createTrivialCube(FruitTreesBlocks.MANGO_PLANKS);
     }
 
     @Override

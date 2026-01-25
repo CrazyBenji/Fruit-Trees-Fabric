@@ -17,11 +17,11 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        getOrCreateTagBuilder(ConventionalItemTags.FOODS)
+        this.getOrCreateTagBuilder(ConventionalItemTags.FOODS)
                 .addTag(FruitTreesTags.Items.FRUITS)
                 .addTag(FruitTreesTags.Items.JUICES);
 
-        getOrCreateTagBuilder(FruitTreesTags.Items.FRUITS)
+        this.getOrCreateTagBuilder(FruitTreesTags.Items.FRUITS)
                 .addTag(FruitTreesTags.Items.GOLDEN_FRUITS)
                 .addTag(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS)
                 .add(FruitTreesItems.MANGO)
@@ -30,13 +30,19 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(FruitTreesItems.DRAGON_FRUIT)
                 .add(FruitTreesItems.PEAR);
 
-        getOrCreateTagBuilder(FruitTreesTags.Items.GOLDEN_FRUITS);
+        this.getOrCreateTagBuilder(FruitTreesTags.Items.GOLDEN_FRUITS);
 
-        getOrCreateTagBuilder(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS);
+        this.getOrCreateTagBuilder(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS);
 
-        getOrCreateTagBuilder(FruitTreesTags.Items.JUICES);
+        this.getOrCreateTagBuilder(FruitTreesTags.Items.JUICES);
 
-        getOrCreateTagBuilder(ItemTags.PIGLIN_LOVED)
+        this.copy(FruitTreesTags.Blocks.MANGO_LOGS, FruitTreesTags.Items.MANGO_LOGS);
+        this.copy(FruitTreesTags.Blocks.POMEGRANATE_LOGS, FruitTreesTags.Items.POMEGRANATE_LOGS);
+        this.copy(FruitTreesTags.Blocks.PINEAPPLE_LOGS, FruitTreesTags.Items.PINEAPPLE_LOGS);
+        this.copy(FruitTreesTags.Blocks.DRAGON_FRUIT_LOGS, FruitTreesTags.Items.DRAGON_FRUIT_LOGS);
+        this.copy(FruitTreesTags.Blocks.PEAR_LOGS, FruitTreesTags.Items.PEAR_LOGS);
+
+        this.getOrCreateTagBuilder(ItemTags.PIGLIN_LOVED)
                 .addTag(FruitTreesTags.Items.GOLDEN_FRUITS)
                 .addTag(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS);
     }
