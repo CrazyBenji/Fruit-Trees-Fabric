@@ -2,6 +2,7 @@ package net.benji.fruittrees.datagen;
 
 import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.item.FruitTreesItems;
+import net.benji.fruittrees.util.FruitTreesBlockFamilies;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -21,7 +22,10 @@ public class FruitTreesModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerator) {
         blockModelGenerator.woodProvider(FruitTreesBlocks.MANGO_LOG).logWithHorizontal(FruitTreesBlocks.MANGO_LOG).wood(FruitTreesBlocks.MANGO_WOOD);
         blockModelGenerator.woodProvider(FruitTreesBlocks.STRIPPED_MANGO_LOG).logWithHorizontal(FruitTreesBlocks.STRIPPED_MANGO_LOG).wood(FruitTreesBlocks.STRIPPED_MANGO_WOOD);
-        blockModelGenerator.createTrivialCube(FruitTreesBlocks.MANGO_PLANKS);
+
+        blockModelGenerator.family(FruitTreesBlocks.MANGO_PLANKS).generateFor(FruitTreesBlockFamilies.MANGO_FAMILY);
+        blockModelGenerator.createHangingSign(FruitTreesBlocks.MANGO_PLANKS, FruitTreesBlocks.MANGO_HANGING_SIGN, FruitTreesBlocks.MANGO_WALL_HANGING_SIGN);
+
     }
 
     @Override

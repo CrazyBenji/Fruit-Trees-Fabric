@@ -1,11 +1,12 @@
-// 1.20.1	2026-01-25T14:58:57.0799655	Fruit Trees/Tags for minecraft:item
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pear_logs.json
+// 1.20.1	2026-01-25T17:55:05.1853934	Fruit Trees/Tags for minecraft:item
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\juices.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\golden_fruits.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pomegranate_logs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\enchanted_golden_fruits.json
-d2e6de0a51e9407082b07c76f6bc3392722daaf7 data\fruittrees\tags\items\fruits.json
+1e6be31da255c7ebd9b51b3680a0bb9cb87dfa23 data\minecraft\tags\items\planks.json
 f0367fa185634adb4b3189d42fdb84e57449e567 data\minecraft\tags\items\piglin_loved.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pear_logs.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pomegranate_logs.json
+d2e6de0a51e9407082b07c76f6bc3392722daaf7 data\fruittrees\tags\items\fruits.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pineapple_logs.json
 fe4d85c932c8bd4a36b39e47866b53c5300cac67 data\fruittrees\tags\items\mango_logs.json
 f626283f562e039c528eab0c524b01b0d9bc249e data\c\tags\items\foods.json

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "fruittrees:block/mango_planks",
+    "side": "fruittrees:block/mango_planks",
+    "top": "fruittrees:block/mango_planks"
+  }
+}

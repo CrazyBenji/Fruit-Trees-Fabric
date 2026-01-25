@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalItemTags;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -45,5 +46,7 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
         this.getOrCreateTagBuilder(ItemTags.PIGLIN_LOVED)
                 .addTag(FruitTreesTags.Items.GOLDEN_FRUITS)
                 .addTag(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS);
+
+        this.copy(BlockTags.PLANKS, ItemTags.PLANKS);
     }
 }

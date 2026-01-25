@@ -3,6 +3,7 @@ package net.benji.fruittrees;
 import net.benji.fruittrees.datagen.FruitTreesBlockTagProvider;
 import net.benji.fruittrees.datagen.FruitTreesItemTagProvider;
 import net.benji.fruittrees.datagen.FruitTreesModelProvider;
+import net.benji.fruittrees.datagen.FruitTreesRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -24,5 +25,6 @@ public class FruitTreesDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(FruitTreesModelProvider::new);
 		FabricTagProvider.BlockTagProvider blockTagsProvider = pack.addProvider(FruitTreesBlockTagProvider::new);
 		pack.addProvider((FabricDataGenerator.Pack.Factory<FruitTreesItemTagProvider>) packOutput -> new FruitTreesItemTagProvider(packOutput, completableFuture, blockTagsProvider));
+		pack.addProvider(FruitTreesRecipeProvider::new);
 	}
 }

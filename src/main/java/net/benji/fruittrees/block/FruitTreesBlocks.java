@@ -5,6 +5,7 @@ import net.benji.fruittrees.util.FruitTreesBlockSetTypes;
 import net.benji.fruittrees.util.FruitTreesWoodTypes;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.data.BlockFamily;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

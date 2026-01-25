@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "fruittrees:block/mango_planks",
+    "side": "fruittrees:block/mango_planks",
+    "top": "fruittrees:block/mango_planks"
+  }
+}
