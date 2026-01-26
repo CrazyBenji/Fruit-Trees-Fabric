@@ -17,11 +17,15 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 public class ItemRendererMixin {
 
     @ModifyVariable(method = "render", at = @At(value = "HEAD"), argsOnly = true)
-    public BakedModel usePeartoModel(BakedModel bakedModel, ItemStack itemStack, ItemDisplayContext itemDisplayContext, boolean leftHanded,
-                                   PoseStack poseStack, MultiBufferSource multiBufferSource, int light, int overlay) {
+    public BakedModel useEasterEggModel(BakedModel bakedModel, ItemStack itemStack, ItemDisplayContext itemDisplayContext, boolean leftHanded,
+                                        PoseStack poseStack, MultiBufferSource multiBufferSource, int light, int overlay) {
         if (itemStack.is(FruitTreesItems.PEAR) && itemStack.getHoverName().getString().equals("Pearto")) {
             return ((ItemRendererAccessor) this).fruittrees$getModels().getModelManager().getModel(
                     new ModelResourceLocation(FruitTrees.MOD_ID, "pearto", "inventory"));
+        }
+        if (itemStack.is(FruitTreesItems.PINEAPPLE) && itemStack.getHoverName().getString().equals("Bavid")) {
+            return ((ItemRendererAccessor) this).fruittrees$getModels().getModelManager().getModel(
+                    new ModelResourceLocation(FruitTrees.MOD_ID, "bavid", "inventory"));
         }
         return bakedModel;
     }

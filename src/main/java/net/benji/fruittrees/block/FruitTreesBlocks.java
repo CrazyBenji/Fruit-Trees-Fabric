@@ -5,7 +5,6 @@ import net.benji.fruittrees.util.FruitTreesBlockSetTypes;
 import net.benji.fruittrees.util.FruitTreesWoodTypes;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.data.BlockFamily;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,27 +20,23 @@ import java.awt.*;
 import java.util.function.Function;
 
 public class FruitTreesBlocks {
-    public static final MapColor MANGO_MAP_COLOR = MapColor.COLOR_ORANGE;
+    public static final MapColor MANGO_MAP_COLOR = MapColor.TERRACOTTA_YELLOW;
 
     // Mango Blocks
     public static final Block MANGO_LOG = registerLogBlock(
             "mango_log",
-            RotatedPillarBlock::new,
             MANGO_MAP_COLOR
     );
     public static final Block STRIPPED_MANGO_LOG = registerLogBlock(
             "stripped_mango_log",
-            RotatedPillarBlock::new,
             MANGO_MAP_COLOR
     );
     public static final Block MANGO_WOOD = registerLogBlock(
             "mango_wood",
-            RotatedPillarBlock::new,
             MANGO_MAP_COLOR
     );
     public static final Block STRIPPED_MANGO_WOOD = registerLogBlock(
             "stripped_mango_wood",
-            RotatedPillarBlock::new,
             MANGO_MAP_COLOR
     );
     public static final Block MANGO_PLANKS = registerPlankLikeBlock(
@@ -111,14 +106,15 @@ public class FruitTreesBlocks {
             MANGO_HANGING_SIGN
     );
 
-    public static Block registerLogBlock(String name, Function<BlockBehaviour.Properties, Block> blockFactory, MapColor color) {
-        BlockBehaviour.Properties properties = BlockBehaviour.Properties.of()
+    public static Block registerLogBlock(String name, MapColor color) {
+        return registerBlock(name,
+                RotatedPillarBlock::new,
+                BlockBehaviour.Properties.of()
                 .mapColor(color)
                 .instrument(NoteBlockInstrument.BASS)
                 .strength(2.0F)
                 .sound(SoundType.WOOD)
-                .ignitedByLava();
-        return registerBlock(name, blockFactory, properties);
+                .ignitedByLava());
     }
 
     public static Block registerPlankLikeBlock(String name, Function<BlockBehaviour.Properties, Block> blockFactory, MapColor color) {

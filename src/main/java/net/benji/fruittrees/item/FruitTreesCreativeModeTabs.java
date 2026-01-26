@@ -12,7 +12,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 public class FruitTreesCreativeModeTabs {
-    public static final ResourceKey<CreativeModeTab> FRUIT_TREES_KEY = createKey("fruittrees_itemgroup");
+    public static final ResourceKey<CreativeModeTab> FRUIT_TREES_KEY = createKey("fruittrees_creative_mode_tab");
 
     private static ResourceKey<CreativeModeTab> createKey(String name) {
         return ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(FruitTrees.MOD_ID, name));
@@ -23,7 +23,7 @@ public class FruitTreesCreativeModeTabs {
                 registry,
                 FRUIT_TREES_KEY,
                 CreativeModeTab.builder(CreativeModeTab.Row.TOP, 7)
-                        .title(Component.translatable("itemgroup.fruittrees"))
+                        .title(Component.translatable("creative_mode_tab.fruittrees"))
                         .icon(() -> new ItemStack(FruitTreesItems.MANGO))
                         .displayItems(((itemDisplayParameters, output) -> {
                             output.accept(FruitTreesItems.MANGO);

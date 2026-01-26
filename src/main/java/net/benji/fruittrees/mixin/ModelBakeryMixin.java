@@ -25,12 +25,12 @@ public abstract class ModelBakeryMixin {
     @Inject(method = "<init>", at = @At(value = "INVOKE",
             target = "Lnet/minecraft/client/resources/model/ModelBakery;loadTopLevel(Lnet/minecraft/client/resources/model/ModelResourceLocation;)V",
             ordinal = 3, shift = At.Shift.AFTER))
-    public void addPearto(BlockColors blockColors, ProfilerFiller profilerFiller,
-                              Map<ResourceLocation, BlockModel> jsonUnbakedModels,
-                              Map<ResourceLocation, List<ModelBakery.LoadedJson>> blockStates, CallbackInfo ci) {
+    public void addModelEasterEggs(BlockColors blockColors, ProfilerFiller profilerFiller,
+                                   Map<ResourceLocation, BlockModel> jsonUnbakedModels,
+                                   Map<ResourceLocation, List<ModelBakery.LoadedJson>> blockStates, CallbackInfo ci) {
 
         this.loadTopLevel(new ModelResourceLocation(FruitTrees.MOD_ID, "pearto", "inventory"));
-
+        this.loadTopLevel(new ModelResourceLocation(FruitTrees.MOD_ID, "bavid", "inventory"));
     }
 
 }
