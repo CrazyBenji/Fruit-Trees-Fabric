@@ -1,13 +1,25 @@
-// 1.20.1	2026-01-27T13:26:37.6671687	Fruit Trees/Tags for minecraft:item
+// 1.20.1	2026-01-27T15:32:21.7262043	Fruit Trees/Tags for minecraft:item
+8f41a8391770eb986871ea9d637e97ec10d15b87 data\minecraft\tags\items\hanging_signs.json
 d2e6de0a51e9407082b07c76f6bc3392722daaf7 data\fruittrees\tags\items\fruits.json
 f0367fa185634adb4b3189d42fdb84e57449e567 data\minecraft\tags\items\piglin_loved.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pineapple_logs.json
-1e6be31da255c7ebd9b51b3680a0bb9cb87dfa23 data\minecraft\tags\items\planks.json
 f626283f562e039c528eab0c524b01b0d9bc249e data\c\tags\items\foods.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pear_logs.json
+2a55f897bb950bbe6d18ac350915851cfa52e672 data\minecraft\tags\items\wooden_doors.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\dragon_fruit_logs.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\juices.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\enchanted_golden_fruits.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pomegranate_logs.json
+7ca0d570193c6ad9d5ae4f1a5083bbea974c0b04 data\minecraft\tags\items\logs.json
+5e9f42c96e45b6f34df0f6d17dd9a7ab5a95f2df data\minecraft\tags\items\wooden_fences.json
+20c9b7eda68cddc612f85a49dd95454344b3f7b0 data\minecraft\tags\items\wooden_stairs.json
+7ca0d570193c6ad9d5ae4f1a5083bbea974c0b04 data\minecraft\tags\items\logs_that_burn.json
+e843c2b3ac57a780fd6ec2ea9494fdc9f7524be6 data\minecraft\tags\items\fence_gates.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pineapple_logs.json
+87e4ecb6def1c3c5aec758b0223fcfea8fd30a64 data\minecraft\tags\items\wooden_buttons.json
+1e6be31da255c7ebd9b51b3680a0bb9cb87dfa23 data\minecraft\tags\items\planks.json
+1a5bedc4ebc3acc6f5346d590a73dd7979286d06 data\minecraft\tags\items\signs.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\pear_logs.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\juices.json
+569f0904962550297bf832cb43cdf1c27c0e8e0f data\minecraft\tags\items\wooden_slabs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\golden_fruits.json
+e21176ba4abbab108aa57d41883a63555ff06eb2 data\minecraft\tags\items\wooden_trapdoors.json
+b2171b7309d2ccf870042e26dc0b708fc3059cd6 data\minecraft\tags\items\wooden_pressure_plates.json
 fe4d85c932c8bd4a36b39e47866b53c5300cac67 data\fruittrees\tags\items\mango_logs.json

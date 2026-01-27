@@ -37,6 +37,13 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
                 .addTag(FruitTreesTags.Blocks.DRAGON_FRUIT_LOGS)
                 .addTag(FruitTreesTags.Blocks.PEAR_LOGS);
 
+        this.getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .addTag(FruitTreesTags.Blocks.MANGO_LOGS)
+                .addTag(FruitTreesTags.Blocks.POMEGRANATE_LOGS)
+                .addTag(FruitTreesTags.Blocks.PINEAPPLE_LOGS)
+                .addTag(FruitTreesTags.Blocks.DRAGON_FRUIT_LOGS)
+                .addTag(FruitTreesTags.Blocks.PEAR_LOGS);
+
         this.getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(FruitTreesBlocks.MANGO_PLANKS);
 

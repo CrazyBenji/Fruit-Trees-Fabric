@@ -24,7 +24,7 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
         this.dropOther(FruitTreesBlocks.MANGO_HANGING_SIGN, FruitTreesItems.MANGO_HANGING_SIGN);
         this.dropOther(FruitTreesBlocks.MANGO_WALL_HANGING_SIGN, FruitTreesItems.MANGO_HANGING_SIGN);
 
-
+        this.dropSelf(FruitTreesBlocks.POMEGRANATE_LOG);
     }
 
     public void generateFruitWoodBlockFamilyDrops(BlockFamily blockFamily) {

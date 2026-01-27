@@ -48,6 +48,21 @@ public class FruitTreesCreativeModeTabs {
                             output.accept(FruitTreesItems.POMEGRANATE);
                             output.accept(FruitTreesItems.GOLDEN_POMEGRANATE);
                             output.accept(FruitTreesItems.ENCHANTED_GOLDEN_POMEGRANATE);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_LOG);
+                            output.accept(FruitTreesBlocks.STRIPPED_POMEGRANATE_LOG);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_WOOD);
+                            output.accept(FruitTreesBlocks.STRIPPED_POMEGRANATE_WOOD);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_PLANKS);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_SLAB);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_STAIRS);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_FENCE);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_FENCE_GATE);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_DOOR);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_TRAPDOOR);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_BUTTON);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_PRESSURE_PLATE);
+                            output.accept(FruitTreesItems.POMEGRANATE_SIGN);
+                            output.accept(FruitTreesItems.POMEGRANATE_HANGING_SIGN);
 
                             output.accept(FruitTreesItems.PINEAPPLE);
                             output.accept(FruitTreesItems.GOLDEN_PINEAPPLE);

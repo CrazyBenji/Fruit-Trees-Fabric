@@ -1,4 +1,4 @@
-// 1.20.1	2026-01-27T13:26:37.6622746	Fruit Trees/Tags for minecraft:block
+// 1.20.1	2026-01-27T15:32:21.7215441	Fruit Trees/Tags for minecraft:block
 1e6be31da255c7ebd9b51b3680a0bb9cb87dfa23 data\minecraft\tags\blocks\planks.json
 e843c2b3ac57a780fd6ec2ea9494fdc9f7524be6 data\minecraft\tags\blocks\fence_gates.json
 87e4ecb6def1c3c5aec758b0223fcfea8fd30a64 data\minecraft\tags\blocks\wooden_buttons.json
@@ -7,6 +7,7 @@ e843c2b3ac57a780fd6ec2ea9494fdc9f7524be6 data\minecraft\tags\blocks\fence_gates.
 8f41a8391770eb986871ea9d637e97ec10d15b87 data\minecraft\tags\blocks\ceiling_hanging_signs.json
 569f0904962550297bf832cb43cdf1c27c0e8e0f data\minecraft\tags\blocks\wooden_slabs.json
 45910c7f9bc2c9c7b393f4ade491e570493b28cb data\minecraft\tags\blocks\wall_hanging_signs.json
+7ca0d570193c6ad9d5ae4f1a5083bbea974c0b04 data\minecraft\tags\blocks\logs_that_burn.json
 2a55f897bb950bbe6d18ac350915851cfa52e672 data\minecraft\tags\blocks\wooden_doors.json
 20c9b7eda68cddc612f85a49dd95454344b3f7b0 data\minecraft\tags\blocks\wooden_stairs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\blocks\dragon_fruit_logs.json

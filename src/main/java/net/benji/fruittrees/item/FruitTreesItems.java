@@ -45,6 +45,16 @@ public class FruitTreesItems {
     public static final Item ENCHANTED_GOLDEN_POMEGRANATE = registerItem("enchanted_golden_pomegranate",
             EnchantedItem::new,
             new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.DEFAULT_ENCHANTED_GOLDEN_FRUIT));
+    public static final Item POMEGRANATE_SIGN = registerItem(
+            "pomegranate_sign",
+            properties -> new SignItem(properties, FruitTreesBlocks.POMEGRANATE_SIGN, FruitTreesBlocks.POMEGRANATE_WALL_SIGN),
+            new Item.Properties().stacksTo(16)
+    );
+    public static final Item POMEGRANATE_HANGING_SIGN = registerItem(
+            "mango_hanging_sign",
+            properties -> new HangingSignItem(FruitTreesBlocks.POMEGRANATE_HANGING_SIGN, FruitTreesBlocks.POMEGRANATE_WALL_HANGING_SIGN, properties),
+            new Item.Properties().stacksTo(16)
+    );
 
     // Pineapple Items
     public static final Item PINEAPPLE = registerItem("pineapple",

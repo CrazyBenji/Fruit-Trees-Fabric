@@ -47,6 +47,18 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .addTag(FruitTreesTags.Items.GOLDEN_FRUITS)
                 .addTag(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS);
 
+        this.copy(BlockTags.LOGS, ItemTags.LOGS);
+        this.copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
         this.copy(BlockTags.PLANKS, ItemTags.PLANKS);
+        this.copy(BlockTags.WOODEN_SLABS, ItemTags.WOODEN_SLABS);
+        this.copy(BlockTags.WOODEN_STAIRS, ItemTags.WOODEN_STAIRS);
+        this.copy(BlockTags.WOODEN_FENCES, ItemTags.WOODEN_FENCES);
+        this.copy(BlockTags.FENCE_GATES, ItemTags.FENCE_GATES);
+        this.copy(BlockTags.WOODEN_DOORS, ItemTags.WOODEN_DOORS);
+        this.copy(BlockTags.WOODEN_TRAPDOORS, ItemTags.WOODEN_TRAPDOORS);
+        this.copy(BlockTags.WOODEN_BUTTONS, ItemTags.WOODEN_BUTTONS);
+        this.copy(BlockTags.WOODEN_PRESSURE_PLATES, ItemTags.WOODEN_PRESSURE_PLATES);
+        this.copy(BlockTags.SIGNS, ItemTags.SIGNS);
+        this.copy(BlockTags.CEILING_HANGING_SIGNS, ItemTags.HANGING_SIGNS);
     }
 }
