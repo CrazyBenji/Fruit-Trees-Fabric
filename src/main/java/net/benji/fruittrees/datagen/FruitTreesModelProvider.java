@@ -46,8 +46,8 @@ public class FruitTreesModelProvider extends FabricModelProvider {
         itemModelGenerator.generateFlatItem(FruitTreesItems.PEAR, ModelTemplates.FLAT_ITEM);
         registerEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_PEAR);
 
-        // registerSecret(itemModelGenerator, "pearto");
-        // registerSecret(itemModelGenerator, "bavid");
+        registerSecret(itemModelGenerator, "pearto");
+        registerSecret(itemModelGenerator, "bavid");
     }
 
     public void registerEnchantedAndRegularGoldenFruit(ItemModelGenerators itemModelGenerator, Item fruitItem) {
@@ -58,6 +58,6 @@ public class FruitTreesModelProvider extends FabricModelProvider {
 
     public void registerSecret(ItemModelGenerators itemModelGenerator, String name) {
         ResourceLocation resourceLocation = new ResourceLocation(FruitTrees.MOD_ID, name).withPrefix("item/");
-        ModelTemplates.FLAT_ITEM.create(resourceLocation, TextureMapping.defaultTexture(resourceLocation), itemModelGenerator.output);
+        ModelTemplates.FLAT_ITEM.create(resourceLocation, TextureMapping.layer0(resourceLocation), itemModelGenerator.output);
     }
 }
