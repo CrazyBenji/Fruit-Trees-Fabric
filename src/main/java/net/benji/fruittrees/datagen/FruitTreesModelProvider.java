@@ -32,31 +32,31 @@ public class FruitTreesModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerator) {
         itemModelGenerator.generateFlatItem(FruitTreesItems.MANGO, ModelTemplates.FLAT_ITEM);
-        registerEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_MANGO);
+        generateEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_MANGO);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.POMEGRANATE, ModelTemplates.FLAT_ITEM);
-        registerEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_POMEGRANATE);
+        generateEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_POMEGRANATE);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.PINEAPPLE, ModelTemplates.FLAT_ITEM);
-        registerEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_PINEAPPLE);
+        generateEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_PINEAPPLE);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.DRAGON_FRUIT, ModelTemplates.FLAT_ITEM);
-        registerEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_DRAGON_FRUIT);
+        generateEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_DRAGON_FRUIT);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.PEAR, ModelTemplates.FLAT_ITEM);
-        registerEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_PEAR);
+        generateEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_PEAR);
 
-        registerSecret(itemModelGenerator, "pearto");
-        registerSecret(itemModelGenerator, "bavid");
+        generateSecret(itemModelGenerator, "pearto");
+        generateSecret(itemModelGenerator, "bavid");
     }
 
-    public void registerEnchantedAndRegularGoldenFruit(ItemModelGenerators itemModelGenerator, Item fruitItem) {
+    public void generateEnchantedAndRegularGoldenFruit(ItemModelGenerators itemModelGenerator, Item fruitItem) {
         itemModelGenerator.generateFlatItem(fruitItem, ModelTemplates.FLAT_ITEM);
         ResourceLocation resourceLocation = BuiltInRegistries.ITEM.getKey(fruitItem).withPrefix("item/enchanted_");
         ModelTemplates.FLAT_ITEM.create(resourceLocation, TextureMapping.layer0(fruitItem), itemModelGenerator.output);
     }
 
-    public void registerSecret(ItemModelGenerators itemModelGenerator, String name) {
+    public void generateSecret(ItemModelGenerators itemModelGenerator, String name) {
         ResourceLocation resourceLocation = new ResourceLocation(FruitTrees.MOD_ID, name).withPrefix("item/");
         ModelTemplates.FLAT_ITEM.create(resourceLocation, TextureMapping.layer0(resourceLocation), itemModelGenerator.output);
     }

@@ -1,12 +1,14 @@
 package net.benji.fruittrees.mixin;
 
 import net.benji.fruittrees.FruitTrees;
+import net.benji.fruittrees.util.FruitTreesSecretItems;
 import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.profiling.ProfilerFiller;
+import net.minecraft.world.item.Item;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -29,8 +31,10 @@ public abstract class ModelBakeryMixin {
                                    Map<ResourceLocation, BlockModel> jsonUnbakedModels,
                                    Map<ResourceLocation, List<ModelBakery.LoadedJson>> blockStates, CallbackInfo ci) {
 
-        this.loadTopLevel(new ModelResourceLocation(FruitTrees.MOD_ID, "pearto", "inventory"));
-        this.loadTopLevel(new ModelResourceLocation(FruitTrees.MOD_ID, "bavid", "inventory"));
+        for (Map.Entry<Item, String> entry : FruitTreesSecretItems.secretItems.entrySet()) {
+            String name = entry.getValue().toLowerCase();
+            this.loadTopLevel(new ModelResourceLocation(FruitTrees.MOD_ID, name, "inventory"));
+        }
     }
 
 }

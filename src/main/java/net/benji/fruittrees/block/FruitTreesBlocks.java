@@ -1,6 +1,10 @@
 package net.benji.fruittrees.block;
 
 import net.benji.fruittrees.FruitTrees;
+import net.benji.fruittrees.block.custom.FruitTreesCeilingHangingSignBlock;
+import net.benji.fruittrees.block.custom.FruitTreesStandingSignBlock;
+import net.benji.fruittrees.block.custom.FruitTreesWallHangingSignBlock;
+import net.benji.fruittrees.block.custom.FruitTreesWallSignBlock;
 import net.benji.fruittrees.util.FruitTreesBlockSetTypes;
 import net.benji.fruittrees.util.FruitTreesWoodTypes;
 import net.minecraft.core.Registry;
@@ -16,7 +20,6 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
-import java.awt.*;
 import java.util.function.Function;
 
 public class FruitTreesBlocks {
@@ -187,7 +190,7 @@ public class FruitTreesBlocks {
 
     public static Block registerSignBlock(String name, WoodType woodType, MapColor color) {
         return registerBlock(name,
-                properties -> new StandingSignBlock(properties, woodType),
+                properties -> new FruitTreesStandingSignBlock(properties, woodType),
                 BlockBehaviour.Properties.of()
                         .mapColor(color)
                         .forceSolidOn()
@@ -200,7 +203,7 @@ public class FruitTreesBlocks {
 
     public static Block registerWallSignBlock(String name, WoodType woodType, MapColor color, Block dropsLike) {
         return registerBlock(name,
-                properties -> new WallSignBlock(properties, woodType),
+                properties -> new FruitTreesWallSignBlock(properties, woodType),
                 BlockBehaviour.Properties.of()
                         .mapColor(color)
                         .forceSolidOn()
@@ -214,7 +217,7 @@ public class FruitTreesBlocks {
 
     public static Block registerHangingSignBlock(String name, WoodType woodType, MapColor color) {
         return registerBlock(name,
-                properties -> new CeilingHangingSignBlock(properties, woodType),
+                properties -> new FruitTreesCeilingHangingSignBlock(properties, woodType),
                 BlockBehaviour.Properties.of()
                         .mapColor(color)
                         .forceSolidOn()
@@ -227,7 +230,7 @@ public class FruitTreesBlocks {
 
     public static Block registerWallHangingSignBlock(String name, WoodType woodType, MapColor color, Block dropsLike) {
         return registerBlock(name,
-                properties -> new WallHangingSignBlock(properties, woodType),
+                properties -> new FruitTreesWallHangingSignBlock(properties, woodType),
                 BlockBehaviour.Properties.of()
                         .mapColor(color)
                         .forceSolidOn()

@@ -1,6 +1,7 @@
 package net.benji.fruittrees;
 
 import net.benji.fruittrees.block.FruitTreesBlocks;
+import net.benji.fruittrees.block.entity.FruitTreesBlockEntities;
 import net.benji.fruittrees.item.FruitTreesCreativeModeTabs;
 import net.benji.fruittrees.item.FruitTreesItems;
 import net.fabricmc.api.ModInitializer;
@@ -22,6 +23,7 @@ public class FruitTrees implements ModInitializer {
 		FruitTreesItems.registerItems();
 		FruitTreesBlocks.registerBlocks();
 		FruitTreesCreativeModeTabs.registerCreativeModeTabs();
+		FruitTreesBlockEntities.registerBlockEntities();
 
 		registerStrippables();
 	}

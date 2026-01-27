@@ -1,4 +1,4 @@
-// 1.20.1	2026-01-27T11:31:47.2271616	Fruit Trees/Recipes
+// 1.20.1	2026-01-27T13:26:37.6635671	Fruit Trees/Recipes
 eac35b1fb9b0c2f6746797057474e4a6a13642aa data\fruittrees\recipes\mango_fence_gate.json
 3d54b5d28683b1b67a4c157942496b71623fe7e0 data\fruittrees\advancements\recipes\building_blocks\mango_planks.json
 4ddca79459f239095a8481ad7210dbe827676093 data\fruittrees\recipes\mango_pressure_plate.json
@@ -16,8 +16,8 @@ e2b6977a0a2ceab474af32471afffd80151d3718 data\fruittrees\advancements\recipes\de
 2cd7d63f5522f45aba85df6c144f61d932017315 data\fruittrees\advancements\recipes\redstone\mango_pressure_plate.json
 93d4f4c0e99dadec080979954dd99c10450c5e27 data\fruittrees\advancements\recipes\redstone\mango_door.json
 830acbcd4e3aec370048d8da28c694b47b994466 data\fruittrees\advancements\recipes\building_blocks\mango_slab.json
-5413c5f7a80526e838752bd07344ced439317c8e data\fruittrees\advancements\recipes\redstone\mango_fence_gate.json
 e197ef6d591bbe3b0e5a88baec41c00a4093a61f data\fruittrees\recipes\mango_wood.json
+5413c5f7a80526e838752bd07344ced439317c8e data\fruittrees\advancements\recipes\redstone\mango_fence_gate.json
 2b1df8a7c75de837ac8e9c49b23f3b7d99557fdf data\fruittrees\recipes\stripped_mango_wood.json
 2580bf1b7fd89a54ce4eb69c3e65aeef3e954f0c data\fruittrees\recipes\mango_fence.json
 9315c2e3e1937deefe817c579bebfc7155a17317 data\fruittrees\advancements\recipes\building_blocks\mango_wood.json
