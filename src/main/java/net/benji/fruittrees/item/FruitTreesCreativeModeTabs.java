@@ -16,6 +16,7 @@ import net.minecraft.world.item.ItemStack;
 public class FruitTreesCreativeModeTabs {
     public static final ResourceKey<CreativeModeTab> FRUIT_TREES_KEY = createKey("fruittrees_creative_mode_tab");
 
+    @SuppressWarnings("all")
     private static ResourceKey<CreativeModeTab> createKey(String name) {
         return ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(FruitTrees.MOD_ID, name));
     }

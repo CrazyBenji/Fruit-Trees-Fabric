@@ -2,8 +2,6 @@ package net.benji.fruittrees.util;
 
 import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.item.FruitTreesItems;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.data.BlockFamily;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.tags.TagKey;
@@ -42,6 +40,7 @@ public class FruitWood {
     public final TagKey<Item> LOGS_ITEM;
     public final TagKey<Block> LOGS_BLOCK;
 
+    @SuppressWarnings("unused")
     public FruitWood(Block log, Block strippedLog, Block wood, Block strippedWood, Block planks, Block slab,
                      Block stairs, Block fence, Block fenceGate, Block door, Block trapdoor, Block button,
                      Block pressurePlate, Block sign, Block wallSign, Block hangingSign, Block wallHangingSign, Item signItem,

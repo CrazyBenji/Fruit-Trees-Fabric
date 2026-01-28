@@ -11,6 +11,7 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 
+@SuppressWarnings("unused")
 public class FruitTreesClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {

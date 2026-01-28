@@ -15,7 +15,6 @@ import net.minecraft.data.models.model.TextureMapping;
 import net.minecraft.data.models.model.TexturedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Blocks;
 
 public class FruitTreesModelProvider extends FabricModelProvider {
     public FruitTreesModelProvider(FabricDataOutput output) {

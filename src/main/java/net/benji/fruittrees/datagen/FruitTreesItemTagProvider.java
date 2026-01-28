@@ -1,6 +1,5 @@
 package net.benji.fruittrees.datagen;
 
-import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.item.FruitTreesItems;
 import net.benji.fruittrees.util.FruitTreesTags;
 import net.benji.fruittrees.util.FruitWoods;
