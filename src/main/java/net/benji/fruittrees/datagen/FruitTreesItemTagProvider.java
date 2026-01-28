@@ -1,7 +1,9 @@
 package net.benji.fruittrees.datagen;
 
+import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.item.FruitTreesItems;
 import net.benji.fruittrees.util.FruitTreesTags;
+import net.benji.fruittrees.util.FruitWoods;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalItemTags;
@@ -31,17 +33,26 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(FruitTreesItems.DRAGON_FRUIT)
                 .add(FruitTreesItems.PEAR);
 
-        this.getOrCreateTagBuilder(FruitTreesTags.Items.GOLDEN_FRUITS);
+        this.getOrCreateTagBuilder(FruitTreesTags.Items.GOLDEN_FRUITS)
+                .addTag(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS)
+                .add(FruitTreesItems.GOLDEN_MANGO)
+                .add(FruitTreesItems.GOLDEN_POMEGRANATE)
+                .add(FruitTreesItems.GOLDEN_PINEAPPLE)
+                .add(FruitTreesItems.GOLDEN_DRAGON_FRUIT)
+                .add(FruitTreesItems.GOLDEN_PEAR);
 
-        this.getOrCreateTagBuilder(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS);
+        this.getOrCreateTagBuilder(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS)
+                .add(FruitTreesItems.ENCHANTED_GOLDEN_MANGO)
+                .add(FruitTreesItems.ENCHANTED_GOLDEN_POMEGRANATE)
+                .add(FruitTreesItems.ENCHANTED_GOLDEN_PINEAPPLE)
+                .add(FruitTreesItems.ENCHANTED_GOLDEN_DRAGON_FRUIT)
+                .add(FruitTreesItems.ENCHANTED_GOLDEN_PEAR);
 
         this.getOrCreateTagBuilder(FruitTreesTags.Items.JUICES);
 
-        this.copy(FruitTreesTags.Blocks.MANGO_LOGS, FruitTreesTags.Items.MANGO_LOGS);
-        this.copy(FruitTreesTags.Blocks.POMEGRANATE_LOGS, FruitTreesTags.Items.POMEGRANATE_LOGS);
-        this.copy(FruitTreesTags.Blocks.PINEAPPLE_LOGS, FruitTreesTags.Items.PINEAPPLE_LOGS);
-        this.copy(FruitTreesTags.Blocks.DRAGON_FRUIT_LOGS, FruitTreesTags.Items.DRAGON_FRUIT_LOGS);
-        this.copy(FruitTreesTags.Blocks.PEAR_LOGS, FruitTreesTags.Items.PEAR_LOGS);
+        this.copy(FruitWoods.MANGO.LOGS_BLOCK, FruitWoods.MANGO.LOGS_ITEM);
+        this.copy(FruitWoods.POMEGRANATE.LOGS_BLOCK, FruitWoods.POMEGRANATE.LOGS_ITEM);
+        this.copy(FruitWoods.PINEAPPLE.LOGS_BLOCK, FruitWoods.PINEAPPLE.LOGS_ITEM);
 
         this.getOrCreateTagBuilder(ItemTags.PIGLIN_LOVED)
                 .addTag(FruitTreesTags.Items.GOLDEN_FRUITS)

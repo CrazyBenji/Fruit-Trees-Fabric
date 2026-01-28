@@ -7,8 +7,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.Util;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.registries.VanillaRegistries;
-import net.minecraft.data.tags.TagsProvider;
-import net.minecraft.world.level.block.Block;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -24,5 +22,6 @@ public class FruitTreesDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider((FabricDataGenerator.Pack.Factory<FruitTreesItemTagProvider>) packOutput -> new FruitTreesItemTagProvider(packOutput, completableFuture, blockTagsProvider));
 		pack.addProvider(FruitTreesRecipeProvider::new);
 		pack.addProvider(FruitTreesBlockLootTableProvider::new);
+		pack.addProvider(FruitTreesLanguageProvider::new);
 	}
 }

@@ -1,7 +1,8 @@
 package net.benji.fruittrees.datagen;
 
 import net.benji.fruittrees.block.FruitTreesBlocks;
-import net.benji.fruittrees.util.FruitTreesTags;
+import net.benji.fruittrees.util.FruitWood;
+import net.benji.fruittrees.util.FruitWoods;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
@@ -16,71 +17,46 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
 
     @Override
     protected void addTags(HolderLookup.Provider arg) {
-        this.getOrCreateTagBuilder(FruitTreesTags.Blocks.MANGO_LOGS)
-                .add(FruitTreesBlocks.MANGO_LOG)
-                .add(FruitTreesBlocks.STRIPPED_MANGO_LOG)
-                .add(FruitTreesBlocks.MANGO_WOOD)
-                .add(FruitTreesBlocks.STRIPPED_MANGO_WOOD);
+        generateFruitWoodTags(FruitWoods.MANGO);
+        generateFruitWoodTags(FruitWoods.POMEGRANATE);
+        generateFruitWoodTags(FruitWoods.PINEAPPLE);
+    }
 
-        this.getOrCreateTagBuilder(FruitTreesTags.Blocks.POMEGRANATE_LOGS);
-
-        this.getOrCreateTagBuilder(FruitTreesTags.Blocks.PINEAPPLE_LOGS);
-
-        this.getOrCreateTagBuilder(FruitTreesTags.Blocks.DRAGON_FRUIT_LOGS);
-
-        this.getOrCreateTagBuilder(FruitTreesTags.Blocks.PEAR_LOGS);
-
+    public void generateFruitWoodTags(FruitWood fruitWood) {
+        this.getOrCreateTagBuilder(fruitWood.LOGS_BLOCK)
+                .add(fruitWood.LOG)
+                .add(fruitWood.STRIPPED_LOG)
+                .add(fruitWood.WOOD)
+                .add(fruitWood.STRIPPED_WOOD);
         this.getOrCreateTagBuilder(BlockTags.LOGS)
-                .addTag(FruitTreesTags.Blocks.MANGO_LOGS)
-                .addTag(FruitTreesTags.Blocks.POMEGRANATE_LOGS)
-                .addTag(FruitTreesTags.Blocks.PINEAPPLE_LOGS)
-                .addTag(FruitTreesTags.Blocks.DRAGON_FRUIT_LOGS)
-                .addTag(FruitTreesTags.Blocks.PEAR_LOGS);
-
+                .addTag(fruitWood.LOGS_BLOCK);
         this.getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-                .addTag(FruitTreesTags.Blocks.MANGO_LOGS)
-                .addTag(FruitTreesTags.Blocks.POMEGRANATE_LOGS)
-                .addTag(FruitTreesTags.Blocks.PINEAPPLE_LOGS)
-                .addTag(FruitTreesTags.Blocks.DRAGON_FRUIT_LOGS)
-                .addTag(FruitTreesTags.Blocks.PEAR_LOGS);
-
+                .addTag(fruitWood.LOGS_BLOCK);
         this.getOrCreateTagBuilder(BlockTags.PLANKS)
-                .add(FruitTreesBlocks.MANGO_PLANKS);
-
+                .add(fruitWood.PLANKS);
         this.getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
-                .add(FruitTreesBlocks.MANGO_SLAB);
-
+                .add(fruitWood.SLAB);
         this.getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
-                .add(FruitTreesBlocks.MANGO_STAIRS);
-
+                .add(fruitWood.STAIRS);
         this.getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
-                .add(FruitTreesBlocks.MANGO_FENCE);
-
+                .add(fruitWood.FENCE);
         this.getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(FruitTreesBlocks.MANGO_FENCE_GATE);
-
+                .add(fruitWood.FENCE_GATE);
         this.getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
-                .add(FruitTreesBlocks.MANGO_DOOR);
-
+                .add(fruitWood.DOOR);
         this.getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
-                .add(FruitTreesBlocks.MANGO_TRAPDOOR);
-
+                .add(fruitWood.TRAPDOOR);
         this.getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
-                .add(FruitTreesBlocks.MANGO_BUTTON);
-
+                .add(fruitWood.BUTTON);
         this.getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
-                .add(FruitTreesBlocks.MANGO_PRESSURE_PLATE);
-
+                .add(fruitWood.PRESSURE_PLATE);
         this.getOrCreateTagBuilder(BlockTags.SIGNS)
-                .add(FruitTreesBlocks.MANGO_SIGN);
-
+                .add(fruitWood.SIGN);
         this.getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
-                .add(FruitTreesBlocks.MANGO_WALL_SIGN);
-
+                .add(fruitWood.WALL_SIGN);
         this.getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
-                .add(FruitTreesBlocks.MANGO_HANGING_SIGN);
-
+                .add(fruitWood.HANGING_SIGN);
         this.getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
-                .add(FruitTreesBlocks.MANGO_WALL_HANGING_SIGN);
+                .add(fruitWood.WALL_HANGING_SIGN);
     }
 }

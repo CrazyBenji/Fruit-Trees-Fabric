@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fruittrees:block/pineapple_slab"
+    },
+    "type=double": {
+      "model": "fruittrees:block/pineapple_planks"
+    },
+    "type=top": {
+      "model": "fruittrees:block/pineapple_slab_top"
+    }
+  }
+}

@@ -1,4 +1,9 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "fruittrees:pomegranate_log",
+    "fruittrees:stripped_pomegranate_log",
+    "fruittrees:pomegranate_wood",
+    "fruittrees:stripped_pomegranate_wood"
+  ]
 }

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "fruittrees:mango_fence_gate"
+    "fruittrees:mango_fence_gate",
+    "fruittrees:pomegranate_fence_gate",
+    "fruittrees:pineapple_fence_gate"
   ]
 }

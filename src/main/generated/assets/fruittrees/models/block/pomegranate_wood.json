@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fruittrees:block/pomegranate_log",
+    "side": "fruittrees:block/pomegranate_log"
+  }
+}

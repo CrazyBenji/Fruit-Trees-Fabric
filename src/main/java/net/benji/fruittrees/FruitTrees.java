@@ -4,11 +4,11 @@ import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.block.entity.FruitTreesBlockEntities;
 import net.benji.fruittrees.item.FruitTreesCreativeModeTabs;
 import net.benji.fruittrees.item.FruitTreesItems;
-import net.benji.fruittrees.util.FruitTreesTags;
+import net.benji.fruittrees.util.FruitWoods;
+import net.benji.fruittrees.util.FruitWood;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,28 +27,22 @@ public class FruitTrees implements ModInitializer {
 		FruitTreesCreativeModeTabs.registerCreativeModeTabs();
 		FruitTreesBlockEntities.registerBlockEntities();
 
-		registerStrippables();
-		registerFlammables();
+		this.addFruitWoodRegistries(FruitWoods.MANGO);
+		this.addFruitWoodRegistries(FruitWoods.POMEGRANATE);
+		this.addFruitWoodRegistries(FruitWoods.PINEAPPLE);
 	}
 
-	public static void registerStrippables() {
-		StrippableBlockRegistry.register(FruitTreesBlocks.MANGO_LOG, FruitTreesBlocks.STRIPPED_MANGO_LOG);
-		StrippableBlockRegistry.register(FruitTreesBlocks.MANGO_WOOD, FruitTreesBlocks.STRIPPED_MANGO_WOOD);
+	public void addFruitWoodRegistries(FruitWood fruitWood) {
+		StrippableBlockRegistry.register(fruitWood.LOG, fruitWood.STRIPPED_LOG);
+		StrippableBlockRegistry.register(fruitWood.WOOD, fruitWood.STRIPPED_WOOD);
+
+		FlammableBlockRegistry flammableBlockRegistry = FlammableBlockRegistry.getDefaultInstance();
+		flammableBlockRegistry.add(fruitWood.LOGS_BLOCK, 5, 5);
+		flammableBlockRegistry.add(fruitWood.PLANKS, 20, 5);
+		flammableBlockRegistry.add(fruitWood.SLAB, 20, 5);
+		flammableBlockRegistry.add(fruitWood.STAIRS, 20, 5);
+		flammableBlockRegistry.add(fruitWood.FENCE, 20, 5);
+		flammableBlockRegistry.add(fruitWood.FENCE_GATE, 20, 5);
 	}
 
-	public static void registerFlammables() {
-		FlammableBlockRegistry flammableRegistry = FlammableBlockRegistry.getDefaultInstance();
-
-		flammableRegistry.add(FruitTreesTags.Blocks.MANGO_LOGS, 5, 5);
-		flammableRegistry.add(FruitTreesTags.Blocks.POMEGRANATE_LOGS, 5, 5);
-		flammableRegistry.add(FruitTreesTags.Blocks.PINEAPPLE_LOGS, 5, 5);
-		flammableRegistry.add(FruitTreesTags.Blocks.DRAGON_FRUIT_LOGS, 5, 5);
-		flammableRegistry.add(FruitTreesTags.Blocks.PEAR_LOGS, 5, 5);
-
-		flammableRegistry.add(FruitTreesBlocks.MANGO_PLANKS, 20, 5);
-		flammableRegistry.add(FruitTreesBlocks.MANGO_SLAB, 20, 5);
-		flammableRegistry.add(FruitTreesBlocks.MANGO_STAIRS, 20, 5);
-		flammableRegistry.add(FruitTreesBlocks.MANGO_FENCE, 20, 5);
-		flammableRegistry.add(FruitTreesBlocks.MANGO_FENCE_GATE, 20, 5);
-	}
 }

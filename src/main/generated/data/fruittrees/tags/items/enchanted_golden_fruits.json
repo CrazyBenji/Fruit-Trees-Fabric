@@ -1,4 +1,10 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "fruittrees:enchanted_golden_mango",
+    "fruittrees:enchanted_golden_pomegranate",
+    "fruittrees:enchanted_golden_pineapple",
+    "fruittrees:enchanted_golden_dragon_fruit",
+    "fruittrees:enchanted_golden_pear"
+  ]
 }

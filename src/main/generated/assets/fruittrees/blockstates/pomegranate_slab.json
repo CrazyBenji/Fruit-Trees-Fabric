@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fruittrees:block/pomegranate_slab"
+    },
+    "type=double": {
+      "model": "fruittrees:block/pomegranate_planks"
+    },
+    "type=top": {
+      "model": "fruittrees:block/pomegranate_slab_top"
+    }
+  }
+}

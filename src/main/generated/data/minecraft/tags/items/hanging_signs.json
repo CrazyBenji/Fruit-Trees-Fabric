@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "fruittrees:mango_hanging_sign"
+    "fruittrees:mango_hanging_sign",
+    "fruittrees:pomegranate_hanging_sign",
+    "fruittrees:pineapple_hanging_sign"
   ]
 }

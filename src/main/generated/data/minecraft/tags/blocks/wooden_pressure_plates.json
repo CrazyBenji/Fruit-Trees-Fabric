@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "fruittrees:mango_pressure_plate"
+    "fruittrees:mango_pressure_plate",
+    "fruittrees:pomegranate_pressure_plate",
+    "fruittrees:pineapple_pressure_plate"
   ]
 }

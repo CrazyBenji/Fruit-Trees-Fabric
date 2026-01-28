@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "fruittrees:block/pineapple_door_bottom",
+    "top": "fruittrees:block/pineapple_door_top"
+  }
+}

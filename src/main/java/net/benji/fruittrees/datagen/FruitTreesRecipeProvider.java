@@ -2,8 +2,9 @@ package net.benji.fruittrees.datagen;
 
 import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.item.FruitTreesItems;
-import net.benji.fruittrees.util.FruitTreesBlockFamilies;
 import net.benji.fruittrees.util.FruitTreesTags;
+import net.benji.fruittrees.util.FruitWood;
+import net.benji.fruittrees.util.FruitWoods;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipes.*;
@@ -17,13 +18,19 @@ public class FruitTreesRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> exporter) {
-        woodFromLogs(exporter, FruitTreesBlocks.MANGO_WOOD, FruitTreesBlocks.MANGO_LOG);
-        woodFromLogs(exporter, FruitTreesBlocks.STRIPPED_MANGO_WOOD, FruitTreesBlocks.STRIPPED_MANGO_LOG);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, FruitTreesBlocks.MANGO_PLANKS, 4)
-                .requires(FruitTreesTags.Items.MANGO_LOGS)
-                .unlockedBy(getHasName(FruitTreesBlocks.MANGO_LOG), has(FruitTreesTags.Items.MANGO_LOGS))
+        generateFruitWoodRecipes(exporter, FruitWoods.MANGO);
+        generateFruitWoodRecipes(exporter, FruitWoods.POMEGRANATE);
+        generateFruitWoodRecipes(exporter, FruitWoods.PINEAPPLE);
+    }
+
+    public void generateFruitWoodRecipes(Consumer<FinishedRecipe> exporter, FruitWood fruitWood) {
+        woodFromLogs(exporter, fruitWood.WOOD, fruitWood.LOG);
+        woodFromLogs(exporter, fruitWood.STRIPPED_WOOD, fruitWood.STRIPPED_LOG);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, fruitWood.PLANKS, 4)
+                .requires(fruitWood.LOGS_ITEM)
+                .unlockedBy(getHasName(fruitWood.LOG), has(fruitWood.LOGS_ITEM))
                 .save(exporter);
-        generateRecipes(exporter, FruitTreesBlockFamilies.MANGO_FAMILY);
-        hangingSign(exporter, FruitTreesItems.MANGO_HANGING_SIGN, FruitTreesBlocks.MANGO_PLANKS);
+        generateRecipes(exporter, fruitWood.FAMILY);
+        hangingSign(exporter, fruitWood.HANGING_SIGN, fruitWood.PLANKS);
     }
 }

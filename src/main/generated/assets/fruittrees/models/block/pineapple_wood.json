@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fruittrees:block/pineapple_log",
+    "side": "fruittrees:block/pineapple_log"
+  }
+}

@@ -1,11 +1,9 @@
 package net.benji.fruittrees.datagen;
 
-import net.benji.fruittrees.block.FruitTreesBlocks;
-import net.benji.fruittrees.item.FruitTreesItems;
-import net.benji.fruittrees.util.FruitTreesBlockFamilies;
+import net.benji.fruittrees.util.FruitWood;
+import net.benji.fruittrees.util.FruitWoods;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.minecraft.data.BlockFamily;
 
 public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvider {
     public FruitTreesBlockLootTableProvider(FabricDataOutput dataOutput) {
@@ -14,28 +12,28 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
 
     @Override
     public void generate() {
-        this.dropSelf(FruitTreesBlocks.MANGO_LOG);
-        this.dropSelf(FruitTreesBlocks.STRIPPED_MANGO_LOG);
-        this.dropSelf(FruitTreesBlocks.MANGO_WOOD);
-        this.dropSelf(FruitTreesBlocks.STRIPPED_MANGO_WOOD);
-        this.generateFruitWoodBlockFamilyDrops(FruitTreesBlockFamilies.MANGO_FAMILY);
-        this.dropOther(FruitTreesBlocks.MANGO_SIGN, FruitTreesItems.MANGO_SIGN);
-        this.dropOther(FruitTreesBlocks.MANGO_WALL_SIGN, FruitTreesItems.MANGO_SIGN);
-        this.dropOther(FruitTreesBlocks.MANGO_HANGING_SIGN, FruitTreesItems.MANGO_HANGING_SIGN);
-        this.dropOther(FruitTreesBlocks.MANGO_WALL_HANGING_SIGN, FruitTreesItems.MANGO_HANGING_SIGN);
-
-        this.dropSelf(FruitTreesBlocks.POMEGRANATE_LOG);
+        this.generateFruitWoodBlockLootTables(FruitWoods.MANGO);
+        this.generateFruitWoodBlockLootTables(FruitWoods.POMEGRANATE);
+        this.generateFruitWoodBlockLootTables(FruitWoods.PINEAPPLE);
     }
 
-    public void generateFruitWoodBlockFamilyDrops(BlockFamily blockFamily) {
-        this.dropSelf(blockFamily.getBaseBlock());
-        this.add(blockFamily.get(BlockFamily.Variant.SLAB), this.createSlabItemTable(blockFamily.get(BlockFamily.Variant.SLAB)));
-        this.dropSelf(blockFamily.get(BlockFamily.Variant.STAIRS));
-        this.dropSelf(blockFamily.get(BlockFamily.Variant.FENCE));
-        this.dropSelf(blockFamily.get(BlockFamily.Variant.FENCE_GATE));
-        this.add(blockFamily.get(BlockFamily.Variant.DOOR), createDoorTable(blockFamily.get(BlockFamily.Variant.DOOR)));
-        this.dropSelf(blockFamily.get(BlockFamily.Variant.TRAPDOOR));
-        this.dropSelf(blockFamily.get(BlockFamily.Variant.BUTTON));
-        this.dropSelf(blockFamily.get(BlockFamily.Variant.PRESSURE_PLATE));
+    public void generateFruitWoodBlockLootTables(FruitWood fruitWood) {
+        this.dropSelf(fruitWood.LOG);
+        this.dropSelf(fruitWood.STRIPPED_LOG);
+        this.dropSelf(fruitWood.WOOD);
+        this.dropSelf(fruitWood.STRIPPED_WOOD);
+        this.dropSelf(fruitWood.PLANKS);
+        this.add(fruitWood.SLAB, this.createSlabItemTable(fruitWood.SLAB));
+        this.dropSelf(fruitWood.STAIRS);
+        this.dropSelf(fruitWood.FENCE);
+        this.dropSelf(fruitWood.FENCE_GATE);
+        this.add(fruitWood.DOOR, this.createDoorTable(fruitWood.DOOR));
+        this.dropSelf(fruitWood.TRAPDOOR);
+        this.dropSelf(fruitWood.BUTTON);
+        this.dropSelf(fruitWood.PRESSURE_PLATE);
+        this.dropOther(fruitWood.SIGN, fruitWood.SIGN_ITEM);
+        this.dropOther(fruitWood.WALL_SIGN, fruitWood.SIGN_ITEM);
+        this.dropOther(fruitWood.HANGING_SIGN, fruitWood.HANGING_SIGN_ITEM);
+        this.dropOther(fruitWood.WALL_HANGING_SIGN, fruitWood.HANGING_SIGN_ITEM);
     }
 }
