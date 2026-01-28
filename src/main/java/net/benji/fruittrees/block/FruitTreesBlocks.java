@@ -19,6 +19,26 @@ import net.minecraft.world.level.material.PushReaction;
 import java.util.function.Function;
 
 public class FruitTreesBlocks {
+    public static final Block MANGO_LEAVES = leavesBlock("mango_leaves");
+    public static final Block FLOWERING_MANGO_LEAVES = leavesBlock("flowering_mango_leaves");
+    public static final Block MANGO_SAPLING = null;
+
+    public static final Block POMEGRANATE_LEAVES = leavesBlock("pomegranate_sapling");
+    public static final Block FLOWERING_POMEGRANATE_LEAVES = leavesBlock("flowering_pomnegranate_sapling");
+    public static final Block POMEGRANATE_SAPLING = null;
+
+    public static final Block PINEAPPLE_LEAVES = leavesBlock("pineapple_leaves");
+    public static final Block FLOWERING_PINEAPPLE_LEAVES = leavesBlock("flowering_pineapple_leaves");
+    public static final Block PINEAPPLE_SAPLING = null;
+
+    public static final Block DRAGON_FRUIT_LEAVES = leavesBlock("dragon_fruit_leaves");
+    public static final Block FLOWERING_DRAGON_FRUIT_LEAVES = leavesBlock("flowering_dragon_fruit_leaves");
+    public static final Block DRAGON_FRUIT_SAPLING = null;
+
+    public static final Block PEAR_LEAVES = leavesBlock("pear_leaves");
+    public static final Block FLOWERING_PEAR_LEAVES = leavesBlock("flowering_pear_leaves");
+    public static final Block PEAR_SAPLING = null;
+
     public static final Block HONEYDEW = registerBlock(
             "honeydew",
             HoneydewBlock::new,
@@ -49,6 +69,22 @@ public class FruitTreesBlocks {
             "attached_cantaloupe_stem",
             properties -> new AttachedStemBlock((StemGrownBlock) CANTALOUPE, () -> FruitTreesItems.CANTALOUPE_SEEDS, properties),
             BlockBehaviour.Properties.copy(Blocks.ATTACHED_MELON_STEM)
+    );
+
+    public static final Block BLUEBERRY_BUSH = registerBlock(
+            "blueberry_bush",
+            properties -> new DynamicBushBlock(properties, () -> FruitTreesItems.BLUEBERRIES),
+            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)
+    );
+    public static final Block CRANBERRY_BUSH = registerBlock(
+            "cranberry_bush",
+            properties -> new DynamicBushBlock(properties, () -> FruitTreesItems.CRANBERRIES),
+            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)
+    );
+    public static final Block HOT_PEPPER_BUSH = registerBlock(
+            "hot_pepper_bush",
+            properties -> new DynamicBushBlock(properties, () -> FruitTreesItems.HOT_PEPPER, () -> FruitTreesItems.HOT_PEPPER_SEEDS),
+            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)
     );
 
     public static Block logBlock(String key, MapColor mapColor) {
@@ -182,6 +218,25 @@ public class FruitTreesBlocks {
                         .ignitedByLava()
                         .dropsLike(dropsLike),
                 false);
+    }
+
+    public static Block leavesBlock(String key) {
+        return registerBlock(
+                key,
+                LeavesBlock::new,
+                BlockBehaviour.Properties.of()
+                        .mapColor(MapColor.PLANT)
+                        .strength(0.2F)
+                        .randomTicks()
+                        .sound(SoundType.GRASS)
+                        .noOcclusion()
+                        .isValidSpawn(Blocks::ocelotOrParrot)
+                        .isSuffocating(Blocks::never)
+                        .isViewBlocking(Blocks::never)
+                        .ignitedByLava()
+                        .pushReaction(PushReaction.DESTROY)
+                        .isRedstoneConductor(Blocks::never)
+        );
     }
 
     public static Block registerBlock(String key, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {

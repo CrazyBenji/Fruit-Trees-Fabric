@@ -10,6 +10,7 @@ import net.minecraft.data.registries.VanillaRegistries;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("unused")
 public class FruitTreesDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {

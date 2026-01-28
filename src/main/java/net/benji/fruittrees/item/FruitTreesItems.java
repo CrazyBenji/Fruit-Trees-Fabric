@@ -102,6 +102,27 @@ public class FruitTreesItems {
             new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_GLISTENING_STEM_FRUIT)
     );
 
+    public static final Item BLUEBERRIES = registerItem(
+            "blueberries",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.BLUEBERRY_BUSH, properties),
+            new Item.Properties().food(null)
+    );
+    public static final Item CRANBERRIES = registerItem(
+            "cranberries",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.CRANBERRY_BUSH, properties),
+            new Item.Properties().food(null)
+    );
+    public static final Item HOT_PEPPER = registerItem(
+            "hot_pepper",
+            Item::new,
+            new Item.Properties().food(null)
+    );
+    public static final Item HOT_PEPPER_SEEDS = registerItem(
+            "hot_pepper_seeds",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.HOT_PEPPER_BUSH, properties),
+            new Item.Properties()
+    );
+
     public static Item registerItem(String name, Function<Item.Properties, Item> itemFactory, Item.Properties properties) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(FruitTrees.MOD_ID, name), itemFactory.apply(properties));
     }
