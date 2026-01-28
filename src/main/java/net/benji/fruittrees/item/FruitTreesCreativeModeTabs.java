@@ -1,6 +1,7 @@
 package net.benji.fruittrees.item;
 
 import net.benji.fruittrees.FruitTrees;
+import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.util.FruitWood;
 import net.benji.fruittrees.util.FruitWoods;
 import net.minecraft.core.Registry;
@@ -45,10 +46,17 @@ public class FruitTreesCreativeModeTabs {
                             output.accept(FruitTreesItems.DRAGON_FRUIT);
                             output.accept(FruitTreesItems.GOLDEN_DRAGON_FRUIT);
                             output.accept(FruitTreesItems.ENCHANTED_GOLDEN_DRAGON_FRUIT);
+                            addFruitWoodToTab(output, FruitWoods.DRAGON_FRUIT);
 
                             output.accept(FruitTreesItems.PEAR);
                             output.accept(FruitTreesItems.GOLDEN_PEAR);
                             output.accept(FruitTreesItems.ENCHANTED_GOLDEN_PEAR);
+
+                            output.accept(FruitTreesItems.HONEYDEW_SEEDS);
+                            output.accept(FruitTreesBlocks.HONEYDEW_BLOCK);
+
+                            output.accept(FruitTreesItems.CANTALOUPE_SEEDS);
+                            output.accept(FruitTreesBlocks.CANTALOUPE_BLOCK);
                         })).build()
         );
     }

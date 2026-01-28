@@ -53,6 +53,7 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
         this.copy(FruitWoods.MANGO.LOGS_BLOCK, FruitWoods.MANGO.LOGS_ITEM);
         this.copy(FruitWoods.POMEGRANATE.LOGS_BLOCK, FruitWoods.POMEGRANATE.LOGS_ITEM);
         this.copy(FruitWoods.PINEAPPLE.LOGS_BLOCK, FruitWoods.PINEAPPLE.LOGS_ITEM);
+        this.copy(FruitWoods.DRAGON_FRUIT.LOGS_BLOCK, FruitWoods.DRAGON_FRUIT.LOGS_ITEM);
 
         this.getOrCreateTagBuilder(ItemTags.PIGLIN_LOVED)
                 .addTag(FruitTreesTags.Items.GOLDEN_FRUITS)

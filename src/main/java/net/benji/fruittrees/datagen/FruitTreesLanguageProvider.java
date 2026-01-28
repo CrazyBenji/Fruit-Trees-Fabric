@@ -1,5 +1,6 @@
 package net.benji.fruittrees.datagen;
 
+import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.item.FruitTreesItems;
 import net.benji.fruittrees.util.FruitWood;
 import net.benji.fruittrees.util.FruitWoods;
@@ -31,10 +32,17 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(FruitTreesItems.DRAGON_FRUIT, "Dragon Fruit");
         translationBuilder.add(FruitTreesItems.GOLDEN_DRAGON_FRUIT, "Golden Dragon Fruit");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_DRAGON_FRUIT, "Enchanted Golden Dragon Fruit");
+        this.generateFruitWoodTranslations(translationBuilder, FruitWoods.DRAGON_FRUIT, "Dragon Fruit");
 
         translationBuilder.add(FruitTreesItems.PEAR, "Pear");
         translationBuilder.add(FruitTreesItems.GOLDEN_PEAR, "Golden Pear");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_PEAR, "Enchanted Golden Pear");
+
+        translationBuilder.add(FruitTreesItems.HONEYDEW_SEEDS, "Honeydew Seeds");
+        translationBuilder.add(FruitTreesBlocks.HONEYDEW_BLOCK, "Honeydew Block");
+
+        translationBuilder.add(FruitTreesItems.CANTALOUPE_SEEDS, "Cantaloupe Seeds");
+        translationBuilder.add(FruitTreesBlocks.CANTALOUPE_BLOCK, "Cantaloupe Block");
 
         translationBuilder.add("creative_mode_tab.fruittrees", "Fruit Trees");
     }

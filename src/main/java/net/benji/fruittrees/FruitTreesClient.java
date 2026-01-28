@@ -1,6 +1,8 @@
 package net.benji.fruittrees;
 
+import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.block.entity.FruitTreesBlockEntities;
+import net.benji.fruittrees.util.FruitTreesTags;
 import net.benji.fruittrees.util.FruitWood;
 import net.benji.fruittrees.util.FruitWoods;
 import net.fabricmc.api.ClientModInitializer;
@@ -19,6 +21,12 @@ public class FruitTreesClient implements ClientModInitializer {
         this.renderFruitWoodCutouts(FruitWoods.MANGO);
         this.renderFruitWoodCutouts(FruitWoods.POMEGRANATE);
         this.renderFruitWoodCutouts(FruitWoods.PINEAPPLE);
+        this.renderFruitWoodCutouts(FruitWoods.DRAGON_FRUIT);
+
+        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.HONEYDEW_STEM, RenderType.cutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, RenderType.cutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.CANTALOUPE_STEM, RenderType.cutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM, RenderType.cutout());
     }
 
     private void renderFruitWoodCutouts(FruitWood fruitWood) {

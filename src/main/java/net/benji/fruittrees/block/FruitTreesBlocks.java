@@ -1,10 +1,8 @@
 package net.benji.fruittrees.block;
 
 import net.benji.fruittrees.FruitTrees;
-import net.benji.fruittrees.block.custom.FruitTreesCeilingHangingSignBlock;
-import net.benji.fruittrees.block.custom.FruitTreesStandingSignBlock;
-import net.benji.fruittrees.block.custom.FruitTreesWallHangingSignBlock;
-import net.benji.fruittrees.block.custom.FruitTreesWallSignBlock;
+import net.benji.fruittrees.block.custom.*;
+import net.benji.fruittrees.item.FruitTreesItems;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -21,6 +19,33 @@ import net.minecraft.world.level.material.PushReaction;
 import java.util.function.Function;
 
 public class FruitTreesBlocks {
+    public static final Block HONEYDEW_BLOCK = registerBlock(
+            "honeydew_block",
+            HoneydewBlock::new,
+            BlockBehaviour.Properties.copy(Blocks.MELON));
+    public static final Block HONEYDEW_STEM = registerBlock(
+            "honeydew_stem",
+            properties -> new StemBlock((StemGrownBlock) HONEYDEW_BLOCK, () -> FruitTreesItems.HONEYDEW_SEEDS, properties),
+            BlockBehaviour.Properties.copy(Blocks.MELON_STEM));
+    public static final Block ATTACHED_HONEYDEW_STEM = registerBlock(
+            "attached_honeydew_stem",
+            properties -> new StemBlock((StemGrownBlock) HONEYDEW_BLOCK, () -> FruitTreesItems.HONEYDEW_SEEDS, properties),
+            BlockBehaviour.Properties.copy(Blocks.ATTACHED_MELON_STEM)
+    );
+
+    public static final Block CANTALOUPE_BLOCK = registerBlock(
+            "cantaloupe_block",
+            CantaloupeBlock::new,
+            BlockBehaviour.Properties.copy(Blocks.MELON));
+    public static final Block CANTALOUPE_STEM = registerBlock(
+            "cantaloupe_stem",
+            properties -> new StemBlock((StemGrownBlock) CANTALOUPE_BLOCK, () -> FruitTreesItems.CANTALOUPE_SEEDS, properties),
+            BlockBehaviour.Properties.copy(Blocks.MELON_STEM));
+    public static final Block ATTACHED_CANTALOUPE_STEM = registerBlock(
+            "attached_cantaloupe_stem",
+            properties -> new StemBlock((StemGrownBlock) CANTALOUPE_BLOCK, () -> FruitTreesItems.CANTALOUPE_SEEDS, properties),
+            BlockBehaviour.Properties.copy(Blocks.ATTACHED_MELON_STEM)
+    );
 
     public static Block logBlock(String key, MapColor mapColor) {
         return registerBlock(key,

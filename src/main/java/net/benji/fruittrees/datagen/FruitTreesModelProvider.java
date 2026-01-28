@@ -25,6 +25,7 @@ public class FruitTreesModelProvider extends FabricModelProvider {
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.MANGO);
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.POMEGRANATE);
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.PINEAPPLE);
+        generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.DRAGON_FRUIT);
     }
 
     @Override

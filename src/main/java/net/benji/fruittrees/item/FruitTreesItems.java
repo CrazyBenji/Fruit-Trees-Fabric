@@ -1,11 +1,13 @@
 package net.benji.fruittrees.item;
 
 import net.benji.fruittrees.FruitTrees;
+import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.benji.fruittrees.item.custom.EnchantedItem;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Rarity;
 
 import java.util.function.Function;
@@ -65,6 +67,20 @@ public class FruitTreesItems {
     public static final Item ENCHANTED_GOLDEN_PEAR = registerItem("enchanted_golden_pear",
             EnchantedItem::new,
             new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.DEFAULT_ENCHANTED_GOLDEN_FRUIT));
+
+    // Honeydew Items
+    public static final Item HONEYDEW_SEEDS = registerItem(
+            "honeydew_seeds",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.HONEYDEW_STEM, properties),
+            new Item.Properties()
+    );
+
+    // Cantaloupe Items
+    public static final Item CANTALOUPE_SEEDS = registerItem(
+            "cantaloupe_seeds",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.CANTALOUPE_STEM, properties),
+            new Item.Properties()
+    );
 
     public static Item registerItem(String name, Function<Item.Properties, Item> itemFactory, Item.Properties properties) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(FruitTrees.MOD_ID, name), itemFactory.apply(properties));

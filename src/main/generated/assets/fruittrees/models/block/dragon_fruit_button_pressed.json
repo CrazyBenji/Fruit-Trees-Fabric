@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "fruittrees:block/dragon_fruit_planks"
+  }
+}

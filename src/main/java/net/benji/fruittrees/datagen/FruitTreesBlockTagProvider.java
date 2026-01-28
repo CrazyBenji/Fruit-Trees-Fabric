@@ -20,6 +20,7 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
         generateFruitWoodTags(FruitWoods.MANGO);
         generateFruitWoodTags(FruitWoods.POMEGRANATE);
         generateFruitWoodTags(FruitWoods.PINEAPPLE);
+        generateFruitWoodTags(FruitWoods.DRAGON_FRUIT);
     }
 
     public void generateFruitWoodTags(FruitWood fruitWood) {

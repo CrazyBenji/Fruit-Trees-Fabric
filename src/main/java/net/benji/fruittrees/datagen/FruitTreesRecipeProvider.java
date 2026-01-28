@@ -21,6 +21,7 @@ public class FruitTreesRecipeProvider extends FabricRecipeProvider {
         generateFruitWoodRecipes(exporter, FruitWoods.MANGO);
         generateFruitWoodRecipes(exporter, FruitWoods.POMEGRANATE);
         generateFruitWoodRecipes(exporter, FruitWoods.PINEAPPLE);
+        generateFruitWoodRecipes(exporter, FruitWoods.DRAGON_FRUIT);
     }
 
     public void generateFruitWoodRecipes(Consumer<FinishedRecipe> exporter, FruitWood fruitWood) {

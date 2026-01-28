@@ -30,6 +30,7 @@ public class FruitTrees implements ModInitializer {
 		this.addFruitWoodRegistries(FruitWoods.MANGO);
 		this.addFruitWoodRegistries(FruitWoods.POMEGRANATE);
 		this.addFruitWoodRegistries(FruitWoods.PINEAPPLE);
+		this.addFruitWoodRegistries(FruitWoods.DRAGON_FRUIT);
 	}
 
 	public void addFruitWoodRegistries(FruitWood fruitWood) {

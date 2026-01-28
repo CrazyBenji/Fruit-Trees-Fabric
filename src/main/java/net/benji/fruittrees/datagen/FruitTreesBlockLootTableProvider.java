@@ -15,6 +15,7 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
         this.generateFruitWoodBlockLootTables(FruitWoods.MANGO);
         this.generateFruitWoodBlockLootTables(FruitWoods.POMEGRANATE);
         this.generateFruitWoodBlockLootTables(FruitWoods.PINEAPPLE);
+        this.generateFruitWoodBlockLootTables(FruitWoods.DRAGON_FRUIT);
     }
 
     public void generateFruitWoodBlockLootTables(FruitWood fruitWood) {

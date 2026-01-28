@@ -14,7 +14,8 @@ public class FruitTreesBlockEntities {
             FabricBlockEntityTypeBuilder.create(FruitTreesSignBlockEntity::new,
                     FruitWoods.MANGO.SIGN, FruitWoods.MANGO.WALL_SIGN,
                     FruitWoods.POMEGRANATE.SIGN, FruitWoods.POMEGRANATE.WALL_SIGN,
-                    FruitWoods.PINEAPPLE.SIGN, FruitWoods.PINEAPPLE.WALL_SIGN
+                    FruitWoods.PINEAPPLE.SIGN, FruitWoods.PINEAPPLE.WALL_SIGN,
+                    FruitWoods.DRAGON_FRUIT.SIGN, FruitWoods.DRAGON_FRUIT.WALL_SIGN
             ).build());
 
     public static final BlockEntityType<FruitTreesHangingSignBlockEntity> FRUIT_TREES_HANGING_SIGN_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE,
@@ -22,7 +23,8 @@ public class FruitTreesBlockEntities {
             FabricBlockEntityTypeBuilder.create(FruitTreesHangingSignBlockEntity::new,
                     FruitWoods.MANGO.HANGING_SIGN, FruitWoods.MANGO.WALL_HANGING_SIGN,
                     FruitWoods.POMEGRANATE.HANGING_SIGN, FruitWoods.POMEGRANATE.WALL_HANGING_SIGN,
-                    FruitWoods.PINEAPPLE.HANGING_SIGN, FruitWoods.PINEAPPLE.WALL_HANGING_SIGN
+                    FruitWoods.PINEAPPLE.HANGING_SIGN, FruitWoods.PINEAPPLE.WALL_HANGING_SIGN,
+                    FruitWoods.DRAGON_FRUIT.HANGING_SIGN, FruitWoods.DRAGON_FRUIT.WALL_HANGING_SIGN
             ).build());
 
     public static void registerBlockEntities() {

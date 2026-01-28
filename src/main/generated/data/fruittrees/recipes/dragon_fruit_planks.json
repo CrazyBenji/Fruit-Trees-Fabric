@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "fruittrees:dragon_fruit_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "fruittrees:dragon_fruit_planks"
+  }
+}
