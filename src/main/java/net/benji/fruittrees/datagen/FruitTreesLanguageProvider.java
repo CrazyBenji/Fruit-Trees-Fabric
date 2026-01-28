@@ -37,12 +37,21 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(FruitTreesItems.PEAR, "Pear");
         translationBuilder.add(FruitTreesItems.GOLDEN_PEAR, "Golden Pear");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_PEAR, "Enchanted Golden Pear");
+        this.generateFruitWoodTranslations(translationBuilder, FruitWoods.PEAR, "Pear");
 
         translationBuilder.add(FruitTreesItems.HONEYDEW_SEEDS, "Honeydew Seeds");
-        translationBuilder.add(FruitTreesBlocks.HONEYDEW_BLOCK, "Honeydew Block");
+        translationBuilder.add(FruitTreesItems.HONEYDEW_SLICE, "Honeydew Slice");
+        translationBuilder.add(FruitTreesItems.GLISTENING_HONEYDEW_SLICE, "Glistening Honeydew Slice");
+        translationBuilder.add(FruitTreesBlocks.HONEYDEW, "Honeydew");
+        translationBuilder.add(FruitTreesBlocks.HONEYDEW_STEM, "Honeydew Stem");
+        translationBuilder.add(FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, "Attached Honeydew Stem");
 
         translationBuilder.add(FruitTreesItems.CANTALOUPE_SEEDS, "Cantaloupe Seeds");
-        translationBuilder.add(FruitTreesBlocks.CANTALOUPE_BLOCK, "Cantaloupe Block");
+        translationBuilder.add(FruitTreesItems.CANTALOUPE_SLICE, "Cantaloupe Slice");
+        translationBuilder.add(FruitTreesItems.GLISTENING_CANTALOUPE_SLICE, "Glistening Cantaloupe Slice");
+        translationBuilder.add(FruitTreesBlocks.CANTALOUPE, "Cantaloupe");
+        translationBuilder.add(FruitTreesBlocks.CANTALOUPE_STEM, "Cantaloupe Stem");
+        translationBuilder.add(FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM, "Attached Cantaloupe Stem");
 
         translationBuilder.add("creative_mode_tab.fruittrees", "Fruit Trees");
     }

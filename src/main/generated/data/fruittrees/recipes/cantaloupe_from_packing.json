@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "fruittrees:cantaloupe_slice"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "item": "fruittrees:cantaloupe"
+  },
+  "show_notification": true
+}

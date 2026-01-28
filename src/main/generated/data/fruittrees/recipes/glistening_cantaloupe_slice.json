@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "fruittrees:cantaloupe_slice"
+    },
+    "g": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "gfg",
+    "ggg"
+  ],
+  "result": {
+    "item": "fruittrees:glistening_cantaloupe_slice"
+  },
+  "show_notification": true
+}

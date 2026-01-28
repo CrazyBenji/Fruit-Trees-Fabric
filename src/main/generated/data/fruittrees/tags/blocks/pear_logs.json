@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "fruittrees:pear_log",
+    "fruittrees:stripped_pear_log",
+    "fruittrees:pear_wood",
+    "fruittrees:stripped_pear_wood"
+  ]
+}

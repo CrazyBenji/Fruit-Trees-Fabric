@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_honeydew_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fruittrees:honeydew_slice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fruittrees:glistening_honeydew_slice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_honeydew_slice",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fruittrees:glistening_honeydew_slice"
+    ]
+  },
+  "sends_telemetry_event": false
+}

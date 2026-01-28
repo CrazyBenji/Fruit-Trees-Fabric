@@ -51,12 +51,17 @@ public class FruitTreesCreativeModeTabs {
                             output.accept(FruitTreesItems.PEAR);
                             output.accept(FruitTreesItems.GOLDEN_PEAR);
                             output.accept(FruitTreesItems.ENCHANTED_GOLDEN_PEAR);
+                            addFruitWoodToTab(output, FruitWoods.PEAR);
 
                             output.accept(FruitTreesItems.HONEYDEW_SEEDS);
-                            output.accept(FruitTreesBlocks.HONEYDEW_BLOCK);
+                            output.accept(FruitTreesItems.HONEYDEW_SLICE);
+                            output.accept(FruitTreesItems.GLISTENING_HONEYDEW_SLICE);
+                            output.accept(FruitTreesBlocks.HONEYDEW);
 
                             output.accept(FruitTreesItems.CANTALOUPE_SEEDS);
-                            output.accept(FruitTreesBlocks.CANTALOUPE_BLOCK);
+                            output.accept(FruitTreesItems.CANTALOUPE_SLICE);
+                            output.accept(FruitTreesItems.GLISTENING_CANTALOUPE_SLICE);
+                            output.accept(FruitTreesBlocks.CANTALOUPE);
                         })).build()
         );
     }

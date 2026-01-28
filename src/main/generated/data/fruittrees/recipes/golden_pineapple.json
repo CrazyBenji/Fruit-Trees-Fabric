@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "fruittrees:pineapple"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "gfg",
+    "ggg"
+  ],
+  "result": {
+    "item": "fruittrees:golden_pineapple"
+  },
+  "show_notification": true
+}

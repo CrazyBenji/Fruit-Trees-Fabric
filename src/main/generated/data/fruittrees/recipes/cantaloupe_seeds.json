@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:cantaloupe_slice"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:cantaloupe_seeds"
+  }
+}

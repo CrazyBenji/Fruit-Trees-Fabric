@@ -12,8 +12,10 @@ import net.minecraft.data.models.BlockModelGenerators;
 import net.minecraft.data.models.ItemModelGenerators;
 import net.minecraft.data.models.model.ModelTemplates;
 import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TexturedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Blocks;
 
 public class FruitTreesModelProvider extends FabricModelProvider {
     public FruitTreesModelProvider(FabricDataOutput output) {
@@ -26,6 +28,13 @@ public class FruitTreesModelProvider extends FabricModelProvider {
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.POMEGRANATE);
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.PINEAPPLE);
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.DRAGON_FRUIT);
+        generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.PEAR);
+
+        blockModelGenerator.createTrivialBlock(FruitTreesBlocks.HONEYDEW, TexturedModel.COLUMN);
+        blockModelGenerator.createStems(FruitTreesBlocks.HONEYDEW_STEM, FruitTreesBlocks.ATTACHED_HONEYDEW_STEM);
+
+        blockModelGenerator.createTrivialBlock(FruitTreesBlocks.CANTALOUPE, TexturedModel.COLUMN);
+        blockModelGenerator.createStems(FruitTreesBlocks.CANTALOUPE_STEM, FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM);
     }
 
     @Override
@@ -44,6 +53,12 @@ public class FruitTreesModelProvider extends FabricModelProvider {
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.PEAR, ModelTemplates.FLAT_ITEM);
         generateEnchantedAndRegularGoldenFruit(itemModelGenerator, FruitTreesItems.GOLDEN_PEAR);
+
+        itemModelGenerator.generateFlatItem(FruitTreesItems.HONEYDEW_SLICE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.GLISTENING_HONEYDEW_SLICE, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerator.generateFlatItem(FruitTreesItems.CANTALOUPE_SLICE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.GLISTENING_CANTALOUPE_SLICE, ModelTemplates.FLAT_ITEM);
 
         generateSecret(itemModelGenerator, "pearto");
         generateSecret(itemModelGenerator, "bavid");

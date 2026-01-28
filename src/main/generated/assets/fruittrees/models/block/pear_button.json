@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "fruittrees:block/pear_planks"
+  }
+}

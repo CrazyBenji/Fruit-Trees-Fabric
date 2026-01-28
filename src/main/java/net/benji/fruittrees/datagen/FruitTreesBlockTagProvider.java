@@ -21,6 +21,11 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
         generateFruitWoodTags(FruitWoods.POMEGRANATE);
         generateFruitWoodTags(FruitWoods.PINEAPPLE);
         generateFruitWoodTags(FruitWoods.DRAGON_FRUIT);
+        generateFruitWoodTags(FruitWoods.PEAR);
+
+        this.getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_AXE)
+                .add(FruitTreesBlocks.HONEYDEW)
+                .add(FruitTreesBlocks.CANTALOUPE);
     }
 
     public void generateFruitWoodTags(FruitWood fruitWood) {

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fruittrees:block/honeydew_top",
+    "side": "fruittrees:block/honeydew_side"
+  }
+}

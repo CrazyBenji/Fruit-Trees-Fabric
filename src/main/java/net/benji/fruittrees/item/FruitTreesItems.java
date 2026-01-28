@@ -74,12 +74,32 @@ public class FruitTreesItems {
             properties -> new ItemNameBlockItem(FruitTreesBlocks.HONEYDEW_STEM, properties),
             new Item.Properties()
     );
+    public static final Item HONEYDEW_SLICE = registerItem(
+            "honeydew_slice",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_STEM_FRUIT)
+    );
+    public static final Item GLISTENING_HONEYDEW_SLICE = registerItem(
+            "glistening_honeydew_slice",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_GLISTENING_STEM_FRUIT)
+    );
 
     // Cantaloupe Items
     public static final Item CANTALOUPE_SEEDS = registerItem(
             "cantaloupe_seeds",
             properties -> new ItemNameBlockItem(FruitTreesBlocks.CANTALOUPE_STEM, properties),
             new Item.Properties()
+    );
+    public static final Item CANTALOUPE_SLICE = registerItem(
+            "cantaloupe_slice",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_STEM_FRUIT)
+    );
+    public static final Item GLISTENING_CANTALOUPE_SLICE = registerItem(
+            "glistening_cantaloupe_slice",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_GLISTENING_STEM_FRUIT)
     );
 
     public static Item registerItem(String name, Function<Item.Properties, Item> itemFactory, Item.Properties properties) {

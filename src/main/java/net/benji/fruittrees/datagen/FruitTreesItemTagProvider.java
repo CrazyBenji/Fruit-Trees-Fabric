@@ -31,7 +31,9 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(FruitTreesItems.POMEGRANATE)
                 .add(FruitTreesItems.PINEAPPLE)
                 .add(FruitTreesItems.DRAGON_FRUIT)
-                .add(FruitTreesItems.PEAR);
+                .add(FruitTreesItems.PEAR)
+                .add(FruitTreesItems.HONEYDEW_SLICE)
+                .add(FruitTreesItems.CANTALOUPE_SLICE);
 
         this.getOrCreateTagBuilder(FruitTreesTags.Items.GOLDEN_FRUITS)
                 .addTag(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS)
@@ -39,7 +41,9 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(FruitTreesItems.GOLDEN_POMEGRANATE)
                 .add(FruitTreesItems.GOLDEN_PINEAPPLE)
                 .add(FruitTreesItems.GOLDEN_DRAGON_FRUIT)
-                .add(FruitTreesItems.GOLDEN_PEAR);
+                .add(FruitTreesItems.GOLDEN_PEAR)
+                .add(FruitTreesItems.GLISTENING_HONEYDEW_SLICE)
+                .add(FruitTreesItems.GLISTENING_CANTALOUPE_SLICE);
 
         this.getOrCreateTagBuilder(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS)
                 .add(FruitTreesItems.ENCHANTED_GOLDEN_MANGO)
@@ -54,6 +58,7 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
         this.copy(FruitWoods.POMEGRANATE.LOGS_BLOCK, FruitWoods.POMEGRANATE.LOGS_ITEM);
         this.copy(FruitWoods.PINEAPPLE.LOGS_BLOCK, FruitWoods.PINEAPPLE.LOGS_ITEM);
         this.copy(FruitWoods.DRAGON_FRUIT.LOGS_BLOCK, FruitWoods.DRAGON_FRUIT.LOGS_ITEM);
+        this.copy(FruitWoods.PEAR.LOGS_BLOCK, FruitWoods.PEAR.LOGS_ITEM);
 
         this.getOrCreateTagBuilder(ItemTags.PIGLIN_LOVED)
                 .addTag(FruitTreesTags.Items.GOLDEN_FRUITS)

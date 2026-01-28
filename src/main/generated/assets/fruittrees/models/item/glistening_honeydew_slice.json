@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fruittrees:item/glistening_honeydew_slice"
+  }
+}
