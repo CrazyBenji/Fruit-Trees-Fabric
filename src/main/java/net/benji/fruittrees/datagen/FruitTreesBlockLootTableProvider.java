@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.IntRange;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -34,6 +35,9 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
     @Override
     public void generate() {
         this.generateFruitWoodBlockLootTables(FruitWoods.MANGO);
+        this.add(FruitTreesBlocks.MANGO_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.MANGO_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.MANGO));
+        this.add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.MANGO));
+
         this.generateFruitWoodBlockLootTables(FruitWoods.POMEGRANATE);
         this.generateFruitWoodBlockLootTables(FruitWoods.PINEAPPLE);
         this.generateFruitWoodBlockLootTables(FruitWoods.DRAGON_FRUIT);

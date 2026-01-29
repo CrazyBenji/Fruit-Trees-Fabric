@@ -26,6 +26,34 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
         this.getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_AXE)
                 .add(FruitTreesBlocks.HONEYDEW)
                 .add(FruitTreesBlocks.CANTALOUPE);
+
+        this.getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_HOE)
+                .add(FruitTreesBlocks.MANGO_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES)
+                .add(FruitTreesBlocks.POMEGRANATE_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES)
+                .add(FruitTreesBlocks.PINEAPPLE_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES)
+                .add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES)
+                .add(FruitTreesBlocks.PEAR_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES);
+
+        this.getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(FruitTreesBlocks.MANGO_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES)
+                .add(FruitTreesBlocks.POMEGRANATE_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES)
+                .add(FruitTreesBlocks.PINEAPPLE_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES)
+                .add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES)
+                .add(FruitTreesBlocks.PEAR_LEAVES)
+                .add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES);
+
+        this.getOrCreateTagBuilder(BlockTags.SAPLINGS);
+
+        this.getOrCreateTagBuilder(BlockTags.FLOWER_POTS);
     }
 
     public void generateFruitWoodTags(FruitWood fruitWood) {

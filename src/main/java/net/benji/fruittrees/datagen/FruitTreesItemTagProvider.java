@@ -76,5 +76,8 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
         this.copy(BlockTags.WOODEN_PRESSURE_PLATES, ItemTags.WOODEN_PRESSURE_PLATES);
         this.copy(BlockTags.SIGNS, ItemTags.SIGNS);
         this.copy(BlockTags.CEILING_HANGING_SIGNS, ItemTags.HANGING_SIGNS);
+
+        this.copy(BlockTags.SAPLINGS, ItemTags.SAPLINGS);
+        this.copy(BlockTags.LEAVES, ItemTags.LEAVES);
     }
 }

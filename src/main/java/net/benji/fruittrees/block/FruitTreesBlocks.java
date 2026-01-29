@@ -21,23 +21,28 @@ import java.util.function.Function;
 public class FruitTreesBlocks {
     public static final Block MANGO_LEAVES = leavesBlock("mango_leaves");
     public static final Block FLOWERING_MANGO_LEAVES = leavesBlock("flowering_mango_leaves");
-    public static final Block MANGO_SAPLING = null;
+    //public static final Block MANGO_SAPLING = null;
+    //public static final Block POTTED_MANGO_SAPLING = flowerPotBlock("potted_mango_sapling", MANGO_SAPLING);
 
     public static final Block POMEGRANATE_LEAVES = leavesBlock("pomegranate_sapling");
     public static final Block FLOWERING_POMEGRANATE_LEAVES = leavesBlock("flowering_pomnegranate_sapling");
-    public static final Block POMEGRANATE_SAPLING = null;
+    //public static final Block POMEGRANATE_SAPLING = null;
+    //public static final Block POTTED_POMEGRANATE_SAPLING = flowerPotBlock("potted_pomegranate_sapling", POMEGRANATE_SAPLING);
 
     public static final Block PINEAPPLE_LEAVES = leavesBlock("pineapple_leaves");
     public static final Block FLOWERING_PINEAPPLE_LEAVES = leavesBlock("flowering_pineapple_leaves");
-    public static final Block PINEAPPLE_SAPLING = null;
+    //public static final Block PINEAPPLE_SAPLING = null;
+    //public static final Block POTTED_PINEAPPLE_SAPLING = flowerPotBlock("potted_pineapple_sapling", PINEAPPLE_SAPLING);
 
     public static final Block DRAGON_FRUIT_LEAVES = leavesBlock("dragon_fruit_leaves");
     public static final Block FLOWERING_DRAGON_FRUIT_LEAVES = leavesBlock("flowering_dragon_fruit_leaves");
-    public static final Block DRAGON_FRUIT_SAPLING = null;
+    //public static final Block DRAGON_FRUIT_SAPLING = null;
+    //public static final Block POTTED_DRAGON_FRUIT_SAPLING = flowerPotBlock("potted_dragon_fruit_sapling", DRAGON_FRUIT_SAPLING);
 
     public static final Block PEAR_LEAVES = leavesBlock("pear_leaves");
     public static final Block FLOWERING_PEAR_LEAVES = leavesBlock("flowering_pear_leaves");
-    public static final Block PEAR_SAPLING = null;
+    //public static final Block PEAR_SAPLING = null;
+    //public static final Block POTTED_PEAR_SAPLING = flowerPotBlock("potted_pear_sapling", PEAR_SAPLING);
 
     public static final Block HONEYDEW = registerBlock(
             "honeydew",
@@ -236,6 +241,18 @@ public class FruitTreesBlocks {
                         .ignitedByLava()
                         .pushReaction(PushReaction.DESTROY)
                         .isRedstoneConductor(Blocks::never)
+        );
+    }
+
+    public static Block flowerPotBlock(String key, Block saplingBlock) {
+        return registerBlock(
+                key,
+                properties -> new FlowerPotBlock(saplingBlock, properties),
+                BlockBehaviour.Properties.of()
+                        .instabreak()
+                        .noOcclusion()
+                        .pushReaction(PushReaction.DESTROY),
+                false
         );
     }
 
