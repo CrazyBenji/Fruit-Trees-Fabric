@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "fruittrees:block/cranberry_bush_stage3"
+  }
+}

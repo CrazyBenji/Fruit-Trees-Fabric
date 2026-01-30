@@ -10,11 +10,17 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.models.BlockModelGenerators;
 import net.minecraft.data.models.ItemModelGenerators;
+import net.minecraft.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.data.models.blockstates.PropertyDispatch;
+import net.minecraft.data.models.blockstates.Variant;
+import net.minecraft.data.models.blockstates.VariantProperties;
 import net.minecraft.data.models.model.ModelTemplates;
 import net.minecraft.data.models.model.TextureMapping;
 import net.minecraft.data.models.model.TexturedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 public class FruitTreesModelProvider extends FabricModelProvider {
     public FruitTreesModelProvider(FabricDataOutput output) {
@@ -53,6 +59,10 @@ public class FruitTreesModelProvider extends FabricModelProvider {
 
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.CANTALOUPE, TexturedModel.COLUMN);
         blockModelGenerator.createStems(FruitTreesBlocks.CANTALOUPE_STEM, FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM);
+
+        this.generateDynamicBushBlockModel(blockModelGenerator, FruitTreesBlocks.BLUEBERRY_BUSH);
+        this.generateDynamicBushBlockModel(blockModelGenerator, FruitTreesBlocks.CRANBERRY_BUSH);
+        this.generateDynamicBushBlockModel(blockModelGenerator, FruitTreesBlocks.HOT_PEPPER_BUSH);
     }
 
     @Override
@@ -89,8 +99,12 @@ public class FruitTreesModelProvider extends FabricModelProvider {
         generateSecretItemModel(itemModelGenerator, "bavid");
     }
 
-    public void generateDynamicBushBlockModel() {
-
+    public void generateDynamicBushBlockModel(BlockModelGenerators blockModelGenerator, Block bushBlock) {
+        blockModelGenerator.blockStateOutput.accept(MultiVariantGenerator.multiVariant(bushBlock)
+                .with(PropertyDispatch.property(BlockStateProperties.AGE_3)
+                        .generate((integer) -> Variant.variant().with(VariantProperties.MODEL,
+                                blockModelGenerator.createSuffixedVariant(bushBlock, "_stage" + integer,
+                                        ModelTemplates.CROSS, TextureMapping::cross)))));
     }
 
     public void generateFruitWoodBlockModels(BlockModelGenerators blockModelGenerator, FruitWood fruitWood) {
