@@ -18,26 +18,36 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(FruitTreesItems.GOLDEN_MANGO, "Golden Mango");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_MANGO, "Enchanted Golden Mango");
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.MANGO, "Mango");
+        translationBuilder.add(FruitTreesBlocks.MANGO_LEAVES, "Mango Leaves");
+        translationBuilder.add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, "Flowering Mango Leaves");
 
         translationBuilder.add(FruitTreesItems.POMEGRANATE, "Pomegranate");
         translationBuilder.add(FruitTreesItems.GOLDEN_POMEGRANATE, "Golden Pomegranate");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_POMEGRANATE, "Enchanted Golden Pomegranate");
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.POMEGRANATE, "Pomegranate");
+        translationBuilder.add(FruitTreesBlocks.POMEGRANATE_LEAVES, "Pomegranate Leaves");
+        translationBuilder.add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, "Flowering Pomegranate Leaves");
 
         translationBuilder.add(FruitTreesItems.PINEAPPLE, "Pineapple");
         translationBuilder.add(FruitTreesItems.GOLDEN_PINEAPPLE, "Golden Pineapple");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_PINEAPPLE, "Enchanted Golden Pineapple");
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.PINEAPPLE, "Pineapple");
+        translationBuilder.add(FruitTreesBlocks.PINEAPPLE_LEAVES, "Pineapple Leaves");
+        translationBuilder.add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, "Flowering Pineapple Leaves");
 
         translationBuilder.add(FruitTreesItems.DRAGON_FRUIT, "Dragon Fruit");
         translationBuilder.add(FruitTreesItems.GOLDEN_DRAGON_FRUIT, "Golden Dragon Fruit");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_DRAGON_FRUIT, "Enchanted Golden Dragon Fruit");
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.DRAGON_FRUIT, "Dragon Fruit");
+        translationBuilder.add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, "Dragon Fruit Leaves");
+        translationBuilder.add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, "Flowering Dragon Fruit Leaves");
 
         translationBuilder.add(FruitTreesItems.PEAR, "Pear");
         translationBuilder.add(FruitTreesItems.GOLDEN_PEAR, "Golden Pear");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_PEAR, "Enchanted Golden Pear");
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.PEAR, "Pear");
+        translationBuilder.add(FruitTreesBlocks.PEAR_LEAVES, "Pear Leaves");
+        translationBuilder.add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, "Flowering Pear Leaves");
 
         translationBuilder.add(FruitTreesItems.HONEYDEW_SEEDS, "Honeydew Seeds");
         translationBuilder.add(FruitTreesItems.HONEYDEW_SLICE, "Honeydew Slice");

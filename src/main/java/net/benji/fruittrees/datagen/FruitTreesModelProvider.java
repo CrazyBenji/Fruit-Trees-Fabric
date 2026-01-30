@@ -26,22 +26,27 @@ public class FruitTreesModelProvider extends FabricModelProvider {
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.MANGO);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.MANGO_LEAVES, TexturedModel.CUBE);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, TexturedModel.CUBE);
+        // blockModelGenerator.createPlant(FruitTreesBlocks.MANGO_SAPLING, FruitTreesBlocks.POTTED_MANGO_SAPLING, BlockModelGenerators.TintState.NOT_TINTED);
 
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.POMEGRANATE);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.POMEGRANATE_LEAVES, TexturedModel.CUBE);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, TexturedModel.CUBE);
+        // blockModelGenerator.createPlant(FruitTreesBlocks.POMEGRANATE_SAPLING, FruitTreesBlocks.POTTED_POMEGRANATE_SAPLING, BlockModelGenerators.TintState.NOT_TINTED);
 
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.PINEAPPLE);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.PINEAPPLE_LEAVES, TexturedModel.CUBE);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, TexturedModel.CUBE);
+        // blockModelGenerator.createPlant(FruitTreesBlocks.PINEAPPLE_SAPLING, FruitTreesBlocks.POTTED_PINEAPPLE_SAPLING, BlockModelGenerators.TintState.NOT_TINTED);
 
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.DRAGON_FRUIT);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, TexturedModel.CUBE);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, TexturedModel.CUBE);
+        // blockModelGenerator.createPlant(FruitTreesBlocks.DRAGON_FRUIT_SAPLING, FruitTreesBlocks.POTTED_DRAGON_FRUIT_SAPLING, BlockModelGenerators.TintState.NOT_TINTED);
 
         generateFruitWoodBlockModels(blockModelGenerator, FruitWoods.PEAR);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.PEAR_LEAVES, TexturedModel.CUBE);
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, TexturedModel.CUBE);
+        // blockModelGenerator.createPlant(FruitTreesBlocks.PEAR_SAPLING, FruitTreesBlocks.POTTED_PEAR_SAPLING, BlockModelGenerators.TintState.NOT_TINTED);
 
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.HONEYDEW, TexturedModel.COLUMN);
         blockModelGenerator.createStems(FruitTreesBlocks.HONEYDEW_STEM, FruitTreesBlocks.ATTACHED_HONEYDEW_STEM);

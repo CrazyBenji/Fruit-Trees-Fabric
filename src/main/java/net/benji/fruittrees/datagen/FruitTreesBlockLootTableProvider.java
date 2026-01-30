@@ -10,7 +10,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.packs.VanillaBlockLoot;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -39,9 +38,20 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
         this.add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.MANGO));
 
         this.generateFruitWoodBlockLootTables(FruitWoods.POMEGRANATE);
+        this.add(FruitTreesBlocks.POMEGRANATE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.POMEGRANATE_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.POMEGRANATE));
+        this.add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.POMEGRANATE));
+
         this.generateFruitWoodBlockLootTables(FruitWoods.PINEAPPLE);
+        this.add(FruitTreesBlocks.PINEAPPLE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PINEAPPLE_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.PINEAPPLE));
+        this.add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.PINEAPPLE));
+
         this.generateFruitWoodBlockLootTables(FruitWoods.DRAGON_FRUIT);
+        this.add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.DRAGON_FRUIT));
+        this.add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.DRAGON_FRUIT));
+
         this.generateFruitWoodBlockLootTables(FruitWoods.PEAR);
+        this.add(FruitTreesBlocks.PEAR_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PEAR_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.PEAR));
+        this.add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.PEAR));
 
         this.add(FruitTreesBlocks.HONEYDEW_STEM, createStemDrops(FruitTreesBlocks.HONEYDEW_STEM, FruitTreesItems.HONEYDEW_SEEDS));
         this.add(FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, createAttachedStemDrops(FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, FruitTreesItems.HONEYDEW_SEEDS));
@@ -63,8 +73,8 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
                                 .setRolls(ConstantValue.exactly(1.0F))
                                 .when(HAS_NO_SHEARS_OR_SILK_TOUCH)
                                 .add(
-                                        ((LootPoolSingletonContainer.Builder<?>)this.applyExplosionCondition(leavesBlock, LootItem.lootTableItem(Items.APPLE)))
-                                                .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.016F, 0.023F, 0.033F, 0.043F, 0.051F))
+                                        ((LootPoolSingletonContainer.Builder<?>)this.applyExplosionCondition(leavesBlock, LootItem.lootTableItem(fruit)))
+                                                .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.016F, 0.023F, 0.033F, 0.043F, 0.05F))
                                 )
                 );
     }
@@ -75,8 +85,8 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
                                 .setRolls(ConstantValue.exactly(1.0F))
                                 .when(HAS_NO_SHEARS_OR_SILK_TOUCH)
                                 .add(
-                                        ((LootPoolSingletonContainer.Builder<?>)this.applyExplosionCondition(leavesBlock, LootItem.lootTableItem(Items.APPLE)))
-                                                .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.031F, 0.047F, 0.066F, 0.085F, 0.1F))
+                                        ((LootPoolSingletonContainer.Builder<?>)this.applyExplosionCondition(leavesBlock, LootItem.lootTableItem(fruit)))
+                                                .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.032F, 0.046F, 0.066F, 0.086F, 0.1F))
                                 )
                 );
     }

@@ -79,17 +79,20 @@ public class FruitTreesBlocks {
     public static final Block BLUEBERRY_BUSH = registerBlock(
             "blueberry_bush",
             properties -> new DynamicBushBlock(properties, () -> FruitTreesItems.BLUEBERRIES),
-            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)
+            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),
+            false
     );
     public static final Block CRANBERRY_BUSH = registerBlock(
             "cranberry_bush",
             properties -> new DynamicBushBlock(properties, () -> FruitTreesItems.CRANBERRIES),
-            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)
+            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),
+            false
     );
     public static final Block HOT_PEPPER_BUSH = registerBlock(
             "hot_pepper_bush",
             properties -> new DynamicBushBlock(properties, () -> FruitTreesItems.HOT_PEPPER, () -> FruitTreesItems.HOT_PEPPER_SEEDS),
-            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)
+            BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),
+            false
     );
 
     public static Block logBlock(String key, MapColor mapColor) {

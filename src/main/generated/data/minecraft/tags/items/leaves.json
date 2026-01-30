@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "fruittrees:mango_leaves",
+    "fruittrees:flowering_mango_leaves",
+    "fruittrees:pomegranate_sapling",
+    "fruittrees:flowering_pomnegranate_sapling",
+    "fruittrees:pineapple_leaves",
+    "fruittrees:flowering_pineapple_leaves",
+    "fruittrees:dragon_fruit_leaves",
+    "fruittrees:flowering_dragon_fruit_leaves",
+    "fruittrees:pear_leaves",
+    "fruittrees:flowering_pear_leaves"
+  ]
+}
