@@ -126,8 +126,7 @@ public class DynamicBushBlock extends BushBlock implements BonemealableBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(AGE);
-        builder.add(HAS_SEED);
+        builder.add(AGE, HAS_SEED);
     }
 
     @Override
