@@ -105,17 +105,17 @@ public class FruitTreesItems {
     public static final Item BLUEBERRIES = registerItem(
             "blueberries",
             properties -> new ItemNameBlockItem(FruitTreesBlocks.BLUEBERRY_BUSH, properties),
-            new Item.Properties().food(null)
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_BERRY)
     );
     public static final Item CRANBERRIES = registerItem(
             "cranberries",
             properties -> new ItemNameBlockItem(FruitTreesBlocks.CRANBERRY_BUSH, properties),
-            new Item.Properties().food(null)
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_BERRY)
     );
     public static final Item HOT_PEPPER = registerItem(
             "hot_pepper",
             Item::new,
-            new Item.Properties().food(null)
+            new Item.Properties().food(FruitTreesFoodProperties.HOT_PEPPER)
     );
     public static final Item HOT_PEPPER_SEEDS = registerItem(
             "hot_pepper_seeds",
