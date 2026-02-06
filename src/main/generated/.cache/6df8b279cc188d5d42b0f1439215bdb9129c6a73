@@ -1,7 +1,7 @@
-// 1.20.1	2026-01-30T18:02:21.8822488	Fruit Trees/Tags for minecraft:item
+// 1.20.1	2026-02-06T14:10:19.0772553	Fruit Trees/Tags for minecraft:item
 4ff5c72d93ca5a627292d04f2a401aa64a44e6b0 data\minecraft\tags\items\hanging_signs.json
 f0367fa185634adb4b3189d42fdb84e57449e567 data\minecraft\tags\items\piglin_loved.json
-cb2cc0297bf73cbcae63140c8b393173278e9a22 data\fruittrees\tags\items\fruits.json
+c563708644e18f6be45020f85ebd5de7ab8a29b3 data\fruittrees\tags\items\fruits.json
 f626283f562e039c528eab0c524b01b0d9bc249e data\c\tags\items\foods.json
 15b3fc9f4adf408e1e970436750a29cd0fb01701 data\minecraft\tags\items\wooden_doors.json
 62621d0d3cf8c016bcded1dd08002da7dad34cc7 data\fruittrees\tags\items\dragon_fruit_logs.json
@@ -13,13 +13,13 @@ a0b081ccb6ab81baff0f131653d0b138982d8921 data\fruittrees\tags\items\pomegranate_
 54a53a474f8d076b508068a0bd6fb0d1aac0cafc data\minecraft\tags\items\wooden_stairs.json
 7ca0d570193c6ad9d5ae4f1a5083bbea974c0b04 data\minecraft\tags\items\logs_that_burn.json
 d086a6e82c4bc69c9b79ff72ab897f75ecc5658e data\minecraft\tags\items\fence_gates.json
-39a21272fcaf8cfca659585f04571e96ada56919 data\minecraft\tags\items\leaves.json
+eaf14a1d97465460d5b04adf229351a3ce9738ec data\minecraft\tags\items\leaves.json
 b35c650547bf5579dedd91302b26fe4854765ad9 data\fruittrees\tags\items\pineapple_logs.json
 6d162482be98852b32ecc9e6c36b86aa0cd0706d data\minecraft\tags\items\wooden_buttons.json
 273fe6f32aff6c28f57866e815e12442b41032e4 data\minecraft\tags\items\planks.json
 f225ec3d1f330f032737711052753b695b8d7cff data\minecraft\tags\items\signs.json
 08ceea8c6ff5372a2e598d7dba3e05f75b6a2340 data\fruittrees\tags\items\pear_logs.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fruittrees\tags\items\juices.json
+94b22e5c4de313218a0b3abb29d1157444ea5144 data\fruittrees\tags\items\juices.json
 1eda5ab277bf8ef56df71c5102512828b102554f data\minecraft\tags\items\wooden_slabs.json
 1d887b4d84e75dd480ffdd0b4335b1ede53e328e data\fruittrees\tags\items\golden_fruits.json
 633e06ff0ad81cbf49614abd117d2812173cf017 data\minecraft\tags\items\wooden_trapdoors.json

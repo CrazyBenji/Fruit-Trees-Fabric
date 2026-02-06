@@ -1,4 +1,4 @@
-// 1.20.1	2026-01-30T18:02:21.870217	Fruit Trees/Block Loot Tables
+// 1.20.1	2026-02-06T14:10:19.0654605	Fruit Trees/Block Loot Tables
 1347ef1977cf6531b16f1c6a0c9e0f2156a28813 data\fruittrees\loot_tables\blocks\pineapple_door.json
 460b5c8452e97288168f52a578f2a355bc0b2c90 data\fruittrees\loot_tables\blocks\stripped_pear_log.json
 cfca7ee69c6148128947995c76e37920871113c0 data\fruittrees\loot_tables\blocks\mango_wood.json
@@ -40,7 +40,6 @@ f8bef288fb78a6a2696d3ec726e890672893c067 data\fruittrees\loot_tables\blocks\pine
 66032b4f2c348c100f8358beea1e027e3089b831 data\fruittrees\loot_tables\blocks\pomegranate_fence_gate.json
 954997fdf30f636d9c4181b09fd383b8f4d9f608 data\fruittrees\loot_tables\blocks\cantaloupe_stem.json
 8b10be81d82e43835c1564d12172d20588814ee4 data\fruittrees\loot_tables\blocks\dragon_fruit_trapdoor.json
-1448e069fde6a3e117726cb74ea27e1b63d9628a data\fruittrees\loot_tables\blocks\pomegranate_sapling.json
 266ba14dda296cc86b7df10659aae765be447d63 data\fruittrees\loot_tables\blocks\cranberry_bush.json
 e1be1af1cfdb0c66cf6c37f9362143a333a74dd1 data\fruittrees\loot_tables\blocks\stripped_pomegranate_wood.json
 83af113af4db02bf7576fcca1df5fe9cf7e9cf8f data\fruittrees\loot_tables\blocks\pomegranate_stairs.json
@@ -64,6 +63,7 @@ be526f0389104768d5da38574b48f47fb5c04d4d data\fruittrees\loot_tables\blocks\cant
 0d57994a1c5f19aff78f06c8a2fc1b5f84058aa9 data\fruittrees\loot_tables\blocks\pineapple_wood.json
 96642c7740332aafe6fd31d5e622536fe9ce6914 data\fruittrees\loot_tables\blocks\dragon_fruit_leaves.json
 26d0fec56da73b95bcfefabdc6efd980adcef441 data\fruittrees\loot_tables\blocks\mango_door.json
+f0b4f1fe288dbb2e66e07b50bb2965e424875555 data\fruittrees\loot_tables\blocks\pomegranate_leaves.json
 f45040149cde91d69869716baf81ae68e3c7e09e data\fruittrees\loot_tables\blocks\mango_slab.json
 5eee3c4480f0eac8176ecda9d6dcfb7e8a952054 data\fruittrees\loot_tables\blocks\pineapple_button.json
 f43279ac6f321ffca9867df55879cc68ebdb0c50 data\fruittrees\loot_tables\blocks\pomegranate_pressure_plate.json

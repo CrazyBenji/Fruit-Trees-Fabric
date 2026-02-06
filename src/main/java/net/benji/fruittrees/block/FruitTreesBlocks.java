@@ -24,7 +24,7 @@ public class FruitTreesBlocks {
     //public static final Block MANGO_SAPLING = null;
     //public static final Block POTTED_MANGO_SAPLING = flowerPotBlock("potted_mango_sapling", MANGO_SAPLING);
 
-    public static final Block POMEGRANATE_LEAVES = leavesBlock("pomegranate_sapling");
+    public static final Block POMEGRANATE_LEAVES = leavesBlock("pomegranate_leaves");
     public static final Block FLOWERING_POMEGRANATE_LEAVES = leavesBlock("flowering_pomnegranate_sapling");
     //public static final Block POMEGRANATE_SAPLING = null;
     //public static final Block POTTED_POMEGRANATE_SAPLING = flowerPotBlock("potted_pomegranate_sapling", POMEGRANATE_SAPLING);

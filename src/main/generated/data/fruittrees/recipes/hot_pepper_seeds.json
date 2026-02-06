@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:hot_pepper"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:hot_pepper_seeds"
+  }
+}

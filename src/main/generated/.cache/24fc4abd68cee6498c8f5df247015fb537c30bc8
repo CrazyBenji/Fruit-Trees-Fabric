@@ -1,11 +1,11 @@
-// 1.20.1	2026-01-30T18:02:21.8742149	Fruit Trees/Tags for minecraft:block
+// 1.20.1	2026-02-06T14:10:19.0686117	Fruit Trees/Tags for minecraft:block
 273fe6f32aff6c28f57866e815e12442b41032e4 data\minecraft\tags\blocks\planks.json
 aa0741902b290931dba91e446fa4078660fd4111 data\minecraft\tags\blocks\mineable\axe.json
-39a21272fcaf8cfca659585f04571e96ada56919 data\minecraft\tags\blocks\mineable\hoe.json
+eaf14a1d97465460d5b04adf229351a3ce9738ec data\minecraft\tags\blocks\mineable\hoe.json
 866524388bcbc1b8d38638ccfccc8abe50a5d437 data\minecraft\tags\blocks\wooden_fences.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\flower_pots.json
 a0b081ccb6ab81baff0f131653d0b138982d8921 data\fruittrees\tags\blocks\pomegranate_logs.json
-39a21272fcaf8cfca659585f04571e96ada56919 data\minecraft\tags\blocks\leaves.json
+eaf14a1d97465460d5b04adf229351a3ce9738ec data\minecraft\tags\blocks\leaves.json
 1eda5ab277bf8ef56df71c5102512828b102554f data\minecraft\tags\blocks\wooden_slabs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\saplings.json
 15b3fc9f4adf408e1e970436750a29cd0fb01701 data\minecraft\tags\blocks\wooden_doors.json

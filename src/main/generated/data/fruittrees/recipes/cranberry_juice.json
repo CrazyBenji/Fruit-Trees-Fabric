@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:cranberries"
+    },
+    {
+      "item": "fruittrees:cranberries"
+    },
+    {
+      "item": "fruittrees:cranberries"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:cranberry_juice"
+  }
+}

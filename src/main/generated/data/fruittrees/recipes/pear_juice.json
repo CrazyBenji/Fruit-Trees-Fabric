@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:pear"
+    },
+    {
+      "item": "fruittrees:pear"
+    },
+    {
+      "item": "fruittrees:pear"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:pear_juice"
+  }
+}

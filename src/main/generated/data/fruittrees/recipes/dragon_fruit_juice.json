@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:dragon_fruit"
+    },
+    {
+      "item": "fruittrees:dragon_fruit"
+    },
+    {
+      "item": "fruittrees:dragon_fruit"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:dragon_fruit_juice"
+  }
+}

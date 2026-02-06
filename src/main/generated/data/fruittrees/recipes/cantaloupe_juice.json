@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:cantaloupe_slice"
+    },
+    {
+      "item": "fruittrees:cantaloupe_slice"
+    },
+    {
+      "item": "fruittrees:cantaloupe_slice"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:cantaloupe_juice"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:pineapple"
+    },
+    {
+      "item": "fruittrees:pineapple"
+    },
+    {
+      "item": "fruittrees:pineapple"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:pineapple_juice"
+  }
+}

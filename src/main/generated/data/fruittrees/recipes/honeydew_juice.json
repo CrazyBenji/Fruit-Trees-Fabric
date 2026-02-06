@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:honeydew_slice"
+    },
+    {
+      "item": "fruittrees:honeydew_slice"
+    },
+    {
+      "item": "fruittrees:honeydew_slice"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:honeydew_juice"
+  }
+}

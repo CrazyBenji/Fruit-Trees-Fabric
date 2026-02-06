@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:pomegranate"
+    },
+    {
+      "item": "fruittrees:pomegranate"
+    },
+    {
+      "item": "fruittrees:pomegranate"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:pomegranate_juice"
+  }
+}

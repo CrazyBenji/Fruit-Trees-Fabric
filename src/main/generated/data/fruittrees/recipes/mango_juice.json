@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:mango"
+    },
+    {
+      "item": "fruittrees:mango"
+    },
+    {
+      "item": "fruittrees:mango"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:mango_juice"
+  }
+}

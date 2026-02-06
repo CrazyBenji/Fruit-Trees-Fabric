@@ -1,4 +1,15 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "fruittrees:mango_juice",
+    "fruittrees:pomegranate_juice",
+    "fruittrees:pineapple_juice",
+    "fruittrees:dragon_fruit_juice",
+    "fruittrees:pear_juice",
+    "fruittrees:honeydew_juice",
+    "fruittrees:cantaloupe_juice",
+    "fruittrees:blueberry_juice",
+    "fruittrees:cranberry_juice",
+    "fruittrees:hot_pepper_juice"
+  ]
 }

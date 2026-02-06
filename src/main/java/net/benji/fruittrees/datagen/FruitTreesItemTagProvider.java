@@ -32,7 +32,10 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(FruitTreesItems.DRAGON_FRUIT)
                 .add(FruitTreesItems.PEAR)
                 .add(FruitTreesItems.HONEYDEW_SLICE)
-                .add(FruitTreesItems.CANTALOUPE_SLICE);
+                .add(FruitTreesItems.CANTALOUPE_SLICE)
+                .add(FruitTreesItems.BLUEBERRIES)
+                .add(FruitTreesItems.CRANBERRIES)
+                .add(FruitTreesItems.HOT_PEPPER);
 
         this.getOrCreateTagBuilder(FruitTreesTags.Items.GOLDEN_FRUITS)
                 .addTag(FruitTreesTags.Items.ENCHANTED_GOLDEN_FRUITS)
@@ -51,7 +54,17 @@ public class FruitTreesItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(FruitTreesItems.ENCHANTED_GOLDEN_DRAGON_FRUIT)
                 .add(FruitTreesItems.ENCHANTED_GOLDEN_PEAR);
 
-        this.getOrCreateTagBuilder(FruitTreesTags.Items.JUICES);
+        this.getOrCreateTagBuilder(FruitTreesTags.Items.JUICES)
+                .add(FruitTreesItems.MANGO_JUICE)
+                .add(FruitTreesItems.POMEGRANATE_JUICE)
+                .add(FruitTreesItems.PINEAPPLE_JUICE)
+                .add(FruitTreesItems.DRAGON_FRUIT_JUICE)
+                .add(FruitTreesItems.PEAR_JUICE)
+                .add(FruitTreesItems.HONEYDEW_JUICE)
+                .add(FruitTreesItems.CANTALOUPE_JUICE)
+                .add(FruitTreesItems.BLUEBERRY_JUICE)
+                .add(FruitTreesItems.CRANBERRY_JUICE)
+                .add(FruitTreesItems.HOT_PEPPER_JUICE);
 
         this.copy(FruitWoods.MANGO.LOGS_BLOCK, FruitWoods.MANGO.LOGS_ITEM);
         this.copy(FruitWoods.POMEGRANATE.LOGS_BLOCK, FruitWoods.POMEGRANATE.LOGS_ITEM);

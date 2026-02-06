@@ -69,31 +69,41 @@ public class FruitTreesModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerator) {
         itemModelGenerator.generateFlatItem(FruitTreesItems.MANGO, ModelTemplates.FLAT_ITEM);
         generateEnchantedAndRegularGoldenFruitItemModels(itemModelGenerator, FruitTreesItems.GOLDEN_MANGO);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.MANGO_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.POMEGRANATE, ModelTemplates.FLAT_ITEM);
         generateEnchantedAndRegularGoldenFruitItemModels(itemModelGenerator, FruitTreesItems.GOLDEN_POMEGRANATE);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.POMEGRANATE_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.PINEAPPLE, ModelTemplates.FLAT_ITEM);
         generateEnchantedAndRegularGoldenFruitItemModels(itemModelGenerator, FruitTreesItems.GOLDEN_PINEAPPLE);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.PINEAPPLE_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.DRAGON_FRUIT, ModelTemplates.FLAT_ITEM);
         generateEnchantedAndRegularGoldenFruitItemModels(itemModelGenerator, FruitTreesItems.GOLDEN_DRAGON_FRUIT);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.DRAGON_FRUIT_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.PEAR, ModelTemplates.FLAT_ITEM);
         generateEnchantedAndRegularGoldenFruitItemModels(itemModelGenerator, FruitTreesItems.GOLDEN_PEAR);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.PEAR_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.HONEYDEW_SLICE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.GLISTENING_HONEYDEW_SLICE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.HONEYDEW_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.CANTALOUPE_SLICE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.GLISTENING_CANTALOUPE_SLICE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.CANTALOUPE_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.BLUEBERRIES, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.BLUEBERRY_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.CRANBERRIES, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.CRANBERRY_JUICE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerator.generateFlatItem(FruitTreesItems.HOT_PEPPER, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.HOT_PEPPER_SEEDS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(FruitTreesItems.HOT_PEPPER_JUICE, ModelTemplates.FLAT_ITEM);
 
         generateSecretItemModel(itemModelGenerator, "pearto");
         generateSecretItemModel(itemModelGenerator, "bavid");

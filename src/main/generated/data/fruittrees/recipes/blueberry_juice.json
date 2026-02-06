@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fruittrees:blueberries"
+    },
+    {
+      "item": "fruittrees:blueberries"
+    },
+    {
+      "item": "fruittrees:blueberries"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "fruittrees:blueberry_juice"
+  }
+}
