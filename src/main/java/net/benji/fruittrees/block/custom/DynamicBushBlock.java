@@ -41,13 +41,13 @@ public class DynamicBushBlock extends BushBlock implements BonemealableBlock {
     private static final VoxelShape SAPLING_SHAPE = Block.box(3.0, 0.0, 3.0, 13.0, 8.0, 13.0);
     private static final VoxelShape MID_GROWTH_SHAPE = Block.box(1.0, 0.0, 1.0, 15.0, 16.0, 15.0);
     protected final Supplier<ItemLike> GROWN_ITEM;
-    protected final Supplier<Item> SEED_ITEM;
+    protected final Supplier<ItemLike> SEED_ITEM;
     public static final IntegerProperty HAS_SEED = IntegerProperty.create("has_seed", 0, 1);
 
-    public DynamicBushBlock(Properties properties, Supplier<ItemLike> grownItem, Supplier<Item> seed) {
+    public DynamicBushBlock(Properties properties, Supplier<ItemLike> grownItem, Supplier<ItemLike> seed) {
         super(properties);
         this.GROWN_ITEM = grownItem;
-        this.SEED_ITEM = seed == null ? () -> grownItem.get().asItem() : seed;
+        this.SEED_ITEM = seed == null ? grownItem : seed;
         int hasSeed = seed == null ? 0 : 1;
         this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0).setValue(HAS_SEED, hasSeed));
     }
@@ -150,6 +150,6 @@ public class DynamicBushBlock extends BushBlock implements BonemealableBlock {
     }
 
     public Item getSeed() {
-        return this.SEED_ITEM.get();
+        return this.SEED_ITEM.get().asItem();
     }
 }
