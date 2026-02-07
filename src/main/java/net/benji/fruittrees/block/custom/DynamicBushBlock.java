@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.TagKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -43,13 +44,19 @@ public class DynamicBushBlock extends BushBlock implements BonemealableBlock {
     protected final Supplier<ItemLike> GROWN_ITEM;
     protected final Supplier<ItemLike> SEED_ITEM;
     public static final IntegerProperty HAS_SEED = IntegerProperty.create("has_seed", 0, 1);
+    protected final TagKey<Block> SUITABLE_BLOCKS;
 
-    public DynamicBushBlock(Properties properties, Supplier<ItemLike> grownItem, Supplier<ItemLike> seed) {
+    public DynamicBushBlock(Properties properties, Supplier<ItemLike> grownItem, Supplier<ItemLike> seed, TagKey<Block> suitableBlocks) {
         super(properties);
         this.GROWN_ITEM = grownItem;
         this.SEED_ITEM = seed == null ? grownItem : seed;
         int hasSeed = seed == null ? 0 : 1;
         this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0).setValue(HAS_SEED, hasSeed));
+        this.SUITABLE_BLOCKS = suitableBlocks;
+    }
+
+    public DynamicBushBlock(Properties properties, Supplier<ItemLike> grownItem, Supplier<ItemLike> seed) {
+        this(properties, grownItem, seed, null);
     }
 
     public DynamicBushBlock(Properties properties, Supplier<ItemLike> grownItem) {
@@ -143,6 +150,11 @@ public class DynamicBushBlock extends BushBlock implements BonemealableBlock {
     public void performBonemeal(ServerLevel serverLevel, RandomSource randomSource, BlockPos blockPos, BlockState blockState) {
         int i = Math.min(MAX_AGE, blockState.getValue(AGE) + 1);
         serverLevel.setBlock(blockPos, blockState.setValue(AGE, i), 2);
+    }
+
+    @Override
+    protected boolean mayPlaceOn(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
+        return this.SUITABLE_BLOCKS == null ? super.mayPlaceOn(blockState, blockGetter, blockPos) : blockState.is(SUITABLE_BLOCKS);
     }
 
     public ItemLike getGrownItem() {

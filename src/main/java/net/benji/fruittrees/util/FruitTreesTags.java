@@ -20,6 +20,7 @@ public class FruitTreesTags {
     }
 
     public static class Blocks {
+        public static final TagKey<Block> HOT_PEPPER_BUSH_SUITABLE = createTag("suitable/hot_pepper_bush");
 
         public static TagKey<Block> createTag(String name) {
             return TagKey.create(Registries.BLOCK, new ResourceLocation(FruitTrees.MOD_ID, name));

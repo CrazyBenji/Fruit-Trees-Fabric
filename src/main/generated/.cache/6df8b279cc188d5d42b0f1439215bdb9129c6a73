@@ -1,7 +1,7 @@
-// 1.20.1	2026-02-06T14:10:19.0772553	Fruit Trees/Tags for minecraft:item
+// 1.20.1	2026-02-06T23:05:58.0205312	Fruit Trees/Tags for minecraft:item
 4ff5c72d93ca5a627292d04f2a401aa64a44e6b0 data\minecraft\tags\items\hanging_signs.json
-f0367fa185634adb4b3189d42fdb84e57449e567 data\minecraft\tags\items\piglin_loved.json
 c563708644e18f6be45020f85ebd5de7ab8a29b3 data\fruittrees\tags\items\fruits.json
+f0367fa185634adb4b3189d42fdb84e57449e567 data\minecraft\tags\items\piglin_loved.json
 f626283f562e039c528eab0c524b01b0d9bc249e data\c\tags\items\foods.json
 15b3fc9f4adf408e1e970436750a29cd0fb01701 data\minecraft\tags\items\wooden_doors.json
 62621d0d3cf8c016bcded1dd08002da7dad34cc7 data\fruittrees\tags\items\dragon_fruit_logs.json

@@ -3,6 +3,7 @@ package net.benji.fruittrees.block;
 import net.benji.fruittrees.FruitTrees;
 import net.benji.fruittrees.block.custom.*;
 import net.benji.fruittrees.item.FruitTreesItems;
+import net.benji.fruittrees.util.FruitTreesTags;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -21,28 +22,28 @@ import java.util.function.Function;
 public class FruitTreesBlocks {
     public static final Block MANGO_LEAVES = leavesBlock("mango_leaves");
     public static final Block FLOWERING_MANGO_LEAVES = leavesBlock("flowering_mango_leaves");
-    //public static final Block MANGO_SAPLING = null;
-    //public static final Block POTTED_MANGO_SAPLING = flowerPotBlock("potted_mango_sapling", MANGO_SAPLING);
+    // public static final Block MANGO_SAPLING = null;
+    // public static final Block POTTED_MANGO_SAPLING = flowerPotBlock("potted_mango_sapling", MANGO_SAPLING);
 
     public static final Block POMEGRANATE_LEAVES = leavesBlock("pomegranate_leaves");
     public static final Block FLOWERING_POMEGRANATE_LEAVES = leavesBlock("flowering_pomnegranate_sapling");
-    //public static final Block POMEGRANATE_SAPLING = null;
-    //public static final Block POTTED_POMEGRANATE_SAPLING = flowerPotBlock("potted_pomegranate_sapling", POMEGRANATE_SAPLING);
+    // public static final Block POMEGRANATE_SAPLING = null;
+    // public static final Block POTTED_POMEGRANATE_SAPLING = flowerPotBlock("potted_pomegranate_sapling", POMEGRANATE_SAPLING);
 
     public static final Block PINEAPPLE_LEAVES = leavesBlock("pineapple_leaves");
     public static final Block FLOWERING_PINEAPPLE_LEAVES = leavesBlock("flowering_pineapple_leaves");
-    //public static final Block PINEAPPLE_SAPLING = null;
-    //public static final Block POTTED_PINEAPPLE_SAPLING = flowerPotBlock("potted_pineapple_sapling", PINEAPPLE_SAPLING);
+    // public static final Block PINEAPPLE_SAPLING = null;
+    // public static final Block POTTED_PINEAPPLE_SAPLING = flowerPotBlock("potted_pineapple_sapling", PINEAPPLE_SAPLING);
 
     public static final Block DRAGON_FRUIT_LEAVES = leavesBlock("dragon_fruit_leaves");
     public static final Block FLOWERING_DRAGON_FRUIT_LEAVES = leavesBlock("flowering_dragon_fruit_leaves");
-    //public static final Block DRAGON_FRUIT_SAPLING = null;
-    //public static final Block POTTED_DRAGON_FRUIT_SAPLING = flowerPotBlock("potted_dragon_fruit_sapling", DRAGON_FRUIT_SAPLING);
+    // public static final Block DRAGON_FRUIT_SAPLING = null;
+    // public static final Block POTTED_DRAGON_FRUIT_SAPLING = flowerPotBlock("potted_dragon_fruit_sapling", DRAGON_FRUIT_SAPLING);
 
     public static final Block PEAR_LEAVES = leavesBlock("pear_leaves");
     public static final Block FLOWERING_PEAR_LEAVES = leavesBlock("flowering_pear_leaves");
-    //public static final Block PEAR_SAPLING = null;
-    //public static final Block POTTED_PEAR_SAPLING = flowerPotBlock("potted_pear_sapling", PEAR_SAPLING);
+    // public static final Block PEAR_SAPLING = null;
+    // public static final Block POTTED_PEAR_SAPLING = flowerPotBlock("potted_pear_sapling", PEAR_SAPLING);
 
     public static final Block HONEYDEW = registerBlock(
             "honeydew",
@@ -90,7 +91,7 @@ public class FruitTreesBlocks {
     );
     public static final Block HOT_PEPPER_BUSH = registerBlock(
             "hot_pepper_bush",
-            properties -> new DynamicBushBlock(properties, () -> FruitTreesItems.HOT_PEPPER, () -> FruitTreesItems.HOT_PEPPER_SEEDS),
+            properties -> new DynamicBushBlock(properties, () -> FruitTreesItems.HOT_PEPPER, () -> FruitTreesItems.HOT_PEPPER_SEEDS, FruitTreesTags.Blocks.HOT_PEPPER_BUSH_SUITABLE),
             BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH),
             false
     );

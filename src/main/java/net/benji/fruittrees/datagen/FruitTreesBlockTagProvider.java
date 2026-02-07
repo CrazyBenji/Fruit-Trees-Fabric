@@ -1,12 +1,14 @@
 package net.benji.fruittrees.datagen;
 
 import net.benji.fruittrees.block.FruitTreesBlocks;
+import net.benji.fruittrees.util.FruitTreesTags;
 import net.benji.fruittrees.util.FruitWood;
 import net.benji.fruittrees.util.FruitWoods;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -22,6 +24,11 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
         generateFruitWoodTags(FruitWoods.PINEAPPLE);
         generateFruitWoodTags(FruitWoods.DRAGON_FRUIT);
         generateFruitWoodTags(FruitWoods.PEAR);
+
+        this.getOrCreateTagBuilder(FruitTreesTags.Blocks.HOT_PEPPER_BUSH_SUITABLE)
+                .add(Blocks.NETHERRACK)
+                .add(Blocks.CRIMSON_NYLIUM)
+                .add(Blocks.WARPED_NYLIUM);
 
         this.getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_AXE)
                 .add(FruitTreesBlocks.HONEYDEW)

@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-06T14:10:19.0654605	Fruit Trees/Block Loot Tables
+// 1.20.1	2026-02-06T23:05:57.9911753	Fruit Trees/Block Loot Tables
 1347ef1977cf6531b16f1c6a0c9e0f2156a28813 data\fruittrees\loot_tables\blocks\pineapple_door.json
 460b5c8452e97288168f52a578f2a355bc0b2c90 data\fruittrees\loot_tables\blocks\stripped_pear_log.json
 cfca7ee69c6148128947995c76e37920871113c0 data\fruittrees\loot_tables\blocks\mango_wood.json
@@ -45,8 +45,8 @@ e1be1af1cfdb0c66cf6c37f9362143a333a74dd1 data\fruittrees\loot_tables\blocks\stri
 83af113af4db02bf7576fcca1df5fe9cf7e9cf8f data\fruittrees\loot_tables\blocks\pomegranate_stairs.json
 634dddedee794778809a7509981f9e45d4c9e7ba data\fruittrees\loot_tables\blocks\dragon_fruit_stairs.json
 582f37c0fc19de010203368d07f6eb9fa427b9ee data\fruittrees\loot_tables\blocks\honeydew.json
-5a5508f24023d3d2a071748121e632b5e9d1a258 data\fruittrees\loot_tables\blocks\stripped_mango_wood.json
 8f53bd359f7032c87ec41b5be77aa9a489afa3c4 data\fruittrees\loot_tables\blocks\pineapple_pressure_plate.json
+5a5508f24023d3d2a071748121e632b5e9d1a258 data\fruittrees\loot_tables\blocks\stripped_mango_wood.json
 43b84a1f992540972e2aa1eb5ee51f4af8436372 data\fruittrees\loot_tables\blocks\dragon_fruit_pressure_plate.json
 f23ad76b6143b8ac6f34629f416284a907336a53 data\fruittrees\loot_tables\blocks\pineapple_hanging_sign.json
 f673bbe0133bf7c8fa8ef938052ab4b58d009c11 data\fruittrees\loot_tables\blocks\hot_pepper_bush.json

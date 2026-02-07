@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-06T14:10:19.0686117	Fruit Trees/Tags for minecraft:block
+// 1.20.1	2026-02-06T23:05:57.9965886	Fruit Trees/Tags for minecraft:block
 273fe6f32aff6c28f57866e815e12442b41032e4 data\minecraft\tags\blocks\planks.json
 aa0741902b290931dba91e446fa4078660fd4111 data\minecraft\tags\blocks\mineable\axe.json
 eaf14a1d97465460d5b04adf229351a3ce9738ec data\minecraft\tags\blocks\mineable\hoe.json
@@ -20,7 +20,8 @@ d086a6e82c4bc69c9b79ff72ab897f75ecc5658e data\minecraft\tags\blocks\fence_gates.
 b659121bc8f05285c1ffc081343f7c612ee128ca data\minecraft\tags\blocks\wall_hanging_signs.json
 54a53a474f8d076b508068a0bd6fb0d1aac0cafc data\minecraft\tags\blocks\wooden_stairs.json
 62621d0d3cf8c016bcded1dd08002da7dad34cc7 data\fruittrees\tags\blocks\dragon_fruit_logs.json
-f225ec3d1f330f032737711052753b695b8d7cff data\minecraft\tags\blocks\signs.json
 14e893828a4ce3f73c0cef198c3a665e97ef14b7 data\minecraft\tags\blocks\wall_signs.json
+f225ec3d1f330f032737711052753b695b8d7cff data\minecraft\tags\blocks\signs.json
 b35c650547bf5579dedd91302b26fe4854765ad9 data\fruittrees\tags\blocks\pineapple_logs.json
 633e06ff0ad81cbf49614abd117d2812173cf017 data\minecraft\tags\blocks\wooden_trapdoors.json
+c0437fdab26d2ae06d620030c940ea71ca4be7c4 data\fruittrees\tags\blocks\suitable\hot_pepper_bush.json
