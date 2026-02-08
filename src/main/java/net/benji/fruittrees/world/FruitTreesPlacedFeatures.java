@@ -12,8 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
@@ -41,7 +40,7 @@ public class FruitTreesPlacedFeatures {
         );
         register(context, POMEGRANATE_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.POMEGRANATE_KEY),
                 VegetationPlacements.treePlacement(
-                        PlacementUtils.countExtra(0, 0.1F, 1), FruitTreesBlocks.POMEGRANATE_SAPLING
+                        PlacementUtils.countExtra(0, 0.02F, 1)
                 )
         );
         register(context, PINEAPPLE_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.PINEAPPLE_KEY),
@@ -60,7 +59,22 @@ public class FruitTreesPlacedFeatures {
                 )
         );
 
+        register(context, HONEYDEW_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.HONEYDEW_KEY),
+                RarityFilter.onAverageOnceEvery(300), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()
+        );
+        register(context, CANTALOUPE_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.CANTALOUPE_KEY),
+                RarityFilter.onAverageOnceEvery(300), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()
+        );
 
+        register(context, BLUEBERRY_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.BLUEBERRY_KEY),
+                RarityFilter.onAverageOnceEvery(384), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()
+        );
+        register(context, CRANBERRY_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.CRANBERRY_KEY),
+                RarityFilter.onAverageOnceEvery(384), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()
+        );
+        register(context, HOT_PEPPER_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.HOT_PEPPER_KEY),
+                RarityFilter.onAverageOnceEvery(384), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()
+        );
     }
 
 

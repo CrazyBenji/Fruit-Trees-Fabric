@@ -29,11 +29,18 @@ public class FruitTreesTags {
     }
 
     public static class Biomes {
-        public static final TagKey<Biome> MANGO_TREE_BIOMES = createTag("mango_tree_biomes");
-        public static final TagKey<Biome> POMEGRANATE_TREE_BIOMES = createTag("pomegranate_tree_biomes");
-        public static final TagKey<Biome> PINEAPPLE_TREE_BIOMES = createTag("pineapple_tree_biomes");
-        public static final TagKey<Biome> DRAGON_FRUIT_TREE_BIOMES = createTag("dragon_fruit_tree_biomes");
-        public static final TagKey<Biome> PEAR_TREE_BIOMES = createTag("pear_tree_biomes");
+        public static final TagKey<Biome> MANGO_TREE_SUITABLE = createTag("suitable/mango_tree");
+        public static final TagKey<Biome> POMEGRANATE_TREE_SUITABLE = createTag("suitable/pomegranate_tree");
+        public static final TagKey<Biome> PINEAPPLE_TREE_SUITABLE = createTag("suitable/pineapple_tree");
+        public static final TagKey<Biome> DRAGON_FRUIT_TREE_SUITABLE = createTag("suitable/dragon_fruit_tree");
+        public static final TagKey<Biome> PEAR_TREE_SUITABLE = createTag("suitable/pear_tree");
+
+        public static final TagKey<Biome> HONEYDEW_SUITABLE = createTag("suitable/honeydew");
+        public static final TagKey<Biome> CANTALOUPE_SUITABLE = createTag("suitable/cantaloupe");
+
+        public static final TagKey<Biome> BLUEBERRY_BUSH_SUITABLE = createTag("suitable/blueberry_bush");
+        public static final TagKey<Biome> CRANBERRY_BUSH_SUITABLE = createTag("suitable/cranberry_bush");
+        public static final TagKey<Biome> HOT_PEPPER_BUSH_SUITABLE = createTag("suitable/hot_pepper_bush");
 
         public static TagKey<Biome> createTag(String key) {
             return TagKey.create(Registries.BIOME, new ResourceLocation(FruitTrees.MOD_ID, key));
