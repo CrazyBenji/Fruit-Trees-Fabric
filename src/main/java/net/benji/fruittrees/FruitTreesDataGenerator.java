@@ -1,11 +1,15 @@
 package net.benji.fruittrees;
 
 import net.benji.fruittrees.datagen.*;
+import net.benji.fruittrees.world.FruitTreesConfiguredFeatures;
+import net.benji.fruittrees.world.FruitTreesPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.Util;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.registries.VanillaRegistries;
 
 import java.util.concurrent.CompletableFuture;
@@ -21,8 +25,16 @@ public class FruitTreesDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(FruitTreesModelProvider::new);
 		FabricTagProvider.BlockTagProvider blockTagsProvider = pack.addProvider(FruitTreesBlockTagProvider::new);
 		pack.addProvider((FabricDataGenerator.Pack.Factory<FruitTreesItemTagProvider>) packOutput -> new FruitTreesItemTagProvider(packOutput, completableFuture, blockTagsProvider));
+		pack.addProvider(FruitTreesBiomeTagProvider::new);
 		pack.addProvider(FruitTreesRecipeProvider::new);
 		pack.addProvider(FruitTreesBlockLootTableProvider::new);
 		pack.addProvider(FruitTreesLanguageProvider::new);
+		pack.addProvider(FruitTreesRegistryProvider::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistrySetBuilder registrySetBuilder) {
+		registrySetBuilder.add(Registries.CONFIGURED_FEATURE, FruitTreesConfiguredFeatures::boostrap);
+		registrySetBuilder.add(Registries.PLACED_FEATURE, FruitTreesPlacedFeatures::bootstrap);
 	}
 }

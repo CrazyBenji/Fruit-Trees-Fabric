@@ -21,6 +21,8 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.MANGO, "Mango");
         translationBuilder.add(FruitTreesBlocks.MANGO_LEAVES, "Mango Leaves");
         translationBuilder.add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, "Flowering Mango Leaves");
+        translationBuilder.add(FruitTreesBlocks.MANGO_SAPLING, "Mango Sapling");
+        translationBuilder.add(FruitTreesBlocks.POTTED_MANGO_SAPLING, "Potted Mango Sapling");
 
         translationBuilder.add(FruitTreesItems.POMEGRANATE, "Pomegranate");
         translationBuilder.add(FruitTreesItems.GOLDEN_POMEGRANATE, "Golden Pomegranate");
@@ -29,6 +31,8 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.POMEGRANATE, "Pomegranate");
         translationBuilder.add(FruitTreesBlocks.POMEGRANATE_LEAVES, "Pomegranate Leaves");
         translationBuilder.add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, "Flowering Pomegranate Leaves");
+        translationBuilder.add(FruitTreesBlocks.POMEGRANATE_SAPLING, "Pomegranate Sapling");
+        translationBuilder.add(FruitTreesBlocks.POTTED_POMEGRANATE_SAPLING, "Potted Pomegranate Sapling");
 
         translationBuilder.add(FruitTreesItems.PINEAPPLE, "Pineapple");
         translationBuilder.add(FruitTreesItems.GOLDEN_PINEAPPLE, "Golden Pineapple");
@@ -37,6 +41,8 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.PINEAPPLE, "Pineapple");
         translationBuilder.add(FruitTreesBlocks.PINEAPPLE_LEAVES, "Pineapple Leaves");
         translationBuilder.add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, "Flowering Pineapple Leaves");
+        translationBuilder.add(FruitTreesBlocks.PINEAPPLE_SAPLING, "Pineapple Sapling");
+        translationBuilder.add(FruitTreesBlocks.POTTED_PINEAPPLE_SAPLING, "Potted Pineapple Sapling");
 
         translationBuilder.add(FruitTreesItems.DRAGON_FRUIT, "Dragon Fruit");
         translationBuilder.add(FruitTreesItems.GOLDEN_DRAGON_FRUIT, "Golden Dragon Fruit");
@@ -45,6 +51,8 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.DRAGON_FRUIT, "Dragon Fruit");
         translationBuilder.add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, "Dragon Fruit Leaves");
         translationBuilder.add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, "Flowering Dragon Fruit Leaves");
+        translationBuilder.add(FruitTreesBlocks.DRAGON_FRUIT_SAPLING, "Dragon Fruit Sapling");
+        translationBuilder.add(FruitTreesBlocks.POTTED_DRAGON_FRUIT_SAPLING, "Potted Dragon Fruit Sapling");
 
         translationBuilder.add(FruitTreesItems.PEAR, "Pear");
         translationBuilder.add(FruitTreesItems.GOLDEN_PEAR, "Golden Pear");
@@ -53,6 +61,8 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         this.generateFruitWoodTranslations(translationBuilder, FruitWoods.PEAR, "Pear");
         translationBuilder.add(FruitTreesBlocks.PEAR_LEAVES, "Pear Leaves");
         translationBuilder.add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, "Flowering Pear Leaves");
+        translationBuilder.add(FruitTreesBlocks.PEAR_SAPLING, "Pear Sapling");
+        translationBuilder.add(FruitTreesBlocks.POTTED_PEAR_SAPLING, "Potted Pear Sapling");
 
         translationBuilder.add(FruitTreesItems.HONEYDEW_SEEDS, "Honeydew Seeds");
         translationBuilder.add(FruitTreesItems.HONEYDEW_SLICE, "Honeydew Slice");

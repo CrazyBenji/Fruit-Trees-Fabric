@@ -25,44 +25,45 @@ public class FruitTreesClient implements ClientModInitializer {
     }
 
     private void putBlockRenderLayer() {
-        this.renderFruitWoodCutouts(FruitWoods.MANGO);
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.MANGO_LEAVES, RenderType.translucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, RenderType.translucent());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.MANGO_SAPLING, RenderType.cutout());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.POTTED_MANGO_SAPLING, RenderType.cutout());
+        BlockRenderLayerMap blockRenderLayerMap = BlockRenderLayerMap.INSTANCE;
+        this.renderFruitWoodCutouts(FruitWoods.MANGO, blockRenderLayerMap);
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.MANGO_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.MANGO_SAPLING, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.POTTED_MANGO_SAPLING, RenderType.cutout());
 
-        this.renderFruitWoodCutouts(FruitWoods.POMEGRANATE);
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.POMEGRANATE_LEAVES, RenderType.translucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, RenderType.translucent());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.POMEGRANATE_SAPLING, RenderType.cutout());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.POTTED_POMEGRANATE_SAPLING, RenderType.cutout());
+        this.renderFruitWoodCutouts(FruitWoods.POMEGRANATE, blockRenderLayerMap);
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.POMEGRANATE_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.POMEGRANATE_SAPLING, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.POTTED_POMEGRANATE_SAPLING, RenderType.cutout());
 
-        this.renderFruitWoodCutouts(FruitWoods.PINEAPPLE);
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.PINEAPPLE_LEAVES, RenderType.translucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, RenderType.translucent());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.PINEAPPLE_SAPLING, RenderType.cutout());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.POTTED_PINEAPPLE_SAPLING, RenderType.cutout());
+        this.renderFruitWoodCutouts(FruitWoods.PINEAPPLE, blockRenderLayerMap);
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.PINEAPPLE_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.PINEAPPLE_SAPLING, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.POTTED_PINEAPPLE_SAPLING, RenderType.cutout());
 
-        this.renderFruitWoodCutouts(FruitWoods.DRAGON_FRUIT);
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, RenderType.translucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, RenderType.translucent());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.DRAGON_FRUIT_SAPLING, RenderType.cutout());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.POTTED_DRAGON_FRUIT_SAPLING, RenderType.cutout());
+        this.renderFruitWoodCutouts(FruitWoods.DRAGON_FRUIT, blockRenderLayerMap);
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.DRAGON_FRUIT_SAPLING, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.POTTED_DRAGON_FRUIT_SAPLING, RenderType.cutout());
 
-        this.renderFruitWoodCutouts(FruitWoods.PEAR);
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.PEAR_LEAVES, RenderType.translucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, RenderType.translucent());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.PEAR_SAPLING, RenderType.cutout());
-        //BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.POTTED_PEAR_SAPLING, RenderType.cutout());
+        this.renderFruitWoodCutouts(FruitWoods.PEAR, blockRenderLayerMap);
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.PEAR_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, RenderType.translucent());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.PEAR_SAPLING, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.POTTED_PEAR_SAPLING, RenderType.cutout());
 
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.HONEYDEW_STEM, RenderType.cutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, RenderType.cutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.CANTALOUPE_STEM, RenderType.cutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.HONEYDEW_STEM, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.CANTALOUPE_STEM, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM, RenderType.cutout());
     }
 
-    private void renderFruitWoodCutouts(FruitWood fruitWood) {
-        BlockRenderLayerMap.INSTANCE.putBlock(fruitWood.DOOR, RenderType.cutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(fruitWood.TRAPDOOR, RenderType.cutout());
+    private void renderFruitWoodCutouts(FruitWood fruitWood, BlockRenderLayerMap blockRenderLayerMap) {
+        blockRenderLayerMap.putBlock(fruitWood.DOOR, RenderType.cutout());
+        blockRenderLayerMap.putBlock(fruitWood.TRAPDOOR, RenderType.cutout());
     }
 }

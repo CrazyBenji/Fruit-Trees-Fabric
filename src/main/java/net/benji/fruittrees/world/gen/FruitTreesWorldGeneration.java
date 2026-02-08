@@ -1,7 +1,7 @@
 package net.benji.fruittrees.world.gen;
 
 public class FruitTreesWorldGeneration {
-    public static void generateModWorldGen() {
-
+    public static void generateWorldGen() {
+        FruitTreesTreeGeneration.generateTrees();
     }
 }

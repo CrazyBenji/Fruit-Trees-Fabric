@@ -1,4 +1,10 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "fruittrees:potted_mango_sapling",
+    "fruittrees:potted_pomegranate_sapling",
+    "fruittrees:potted_pineapple_sapling",
+    "fruittrees:potted_dragon_fruit_sapling",
+    "fruittrees:potted_pear_sapling"
+  ]
 }

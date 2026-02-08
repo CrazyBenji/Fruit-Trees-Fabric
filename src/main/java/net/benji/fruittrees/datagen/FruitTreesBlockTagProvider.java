@@ -58,9 +58,19 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
                 .add(FruitTreesBlocks.PEAR_LEAVES)
                 .add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES);
 
-        this.getOrCreateTagBuilder(BlockTags.SAPLINGS);
+        this.getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(FruitTreesBlocks.MANGO_SAPLING)
+                .add(FruitTreesBlocks.POMEGRANATE_SAPLING)
+                .add(FruitTreesBlocks.PINEAPPLE_SAPLING)
+                .add(FruitTreesBlocks.DRAGON_FRUIT_SAPLING)
+                .add(FruitTreesBlocks.PEAR_SAPLING);
 
-        this.getOrCreateTagBuilder(BlockTags.FLOWER_POTS);
+        this.getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
+                .add(FruitTreesBlocks.POTTED_MANGO_SAPLING)
+                .add(FruitTreesBlocks.POTTED_POMEGRANATE_SAPLING)
+                .add(FruitTreesBlocks.POTTED_PINEAPPLE_SAPLING)
+                .add(FruitTreesBlocks.POTTED_DRAGON_FRUIT_SAPLING)
+                .add(FruitTreesBlocks.POTTED_PEAR_SAPLING);
     }
 
     public void generateFruitWoodTags(FruitWood fruitWood) {

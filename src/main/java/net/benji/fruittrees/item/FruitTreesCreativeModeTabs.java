@@ -36,6 +36,7 @@ public class FruitTreesCreativeModeTabs {
                             addFruitWoodToTab(output, FruitWoods.MANGO);
                             output.accept(FruitTreesBlocks.MANGO_LEAVES);
                             output.accept(FruitTreesBlocks.FLOWERING_MANGO_LEAVES);
+                            output.accept(FruitTreesBlocks.MANGO_SAPLING);
 
                             output.accept(FruitTreesItems.POMEGRANATE);
                             output.accept(FruitTreesItems.GOLDEN_POMEGRANATE);
@@ -44,6 +45,7 @@ public class FruitTreesCreativeModeTabs {
                             addFruitWoodToTab(output, FruitWoods.POMEGRANATE);
                             output.accept(FruitTreesBlocks.POMEGRANATE_LEAVES);
                             output.accept(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES);
+                            output.accept(FruitTreesBlocks.POMEGRANATE_SAPLING);
 
                             output.accept(FruitTreesItems.PINEAPPLE);
                             output.accept(FruitTreesItems.GOLDEN_PINEAPPLE);
@@ -52,6 +54,7 @@ public class FruitTreesCreativeModeTabs {
                             addFruitWoodToTab(output, FruitWoods.PINEAPPLE);
                             output.accept(FruitTreesBlocks.PINEAPPLE_LEAVES);
                             output.accept(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES);
+                            output.accept(FruitTreesBlocks.PINEAPPLE_SAPLING);
 
                             output.accept(FruitTreesItems.DRAGON_FRUIT);
                             output.accept(FruitTreesItems.GOLDEN_DRAGON_FRUIT);
@@ -60,6 +63,7 @@ public class FruitTreesCreativeModeTabs {
                             addFruitWoodToTab(output, FruitWoods.DRAGON_FRUIT);
                             output.accept(FruitTreesBlocks.DRAGON_FRUIT_LEAVES);
                             output.accept(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES);
+                            output.accept(FruitTreesBlocks.DRAGON_FRUIT_SAPLING);
 
                             output.accept(FruitTreesItems.PEAR);
                             output.accept(FruitTreesItems.GOLDEN_PEAR);
@@ -68,6 +72,7 @@ public class FruitTreesCreativeModeTabs {
                             addFruitWoodToTab(output, FruitWoods.PEAR);
                             output.accept(FruitTreesBlocks.PEAR_LEAVES);
                             output.accept(FruitTreesBlocks.FLOWERING_PEAR_LEAVES);
+                            output.accept(FruitTreesBlocks.PEAR_SAPLING);
 
                             output.accept(FruitTreesItems.HONEYDEW_SEEDS);
                             output.accept(FruitTreesItems.HONEYDEW_SLICE);

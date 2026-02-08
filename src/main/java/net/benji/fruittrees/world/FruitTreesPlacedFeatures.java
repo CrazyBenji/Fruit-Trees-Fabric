@@ -1,9 +1,12 @@
 package net.benji.fruittrees.world;
 
 import net.benji.fruittrees.FruitTrees;
+import net.benji.fruittrees.block.FruitTreesBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -30,6 +33,34 @@ public class FruitTreesPlacedFeatures {
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+
+        register(context, MANGO_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.MANGO_KEY),
+                VegetationPlacements.treePlacement(
+                        PlacementUtils.countExtra(0, 0.1F, 1), FruitTreesBlocks.MANGO_SAPLING
+                )
+        );
+        register(context, POMEGRANATE_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.POMEGRANATE_KEY),
+                VegetationPlacements.treePlacement(
+                        PlacementUtils.countExtra(0, 0.1F, 1), FruitTreesBlocks.POMEGRANATE_SAPLING
+                )
+        );
+        register(context, PINEAPPLE_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.PINEAPPLE_KEY),
+                VegetationPlacements.treePlacement(
+                        PlacementUtils.countExtra(0, 0.1F, 1), FruitTreesBlocks.PINEAPPLE_SAPLING
+                )
+        );
+        register(context, DRAGON_FRUIT_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.DRAGON_FRUIT_KEY),
+                VegetationPlacements.treePlacement(
+                        PlacementUtils.countExtra(0, 0.1F, 1), FruitTreesBlocks.DRAGON_FRUIT_SAPLING
+                )
+        );
+        register(context, PEAR_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.PEAR_KEY),
+                VegetationPlacements.treePlacement(
+                        PlacementUtils.countExtra(0, 0.1F, 1), FruitTreesBlocks.PEAR_SAPLING
+                )
+        );
+
+
     }
 
 
