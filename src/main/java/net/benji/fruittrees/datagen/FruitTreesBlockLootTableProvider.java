@@ -34,32 +34,32 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
     @Override
     public void generate() {
         this.generateFruitWoodBlockLootTables(FruitWoods.MANGO);
-        this.add(FruitTreesBlocks.MANGO_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.MANGO_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.MANGO));
-        this.add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.MANGO));
+        this.add(FruitTreesBlocks.MANGO_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.MANGO_LEAVES, FruitTreesBlocks.MANGO_SAPLING, FruitTreesItems.MANGO));
+        this.add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, FruitTreesBlocks.MANGO_SAPLING, FruitTreesItems.MANGO));
         this.dropSelf(FruitTreesBlocks.MANGO_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_MANGO_SAPLING);
 
         this.generateFruitWoodBlockLootTables(FruitWoods.POMEGRANATE);
-        this.add(FruitTreesBlocks.POMEGRANATE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.POMEGRANATE_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.POMEGRANATE));
-        this.add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.POMEGRANATE));
+        this.add(FruitTreesBlocks.POMEGRANATE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.POMEGRANATE_LEAVES, FruitTreesBlocks.POMEGRANATE_SAPLING, FruitTreesItems.POMEGRANATE));
+        this.add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, FruitTreesBlocks.POMEGRANATE_SAPLING, FruitTreesItems.POMEGRANATE));
         this.dropSelf(FruitTreesBlocks.POMEGRANATE_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_POMEGRANATE_SAPLING);
 
         this.generateFruitWoodBlockLootTables(FruitWoods.PINEAPPLE);
-        this.add(FruitTreesBlocks.PINEAPPLE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PINEAPPLE_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.PINEAPPLE));
-        this.add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.PINEAPPLE));
+        this.add(FruitTreesBlocks.PINEAPPLE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PINEAPPLE_LEAVES, FruitTreesBlocks.PINEAPPLE_SAPLING, FruitTreesItems.PINEAPPLE));
+        this.add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, FruitTreesBlocks.PINEAPPLE_SAPLING, FruitTreesItems.PINEAPPLE));
         this.dropSelf(FruitTreesBlocks.PINEAPPLE_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_PINEAPPLE_SAPLING);
 
         this.generateFruitWoodBlockLootTables(FruitWoods.DRAGON_FRUIT);
-        this.add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.DRAGON_FRUIT));
-        this.add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.DRAGON_FRUIT));
+        this.add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, FruitTreesBlocks.DRAGON_FRUIT_SAPLING, FruitTreesItems.DRAGON_FRUIT));
+        this.add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, FruitTreesBlocks.DRAGON_FRUIT_SAPLING, FruitTreesItems.DRAGON_FRUIT));
         this.dropSelf(FruitTreesBlocks.DRAGON_FRUIT_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_DRAGON_FRUIT_SAPLING);
 
         this.generateFruitWoodBlockLootTables(FruitWoods.PEAR);
-        this.add(FruitTreesBlocks.PEAR_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PEAR_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.PEAR));
-        this.add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, Blocks.OAK_SAPLING, FruitTreesItems.PEAR));
+        this.add(FruitTreesBlocks.PEAR_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PEAR_LEAVES, FruitTreesBlocks.PEAR_SAPLING, FruitTreesItems.PEAR));
+        this.add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, FruitTreesBlocks.PEAR_SAPLING, FruitTreesItems.PEAR));
         this.dropSelf(FruitTreesBlocks.PEAR_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_PEAR_SAPLING);
 
