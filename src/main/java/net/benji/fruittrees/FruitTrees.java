@@ -34,6 +34,23 @@ public class FruitTrees implements ModInitializer {
 		this.addFruitWoodRegistries(FruitWoods.PINEAPPLE);
 		this.addFruitWoodRegistries(FruitWoods.DRAGON_FRUIT);
 		this.addFruitWoodRegistries(FruitWoods.PEAR);
+
+		this.registerFlammables();
+	}
+
+	public void registerFlammables() {
+		FlammableBlockRegistry flammableBlockRegistry = FlammableBlockRegistry.getDefaultInstance();
+
+		flammableBlockRegistry.add(FruitTreesBlocks.MANGO_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.POMEGRANATE_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.PINEAPPLE_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.PEAR_LEAVES, 30, 60);
+		flammableBlockRegistry.add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, 30, 60);
 	}
 
 	public void addFruitWoodRegistries(FruitWood fruitWood) {

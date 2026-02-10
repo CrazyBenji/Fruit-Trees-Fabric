@@ -13,6 +13,6 @@ public class FruitTreesBushGeneration {
         BiomeModifications.addFeature(BiomeSelectors.tag(FruitTreesTags.Biomes.CRANBERRY_BUSH_SUITABLE),
                 GenerationStep.Decoration.VEGETAL_DECORATION, FruitTreesPlacedFeatures.CRANBERRY_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.tag(FruitTreesTags.Biomes.HOT_PEPPER_BUSH_SUITABLE),
-                GenerationStep.Decoration.VEGETAL_DECORATION, FruitTreesPlacedFeatures.HOT_PEPPER_PLACED_KEY);
+                GenerationStep.Decoration.UNDERGROUND_DECORATION, FruitTreesPlacedFeatures.HOT_PEPPER_PLACED_KEY);
     }
 }
