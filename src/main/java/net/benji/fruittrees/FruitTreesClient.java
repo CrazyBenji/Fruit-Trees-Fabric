@@ -60,6 +60,10 @@ public class FruitTreesClient implements ClientModInitializer {
         blockRenderLayerMap.putBlock(FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, RenderType.cutout());
         blockRenderLayerMap.putBlock(FruitTreesBlocks.CANTALOUPE_STEM, RenderType.cutout());
         blockRenderLayerMap.putBlock(FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM, RenderType.cutout());
+
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.BLUEBERRY_BUSH, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.CRANBERRY_BUSH, RenderType.cutout());
+        blockRenderLayerMap.putBlock(FruitTreesBlocks.HOT_PEPPER_BUSH, RenderType.cutout());
     }
 
     private void renderFruitWoodCutouts(FruitWood fruitWood, BlockRenderLayerMap blockRenderLayerMap) {
