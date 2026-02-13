@@ -1,9 +1,8 @@
-// 1.20.1	2026-02-12T16:21:56.6261492	Fruit Trees/Block Loot Tables
+// 1.20.1	2026-02-12T23:18:00.7273503	Fruit Trees/Block Loot Tables
 460b5c8452e97288168f52a578f2a355bc0b2c90 data\fruittrees\loot_tables\blocks\stripped_pear_log.json
 a584420ce81044425ea032d7e5c1eaefced7a1d4 data\fruittrees\loot_tables\blocks\pineapple_slab.json
 7c0332ec7aa8feebafe313bf6a75b156efc7b6ce data\fruittrees\loot_tables\blocks\pomegranate_hanging_sign.json
 48087880bbc17a8c63be9049d016acc7bc0e1237 data\fruittrees\loot_tables\blocks\pineapple_fence.json
-cc1696e0c00064057d2fe4609cdd2b3f1676cba0 data\fruittrees\loot_tables\blocks\flowering_pomnegranate_sapling.json
 ae842dd46300322502e4ffeb98ddae744421eaa4 data\fruittrees\loot_tables\blocks\dragon_fruit_fence_gate.json
 5d7ca4c7dea8618fac50856d3334aec25baf23ed data\fruittrees\loot_tables\blocks\mango_sapling.json
 23dca7063d65b8389764d146f9627ff30ad330ef data\fruittrees\loot_tables\blocks\stripped_mango_log.json
@@ -33,6 +32,7 @@ be526f0389104768d5da38574b48f47fb5c04d4d data\fruittrees\loot_tables\blocks\cant
 2581414c6538cca2745d2ea8dacb5e76bd0d9edc data\fruittrees\loot_tables\blocks\pomegranate_planks.json
 3b59848d2fb5b23cf9fbaf8fa1d3dc2c599ccf2c data\fruittrees\loot_tables\blocks\attached_cantaloupe_stem.json
 5bc65284fe9550e90a3b3d4c1722e71bda07cb1c data\fruittrees\loot_tables\blocks\pineapple_stairs.json
+c42d392ad636eeb022c95f463bc0892e9b16d6f0 data\fruittrees\loot_tables\blocks\flowering_pomegranate_leaves.json
 f45040149cde91d69869716baf81ae68e3c7e09e data\fruittrees\loot_tables\blocks\mango_slab.json
 dd57dc718693e93126b67f15c0b4fa7924ce0326 data\fruittrees\loot_tables\blocks\pomegranate_leaves.json
 31ae95f8b521e192fcdd8e40fb2181de9656ea27 data\fruittrees\loot_tables\blocks\potted_pear_sapling.json

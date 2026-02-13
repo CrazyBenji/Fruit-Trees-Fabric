@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-12T16:21:56.6434075	Fruit Trees/Tags for minecraft:item
+// 1.20.1	2026-02-12T23:18:00.7535733	Fruit Trees/Tags for minecraft:item
 4ff5c72d93ca5a627292d04f2a401aa64a44e6b0 data\minecraft\tags\items\hanging_signs.json
 c563708644e18f6be45020f85ebd5de7ab8a29b3 data\fruittrees\tags\items\fruits.json
 f0367fa185634adb4b3189d42fdb84e57449e567 data\minecraft\tags\items\piglin_loved.json
@@ -13,7 +13,7 @@ a0b081ccb6ab81baff0f131653d0b138982d8921 data\fruittrees\tags\items\pomegranate_
 54a53a474f8d076b508068a0bd6fb0d1aac0cafc data\minecraft\tags\items\wooden_stairs.json
 7ca0d570193c6ad9d5ae4f1a5083bbea974c0b04 data\minecraft\tags\items\logs_that_burn.json
 d086a6e82c4bc69c9b79ff72ab897f75ecc5658e data\minecraft\tags\items\fence_gates.json
-eaf14a1d97465460d5b04adf229351a3ce9738ec data\minecraft\tags\items\leaves.json
+f0d18d4343de2ba42f657687f1c17cf32ebaaeaf data\minecraft\tags\items\leaves.json
 b35c650547bf5579dedd91302b26fe4854765ad9 data\fruittrees\tags\items\pineapple_logs.json
 6d162482be98852b32ecc9e6c36b86aa0cd0706d data\minecraft\tags\items\wooden_buttons.json
 273fe6f32aff6c28f57866e815e12442b41032e4 data\minecraft\tags\items\planks.json
