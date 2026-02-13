@@ -10,6 +10,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.util.valueproviders.WeightedListInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -18,9 +21,14 @@ import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfigur
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 
 import java.util.List;
@@ -54,11 +62,11 @@ public class FruitTreesConfiguredFeatures {
         );
         register(context, POMEGRANATE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(FruitWoods.POMEGRANATE.LOG),
-                new StraightTrunkPlacer(4, 2, 0),
+                new ForkingTrunkPlacer(4, 2, 2),
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(FruitTreesBlocks.POMEGRANATE_LEAVES.defaultBlockState(), 3)
                         .add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES.defaultBlockState(), 1)),
-                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
                 new TwoLayersFeatureSize(1, 0, 2))
                 .dirt(BlockStateProvider.simple(Blocks.DIRT))
                 .forceDirt()
@@ -66,11 +74,11 @@ public class FruitTreesConfiguredFeatures {
         );
         register(context, PINEAPPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(FruitWoods.PINEAPPLE.LOG),
-                new StraightTrunkPlacer(4, 2, 0),
+                new StraightTrunkPlacer(4, 1, 1),
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(FruitTreesBlocks.PINEAPPLE_LEAVES.defaultBlockState(), 3)
                         .add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES.defaultBlockState(), 1)),
-                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new AcaciaFoliagePlacer(UniformInt.of(2, 3), UniformInt.of(0, 1)),
                 new TwoLayersFeatureSize(1, 0, 2))
                 .dirt(BlockStateProvider.simple(Blocks.DIRT))
                 .forceDirt()
@@ -90,12 +98,12 @@ public class FruitTreesConfiguredFeatures {
         );
         register(context, PEAR_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(FruitWoods.PEAR.LOG),
-                new StraightTrunkPlacer(4, 2, 0),
+                new ForkingTrunkPlacer(5, 2, 1),
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(FruitTreesBlocks.PEAR_LEAVES.defaultBlockState(), 3)
                         .add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES.defaultBlockState(), 1)),
-                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-                new TwoLayersFeatureSize(1, 0, 2))
+                new SpruceFoliagePlacer(UniformInt.of(2, 3), UniformInt.of(0, 2), UniformInt.of(0, 1)),
+                new TwoLayersFeatureSize(2, 0, 2))
                 .dirt(BlockStateProvider.simple(Blocks.DIRT))
                 .forceDirt()
                 .build()

@@ -81,13 +81,16 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM, "Attached Cantaloupe Stem");
 
         translationBuilder.add(FruitTreesItems.BLUEBERRIES, "Blueberries");
+        translationBuilder.add(FruitTreesBlocks.BLUEBERRY_BUSH, "Blueberry Bush");
         translationBuilder.add(FruitTreesItems.BLUEBERRY_JUICE, "Blueberry Juice");
 
         translationBuilder.add(FruitTreesItems.CRANBERRIES, "Cranberries");
+        translationBuilder.add(FruitTreesBlocks.CRANBERRY_BUSH, "Cranberry Bush");
         translationBuilder.add(FruitTreesItems.CRANBERRY_JUICE, "Cranberry Juice");
 
         translationBuilder.add(FruitTreesItems.HOT_PEPPER, "Hot Pepper");
         translationBuilder.add(FruitTreesItems.HOT_PEPPER_SEEDS, "Hot Pepper Seeds");
+        translationBuilder.add(FruitTreesBlocks.HOT_PEPPER_BUSH, "Hot Pepper Bush");
         translationBuilder.add(FruitTreesItems.HOT_PEPPER_JUICE, "Hot Pepper Juice");
 
         translationBuilder.add("creative_mode_tab.fruittrees", "Fruit Trees");
