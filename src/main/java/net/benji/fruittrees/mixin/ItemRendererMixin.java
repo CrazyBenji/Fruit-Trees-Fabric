@@ -22,9 +22,9 @@ public class ItemRendererMixin {
     public BakedModel useEasterEggModel(BakedModel bakedModel, ItemStack itemStack, ItemDisplayContext itemDisplayContext, boolean leftHanded,
                                         PoseStack poseStack, MultiBufferSource multiBufferSource, int light, int overlay) {
         for(SecretItem secretItem : FruitTreesSecretItems.SECRET_ITEMS) {
-            Item item = secretItem.item;
-            String name = secretItem.name;
-            String key = secretItem.key;
+            Item item = secretItem.item();
+            String name = secretItem.name();
+            String key = secretItem.key();
             if (itemStack.is(item) && itemStack.getHoverName().getString().equals(name)) {
                 return ((ItemRendererAccessor) this).fruittrees$getModels().getModelManager().getModel(
                         new ModelResourceLocation(FruitTrees.MOD_ID, key, "inventory"));

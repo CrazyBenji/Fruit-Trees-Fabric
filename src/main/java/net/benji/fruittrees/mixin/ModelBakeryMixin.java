@@ -32,7 +32,7 @@ public abstract class ModelBakeryMixin {
                                    Map<ResourceLocation, List<ModelBakery.LoadedJson>> blockStates, CallbackInfo ci) {
 
         for(SecretItem secretItem : FruitTreesSecretItems.SECRET_ITEMS) {
-            String key = secretItem.key;
+            String key = secretItem.key();
             this.loadTopLevel(new ModelResourceLocation(FruitTrees.MOD_ID, key, "inventory"));
         }
     }

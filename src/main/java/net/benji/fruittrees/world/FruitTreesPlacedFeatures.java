@@ -36,7 +36,7 @@ public class FruitTreesPlacedFeatures {
 
         register(context, MANGO_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.MANGO_KEY),
                 VegetationPlacements.treePlacement(
-                        PlacementUtils.countExtra(1, 1F, 1), FruitTreesBlocks.MANGO_SAPLING
+                        PlacementUtils.countExtra(6, 1F, 1), FruitTreesBlocks.MANGO_SAPLING
                 )
         );
         register(context, POMEGRANATE_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.POMEGRANATE_KEY),
@@ -51,7 +51,7 @@ public class FruitTreesPlacedFeatures {
         );
         register(context, DRAGON_FRUIT_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.DRAGON_FRUIT_KEY),
                 VegetationPlacements.treePlacement(
-                        PlacementUtils.countExtra(0, 0.1F, 1), FruitTreesBlocks.DRAGON_FRUIT_SAPLING
+                        PlacementUtils.countExtra(0, 0.02F, 1)
                 )
         );
         register(context, PEAR_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.PEAR_KEY),
@@ -70,13 +70,13 @@ public class FruitTreesPlacedFeatures {
                 RarityFilter.onAverageOnceEvery(75), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
 
         register(context, BLUEBERRY_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.BLUEBERRY_KEY),
-                RarityFilter.onAverageOnceEvery(64), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()
+                RarityFilter.onAverageOnceEvery(48), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()
         );
         register(context, CRANBERRY_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.CRANBERRY_KEY),
                 RarityFilter.onAverageOnceEvery(64), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()
         );
         register(context, HOT_PEPPER_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.HOT_PEPPER_KEY),
-                RarityFilter.onAverageOnceEvery(3), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()
+                RarityFilter.onAverageOnceEvery(2), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()
         );
     }
 

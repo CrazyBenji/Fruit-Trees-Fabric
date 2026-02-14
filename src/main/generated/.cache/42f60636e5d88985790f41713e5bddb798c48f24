@@ -1,11 +1,11 @@
-// 1.20.1	2026-02-14T14:54:46.7692305	Fruit Trees/Tags for minecraft:worldgen/biome
+// 1.20.1	2026-02-14T17:16:34.2242819	Fruit Trees/Tags for minecraft:worldgen/biome
 94e5f7232e09d25b922f1d9a07e6eb94f2583669 data\fruittrees\tags\worldgen\biome\suitable\pineapple_tree.json
 b8e2dce09bfef8f545ed3589af02fc7d5aa5d3ac data\fruittrees\tags\worldgen\biome\suitable\cranberry_bush.json
 56efac13268aa7c034ec92e7c8c6caa5a94489f9 data\fruittrees\tags\worldgen\biome\suitable\pear_tree.json
 0fc08562b2e0d622ac00a697e3a3686ca1012573 data\fruittrees\tags\worldgen\biome\suitable\dragon_fruit_tree.json
 173766dd673e26f67087bbe2203a2556fb1f5cb2 data\fruittrees\tags\worldgen\biome\suitable\blueberry_bush.json
-abc826b192c15336b41c4378d711fe269f94ba78 data\fruittrees\tags\worldgen\biome\suitable\hot_pepper_bush.json
 16a40b1e3b5cea27b68717b22f60ed202ddd62bd data\fruittrees\tags\worldgen\biome\suitable\mixed_stem.json
+abc826b192c15336b41c4378d711fe269f94ba78 data\fruittrees\tags\worldgen\biome\suitable\hot_pepper_bush.json
 a0644d7f87b20b80c17d6fb7fbb483d079ce1887 data\fruittrees\tags\worldgen\biome\suitable\pomegranate_tree.json
 02ed45543827f812abde82a15489c3a686641719 data\fruittrees\tags\worldgen\biome\suitable\cantaloupe.json
 2409d92ac4d4431d56a6bc5ba9f61b12c3b3c7f5 data\fruittrees\tags\worldgen\biome\suitable\mango_tree.json
