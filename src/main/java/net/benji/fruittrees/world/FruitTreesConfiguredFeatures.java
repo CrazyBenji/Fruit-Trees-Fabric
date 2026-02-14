@@ -10,9 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
-import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.util.valueproviders.WeightedListInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -21,13 +19,10 @@ import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfigur
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 
@@ -86,12 +81,12 @@ public class FruitTreesConfiguredFeatures {
         );
         register(context, DRAGON_FRUIT_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(FruitWoods.DRAGON_FRUIT.LOG),
-                new StraightTrunkPlacer(4, 2, 0),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES.defaultBlockState(), 3)
                         .add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES.defaultBlockState(), 1)),
-                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-                new TwoLayersFeatureSize(1, 0, 2))
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 42),
+                new TwoLayersFeatureSize(1, 0, 1))
                 .dirt(BlockStateProvider.simple(Blocks.DIRT))
                 .forceDirt()
                 .build()
