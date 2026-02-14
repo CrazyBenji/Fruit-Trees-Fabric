@@ -8,8 +8,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-public class FruitTreesRegistryProvider extends FabricDynamicRegistryProvider {
-    public FruitTreesRegistryProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
+public class FruitTreesDynamicRegistryProvider extends FabricDynamicRegistryProvider {
+    public FruitTreesDynamicRegistryProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
     }
 
@@ -21,6 +21,6 @@ public class FruitTreesRegistryProvider extends FabricDynamicRegistryProvider {
 
     @Override
     public @NotNull String getName() {
-        return "";
+        return "Dynamic Registry";
     }
 }

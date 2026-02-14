@@ -93,11 +93,11 @@ public class FruitTreesConfiguredFeatures {
         );
         register(context, PEAR_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(FruitWoods.PEAR.LOG),
-                new ForkingTrunkPlacer(5, 2, 1),
+                new BendingTrunkPlacer(5, 2, 1, 3, UniformInt.of(1, 2)),
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
                         .add(FruitTreesBlocks.PEAR_LEAVES.defaultBlockState(), 3)
                         .add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES.defaultBlockState(), 1)),
-                new SpruceFoliagePlacer(UniformInt.of(2, 3), UniformInt.of(0, 2), UniformInt.of(0, 1)),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1)),
                 new TwoLayersFeatureSize(2, 0, 2))
                 .dirt(BlockStateProvider.simple(Blocks.DIRT))
                 .forceDirt()

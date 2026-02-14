@@ -29,7 +29,7 @@ public class FruitTreesDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(FruitTreesRecipeProvider::new);
 		pack.addProvider(FruitTreesBlockLootTableProvider::new);
 		pack.addProvider(FruitTreesLanguageProvider::new);
-		pack.addProvider(FruitTreesRegistryProvider::new);
+		pack.addProvider(FruitTreesDynamicRegistryProvider::new);
 	}
 
 	@Override
