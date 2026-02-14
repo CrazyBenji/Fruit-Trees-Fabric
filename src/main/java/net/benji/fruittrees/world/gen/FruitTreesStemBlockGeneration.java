@@ -12,5 +12,7 @@ public class FruitTreesStemBlockGeneration {
                 GenerationStep.Decoration.VEGETAL_DECORATION, FruitTreesPlacedFeatures.HONEYDEW_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.tag(FruitTreesTags.Biomes.CANTALOUPE_SUITABLE),
                 GenerationStep.Decoration.VEGETAL_DECORATION, FruitTreesPlacedFeatures.CANTALOUPE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.tag(FruitTreesTags.Biomes.MIXED_STEM_SUITABLE),
+                GenerationStep.Decoration.VEGETAL_DECORATION, FruitTreesPlacedFeatures.MIXED_STEM_PLACED_KEY);
     }
 }

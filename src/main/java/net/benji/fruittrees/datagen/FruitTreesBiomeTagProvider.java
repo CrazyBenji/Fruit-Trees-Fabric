@@ -41,6 +41,9 @@ public class FruitTreesBiomeTagProvider extends FabricTagProvider<Biome> {
                 .add(Biomes.MEADOW)
                 .add(Biomes.WINDSWEPT_HILLS);
 
+        this.getOrCreateTagBuilder(FruitTreesTags.Biomes.MIXED_STEM_SUITABLE)
+                .add(Biomes.PLAINS);
+
         this.getOrCreateTagBuilder(FruitTreesTags.Biomes.BLUEBERRY_BUSH_SUITABLE)
                 .add(Biomes.FOREST);
 

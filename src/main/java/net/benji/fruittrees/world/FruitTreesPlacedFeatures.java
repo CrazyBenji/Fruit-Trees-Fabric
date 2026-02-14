@@ -25,6 +25,7 @@ public class FruitTreesPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> HONEYDEW_PLACED_KEY = resourceKey("honeydew_placed");
     public static final ResourceKey<PlacedFeature> CANTALOUPE_PLACED_KEY = resourceKey("cantaloupe_placed");
+    public static final ResourceKey<PlacedFeature> MIXED_STEM_PLACED_KEY = resourceKey("mixed_stem_placed");
 
     public static final ResourceKey<PlacedFeature> BLUEBERRY_PLACED_KEY = resourceKey("blueberry_placed");
     public static final ResourceKey<PlacedFeature> CRANBERRY_PLACED_KEY = resourceKey("cranberry_placed");
@@ -65,6 +66,8 @@ public class FruitTreesPlacedFeatures {
         register(context, CANTALOUPE_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.CANTALOUPE_KEY),
                 RarityFilter.onAverageOnceEvery(75), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()
         );
+        register(context, MIXED_STEM_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.MIXED_STEM_KEY),
+                RarityFilter.onAverageOnceEvery(75), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
 
         register(context, BLUEBERRY_PLACED_KEY, configuredFeatures.getOrThrow(FruitTreesConfiguredFeatures.BLUEBERRY_KEY),
                 RarityFilter.onAverageOnceEvery(64), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()

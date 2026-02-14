@@ -37,6 +37,7 @@ public class FruitTreesTags {
 
         public static final TagKey<Biome> HONEYDEW_SUITABLE = createTag("suitable/honeydew");
         public static final TagKey<Biome> CANTALOUPE_SUITABLE = createTag("suitable/cantaloupe");
+        public static final TagKey<Biome> MIXED_STEM_SUITABLE = createTag("suitable/mixed_stem");
 
         public static final TagKey<Biome> BLUEBERRY_BUSH_SUITABLE = createTag("suitable/blueberry_bush");
         public static final TagKey<Biome> CRANBERRY_BUSH_SUITABLE = createTag("suitable/cranberry_bush");

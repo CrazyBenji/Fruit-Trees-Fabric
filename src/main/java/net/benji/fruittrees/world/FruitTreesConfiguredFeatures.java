@@ -37,6 +37,7 @@ public class FruitTreesConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> HONEYDEW_KEY = resourceKey("honeydew");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CANTALOUPE_KEY = resourceKey("cantaloupe");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MIXED_STEM_KEY = resourceKey("mixed_stem");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUEBERRY_KEY = resourceKey("blueberry");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRANBERRY_KEY = resourceKey("cranberry");
@@ -112,6 +113,13 @@ public class FruitTreesConfiguredFeatures {
         register(context, CANTALOUPE_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(
                 Feature.SIMPLE_BLOCK,
                 new SimpleBlockConfiguration(BlockStateProvider.simple(FruitTreesBlocks.CANTALOUPE)),
+                List.of(Blocks.GRASS_BLOCK)
+        ));
+        register(context, MIXED_STEM_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(
+                Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
+                        .add(FruitTreesBlocks.HONEYDEW.defaultBlockState(), 1)
+                        .add(FruitTreesBlocks.CANTALOUPE.defaultBlockState(), 1))),
                 List.of(Blocks.GRASS_BLOCK)
         ));
 
