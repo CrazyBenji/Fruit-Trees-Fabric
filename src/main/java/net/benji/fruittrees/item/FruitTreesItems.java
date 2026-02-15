@@ -23,12 +23,12 @@ public class FruitTreesItems {
     public static final Item GOLDEN_MANGO = registerItem(
             "golden_mango",
             Item::new,
-            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.DEFAULT_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_MANGO)
     );
     public static final Item ENCHANTED_GOLDEN_MANGO = registerItem(
             "enchanted_golden_mango",
             EnchantedItem::new,
-            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.DEFAULT_ENCHANTED_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_MANGO)
     );
     public static final Item MANGO_JUICE = registerItem(
             "mango_juice",
@@ -45,12 +45,12 @@ public class FruitTreesItems {
     public static final Item GOLDEN_POMEGRANATE = registerItem(
             "golden_pomegranate",
             Item::new,
-            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.DEFAULT_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_POMEGRANATE)
     );
     public static final Item ENCHANTED_GOLDEN_POMEGRANATE = registerItem(
             "enchanted_golden_pomegranate",
             EnchantedItem::new,
-            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.DEFAULT_ENCHANTED_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_POMEGRANATE)
     );
     public static final Item POMEGRANATE_JUICE = registerItem(
             "pomegranate_juice",
@@ -67,12 +67,12 @@ public class FruitTreesItems {
     public static final Item GOLDEN_PINEAPPLE = registerItem(
             "golden_pineapple",
             Item::new,
-            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.DEFAULT_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_PINEAPPLE)
     );
     public static final Item ENCHANTED_GOLDEN_PINEAPPLE = registerItem(
             "enchanted_golden_pineapple",
             EnchantedItem::new,
-            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.DEFAULT_ENCHANTED_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_PINEAPPLE)
     );
     public static final Item PINEAPPLE_JUICE = registerItem(
             "pineapple_juice",
@@ -89,12 +89,12 @@ public class FruitTreesItems {
     public static final Item GOLDEN_DRAGON_FRUIT = registerItem(
             "golden_dragon_fruit",
             Item::new,
-            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.DEFAULT_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_DRAGON_FRUIT)
     );
     public static final Item ENCHANTED_GOLDEN_DRAGON_FRUIT = registerItem(
             "enchanted_golden_dragon_fruit",
             EnchantedItem::new,
-            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.DEFAULT_ENCHANTED_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_DRAGON_FRUIT)
     );
     public static final Item DRAGON_FRUIT_JUICE = registerItem(
             "dragon_fruit_juice",
@@ -111,12 +111,12 @@ public class FruitTreesItems {
     public static final Item GOLDEN_PEAR = registerItem(
             "golden_pear",
             Item::new,
-            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.DEFAULT_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_PEAR)
     );
     public static final Item ENCHANTED_GOLDEN_PEAR = registerItem(
             "enchanted_golden_pear",
             EnchantedItem::new,
-            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.DEFAULT_ENCHANTED_GOLDEN_FRUIT)
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_PEAR)
     );
     public static final Item PEAR_JUICE = registerItem(
             "pear_juice",

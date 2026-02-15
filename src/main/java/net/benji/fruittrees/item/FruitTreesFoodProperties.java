@@ -7,8 +7,81 @@ import net.minecraft.world.food.Foods;
 
 public class FruitTreesFoodProperties {
     public static final FoodProperties DEFAULT_FRUIT = Foods.APPLE;
-    public static final FoodProperties DEFAULT_GOLDEN_FRUIT = Foods.GOLDEN_APPLE;
-    public static final FoodProperties DEFAULT_ENCHANTED_GOLDEN_FRUIT = Foods.ENCHANTED_GOLDEN_APPLE;
+    public static final FoodProperties GOLDEN_MANGO = new FoodProperties.Builder()
+            .nutrition(4).saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.HEAL, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties GOLDEN_POMEGRANATE = new FoodProperties.Builder()
+            .nutrition(4).saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.SATURATION, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties GOLDEN_PINEAPPLE = new FoodProperties.Builder()
+            .nutrition(4).saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.DIG_SPEED, 100, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties GOLDEN_DRAGON_FRUIT = new FoodProperties.Builder()
+            .nutrition(4).saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties GOLDEN_PEAR = new FoodProperties.Builder()
+            .nutrition(4).saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties ENCHANTED_GOLDEN_MANGO = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.HEAL, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties ENCHANTED_GOLDEN_POMEGRANATE = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.SATURATION, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties ENCHANTED_GOLDEN_PINEAPPLE = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.DIG_SPEED, 400, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties ENCHANTED_GOLDEN_DRAGON_FRUIT = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
+            .alwaysEat()
+            .build();
+    public static final FoodProperties ENCHANTED_GOLDEN_PEAR = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(1.2F)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
+            .alwaysEat()
+            .build();
 
     public static final FoodProperties DEFAULT_STEM_FRUIT = Foods.MELON_SLICE;
     public static final FoodProperties DEFAULT_GLISTENING_STEM_FRUIT = new FoodProperties.Builder()
