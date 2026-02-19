@@ -6,6 +6,7 @@ import net.benji.fruittrees.item.FruitTreesCreativeModeTabs;
 import net.benji.fruittrees.item.FruitTreesItems;
 import net.benji.fruittrees.util.FruitWoods;
 import net.benji.fruittrees.util.FruitWood;
+import net.benji.fruittrees.util.loot.FruitTreesLootTableModifiers;
 import net.benji.fruittrees.world.gen.FruitTreesWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -28,6 +29,8 @@ public class FruitTrees implements ModInitializer {
 		FruitTreesCreativeModeTabs.registerCreativeModeTabs();
 		FruitTreesBlockEntities.registerBlockEntities();
 		FruitTreesWorldGeneration.generateWorldGen();
+
+		FruitTreesLootTableModifiers.modifyChestLootTables();
 
 		this.addFruitWoodRegistries(FruitWoods.MANGO);
 		this.addFruitWoodRegistries(FruitWoods.POMEGRANATE);
