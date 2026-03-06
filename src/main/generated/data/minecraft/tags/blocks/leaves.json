@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "fruittrees:fruit_leaves",
     "fruittrees:mango_leaves",
     "fruittrees:flowering_mango_leaves",
     "fruittrees:pomegranate_leaves",

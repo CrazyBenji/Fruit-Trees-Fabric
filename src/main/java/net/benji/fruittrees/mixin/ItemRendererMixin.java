@@ -4,6 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import net.benji.fruittrees.FruitTrees;
 import net.benji.fruittrees.util.secret.FruitTreesSecretItems;
 import net.benji.fruittrees.util.secret.SecretItem;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.resources.model.BakedModel;
@@ -26,7 +27,7 @@ public class ItemRendererMixin {
             String name = secretItem.name();
             String key = secretItem.key();
             if (itemStack.is(item) && itemStack.getHoverName().getString().equals(name)) {
-                return ((ItemRendererAccessor) this).fruittrees$getModels().getModelManager().getModel(
+                return Minecraft.getInstance().getModelManager().getModel(
                         new ModelResourceLocation(FruitTrees.MOD_ID, key, "inventory"));
             }
         }

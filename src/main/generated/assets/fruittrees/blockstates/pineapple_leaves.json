@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "fruittrees:block/mango_leaves"
+      "model": "fruittrees:block/fruit_leaves"
     }
   }
 }

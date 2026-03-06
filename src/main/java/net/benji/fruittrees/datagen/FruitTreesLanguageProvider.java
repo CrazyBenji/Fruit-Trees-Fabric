@@ -14,6 +14,8 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
+        translationBuilder.add(FruitTreesBlocks.FRUIT_LEAVES, "Fruit Leaves");
+
         translationBuilder.add(FruitTreesItems.MANGO, "Mango");
         translationBuilder.add(FruitTreesItems.GOLDEN_MANGO, "Golden Mango");
         translationBuilder.add(FruitTreesItems.ENCHANTED_GOLDEN_MANGO, "Enchanted Golden Mango");

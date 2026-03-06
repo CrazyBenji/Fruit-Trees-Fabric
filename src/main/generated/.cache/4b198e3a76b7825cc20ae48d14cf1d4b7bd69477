@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-14T17:16:34.226281	Fruit Trees/Dynamic Registry
+// 1.20.1	2026-03-05T23:22:28.9390805	Fruit Trees/Dynamic Registry
 8fc3df72cb64976cc65fc47464530b0092a49645 data\fruittrees\worldgen\placed_feature\hot_pepper_placed.json
 1233e3f2fff601cf9975dba0c7a7ee1d88d8e952 data\fruittrees\worldgen\placed_feature\mango_placed.json
 b68222dba4403ddb5c30c9232a8e3cdacb4b7cdf data\fruittrees\worldgen\placed_feature\cranberry_placed.json
@@ -10,8 +10,8 @@ b1fbb841c7cd49b438a40849ea9074cda9c42267 data\fruittrees\worldgen\placed_feature
 4ca998ffd54763fbf210590f9ed197b6c7ae4610 data\fruittrees\worldgen\placed_feature\honeydew_placed.json
 1fa74ed6252e04a2ef5c7b5a138feb36fb2af6c9 data\fruittrees\worldgen\configured_feature\honeydew.json
 41e97a37d280c651106f2575e5234b8e141318c5 data\fruittrees\worldgen\configured_feature\dragon_fruit.json
-105664cf3979ebe8cf3730f7c846873870f4b23c data\fruittrees\worldgen\placed_feature\cantaloupe_placed.json
 6d7f673bf6476986587d441bfc32755a04db0953 data\fruittrees\worldgen\placed_feature\blueberry_placed.json
+105664cf3979ebe8cf3730f7c846873870f4b23c data\fruittrees\worldgen\placed_feature\cantaloupe_placed.json
 d703a699c228538c396658dd723e8bddf642bb3e data\fruittrees\worldgen\configured_feature\mixed_stem.json
 1848d5b29e4980f94b341cfbfca47a0ab08b9269 data\fruittrees\worldgen\configured_feature\blueberry.json
 0f282b981a0007d934d8893c150b2f9023b597e9 data\fruittrees\worldgen\placed_feature\dragon_fruit_placed.json
