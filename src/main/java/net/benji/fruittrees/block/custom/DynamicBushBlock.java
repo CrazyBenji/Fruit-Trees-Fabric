@@ -65,7 +65,7 @@ public class DynamicBushBlock extends BushBlock implements BonemealableBlock {
 
     @Override
     public @NotNull ItemStack getCloneItemStack(BlockGetter blockGetter, BlockPos blockPos, BlockState blockState) {
-        return new ItemStack(this.SEED_ITEM.get());
+        return new ItemStack(this.getSeed());
     }
 
     @Override
