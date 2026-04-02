@@ -91,7 +91,6 @@ public class FruitTreesFoodProperties {
             .build();
 
     public static final FoodProperties DEFAULT_BERRY = new FoodProperties.Builder()
-            .alwaysEat()
             .nutrition(2)
             .saturationMod(0.1F)
             .fast()
@@ -105,7 +104,6 @@ public class FruitTreesFoodProperties {
             .build();
 
     public static final FoodProperties DEFAULT_JUICE = new FoodProperties.Builder()
-            .alwaysEat()
             .nutrition(12)
             .saturationMod(0.5F)
             .build();

@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-05T23:22:28.9472509	Fruit Trees/Tags for minecraft:item
+// 1.20.1	2026-04-02T18:13:21.4818446	Fruit Trees/Tags for minecraft:item
 4ff5c72d93ca5a627292d04f2a401aa64a44e6b0 data\minecraft\tags\items\hanging_signs.json
 f0367fa185634adb4b3189d42fdb84e57449e567 data\minecraft\tags\items\piglin_loved.json
 c563708644e18f6be45020f85ebd5de7ab8a29b3 data\fruittrees\tags\items\fruits.json
@@ -22,6 +22,6 @@ f225ec3d1f330f032737711052753b695b8d7cff data\minecraft\tags\items\signs.json
 94b22e5c4de313218a0b3abb29d1157444ea5144 data\fruittrees\tags\items\juices.json
 1eda5ab277bf8ef56df71c5102512828b102554f data\minecraft\tags\items\wooden_slabs.json
 1d887b4d84e75dd480ffdd0b4335b1ede53e328e data\fruittrees\tags\items\golden_fruits.json
-633e06ff0ad81cbf49614abd117d2812173cf017 data\minecraft\tags\items\wooden_trapdoors.json
 ad48752bcbd8148932d1ddd13476124e44a0fe7c data\minecraft\tags\items\wooden_pressure_plates.json
+633e06ff0ad81cbf49614abd117d2812173cf017 data\minecraft\tags\items\wooden_trapdoors.json
 fe4d85c932c8bd4a36b39e47866b53c5300cac67 data\fruittrees\tags\items\mango_logs.json
