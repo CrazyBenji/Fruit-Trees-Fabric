@@ -6,10 +6,14 @@ import net.benji.fruittrees.util.FruitWood;
 import net.benji.fruittrees.util.FruitWoods;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.impl.client.rendering.ColorProviderRegistryImpl;
+import net.fabricmc.fabric.mixin.client.rendering.BlockColorsMixin;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.world.level.block.StemBlock;
 
 @SuppressWarnings("unused")
 public class FruitTreesClient implements ClientModInitializer {
@@ -17,6 +21,16 @@ public class FruitTreesClient implements ClientModInitializer {
     public void onInitializeClient() {
         this.registerBlockEntityRenderers();
         this.putBlockRenderLayer();
+
+        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, i) -> 14731036,
+                FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM);
+        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, tintIndex) -> {
+            int j = blockState.getValue(StemBlock.AGE);
+            int k = j * 32;
+            int l = 255 - j * 8;
+            int m = j * 4;
+            return k << 16 | l << 8 | m;
+        }, FruitTreesBlocks.HONEYDEW_STEM, FruitTreesBlocks.CANTALOUPE_STEM);
     }
 
     private void registerBlockEntityRenderers() {

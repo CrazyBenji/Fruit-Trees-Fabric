@@ -14,12 +14,16 @@ import net.minecraft.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.data.models.blockstates.PropertyDispatch;
 import net.minecraft.data.models.blockstates.Variant;
 import net.minecraft.data.models.blockstates.VariantProperties;
+import net.minecraft.data.models.model.ModelLocationUtils;
 import net.minecraft.data.models.model.ModelTemplates;
 import net.minecraft.data.models.model.TextureMapping;
 import net.minecraft.data.models.model.TexturedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.AttachedStemBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.StemBlock;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 public class FruitTreesModelProvider extends FabricModelProvider {
@@ -59,7 +63,7 @@ public class FruitTreesModelProvider extends FabricModelProvider {
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.HONEYDEW, TexturedModel.COLUMN);
         blockModelGenerator.createStems(FruitTreesBlocks.HONEYDEW_STEM, FruitTreesBlocks.ATTACHED_HONEYDEW_STEM);
 
-        blockModelGenerator.createTrivialBlock(FruitTreesBlocks.CANTALOUPE, TexturedModel.COLUMN);
+        blockModelGenerator.createTrivialCube(FruitTreesBlocks.CANTALOUPE);
         blockModelGenerator.createStems(FruitTreesBlocks.CANTALOUPE_STEM, FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM);
 
         this.generateDynamicBushBlockModel(blockModelGenerator, FruitTreesBlocks.BLUEBERRY_BUSH);
@@ -89,10 +93,12 @@ public class FruitTreesModelProvider extends FabricModelProvider {
         generateEnchantedAndRegularGoldenFruitItemModels(itemModelGenerator, FruitTreesItems.GOLDEN_PEAR);
         itemModelGenerator.generateFlatItem(FruitTreesItems.PEAR_JUICE, ModelTemplates.FLAT_ITEM);
 
+        // itemModelGenerator.generateFlatItem(FruitTreesItems.HONEYDEW_SEEDS, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.HONEYDEW_SLICE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.GLISTENING_HONEYDEW_SLICE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.HONEYDEW_JUICE, ModelTemplates.FLAT_ITEM);
 
+        // itemModelGenerator.generateFlatItem(FruitTreesItems.CANTALOUPE_SEEDS, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.CANTALOUPE_SLICE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.GLISTENING_CANTALOUPE_SLICE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(FruitTreesItems.CANTALOUPE_JUICE, ModelTemplates.FLAT_ITEM);
