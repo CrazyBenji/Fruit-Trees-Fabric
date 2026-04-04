@@ -22,15 +22,10 @@ public class FruitTreesClient implements ClientModInitializer {
         this.registerBlockEntityRenderers();
         this.putBlockRenderLayer();
 
-        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, i) -> 14731036,
-                FruitTreesBlocks.ATTACHED_HONEYDEW_STEM, FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM);
-        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, tintIndex) -> {
-            int j = blockState.getValue(StemBlock.AGE);
-            int k = j * 32;
-            int l = 255 - j * 8;
-            int m = j * 4;
-            return k << 16 | l << 8 | m;
-        }, FruitTreesBlocks.HONEYDEW_STEM, FruitTreesBlocks.CANTALOUPE_STEM);
+        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, i) -> 0x1ef73a,
+                FruitTreesBlocks.HONEYDEW_STEM, FruitTreesBlocks.ATTACHED_HONEYDEW_STEM);
+        ColorProviderRegistry.BLOCK.register((blockState, blockAndTintGetter, blockPos, i) -> 0x49c96f,
+                FruitTreesBlocks.CANTALOUPE_STEM, FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM);
     }
 
     private void registerBlockEntityRenderers() {
