@@ -63,7 +63,7 @@ public class FruitTreesModelProvider extends FabricModelProvider {
         blockModelGenerator.createTrivialBlock(FruitTreesBlocks.HONEYDEW, TexturedModel.COLUMN);
         blockModelGenerator.createStems(FruitTreesBlocks.HONEYDEW_STEM, FruitTreesBlocks.ATTACHED_HONEYDEW_STEM);
 
-        blockModelGenerator.createTrivialCube(FruitTreesBlocks.CANTALOUPE);
+        blockModelGenerator.createTrivialBlock(FruitTreesBlocks.CANTALOUPE, TexturedModel.COLUMN);
         blockModelGenerator.createStems(FruitTreesBlocks.CANTALOUPE_STEM, FruitTreesBlocks.ATTACHED_CANTALOUPE_STEM);
 
         this.generateDynamicBushBlockModel(blockModelGenerator, FruitTreesBlocks.BLUEBERRY_BUSH);
