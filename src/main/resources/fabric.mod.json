@@ -11,8 +11,8 @@
 		"homepage": "https://modrinth.com/user/CrazyBenji",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/fruittrees/textures/block/mango_sapling.png",
+	"license": "CC-BY",
+	"icon": "assets/fruittrees/textures/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
