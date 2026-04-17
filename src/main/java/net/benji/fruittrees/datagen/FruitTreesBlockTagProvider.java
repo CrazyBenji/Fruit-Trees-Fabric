@@ -47,7 +47,6 @@ public class FruitTreesBlockTagProvider extends FabricTagProvider.BlockTagProvid
                 .add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES);
 
         this.getOrCreateTagBuilder(BlockTags.LEAVES)
-                .add(FruitTreesBlocks.FRUIT_LEAVES)
                 .add(FruitTreesBlocks.MANGO_LEAVES)
                 .add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES)
                 .add(FruitTreesBlocks.POMEGRANATE_LEAVES)

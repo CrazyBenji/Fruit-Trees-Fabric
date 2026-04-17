@@ -22,8 +22,6 @@ import net.minecraft.world.level.material.PushReaction;
 import java.util.function.Function;
 
 public class FruitTreesBlocks {
-    public static final Block FRUIT_LEAVES = leavesBlock("fruit_leaves");
-
     public static final Block MANGO_LEAVES = leavesBlock("mango_leaves");
     public static final Block FLOWERING_MANGO_LEAVES = leavesBlock("flowering_mango_leaves");
     public static final Block MANGO_SAPLING = registerBlock(

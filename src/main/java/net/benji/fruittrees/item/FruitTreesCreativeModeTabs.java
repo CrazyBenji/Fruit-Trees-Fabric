@@ -28,8 +28,6 @@ public class FruitTreesCreativeModeTabs {
                     .title(Component.translatable("creative_mode_tab.fruittrees"))
                     .icon(() -> new ItemStack(FruitTreesItems.MANGO))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(FruitTreesBlocks.FRUIT_LEAVES);
-
                         output.accept(FruitTreesItems.MANGO);
                         output.accept(FruitTreesItems.GOLDEN_MANGO);
                         output.accept(FruitTreesItems.ENCHANTED_GOLDEN_MANGO);

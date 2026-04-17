@@ -35,7 +35,6 @@ public class FruitTreesClient implements ClientModInitializer {
 
     private void putBlockRenderLayer() {
         BlockRenderLayerMap blockRenderLayerMap = BlockRenderLayerMap.INSTANCE;
-        blockRenderLayerMap.putBlock(FruitTreesBlocks.FRUIT_LEAVES, RenderType.cutoutMipped());
 
         this.renderFruitWoodCutouts(FruitWoods.MANGO, blockRenderLayerMap);
         blockRenderLayerMap.putBlock(FruitTreesBlocks.MANGO_LEAVES, RenderType.cutoutMipped());

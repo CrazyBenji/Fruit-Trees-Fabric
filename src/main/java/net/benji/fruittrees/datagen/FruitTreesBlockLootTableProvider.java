@@ -33,34 +33,33 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
 
     @Override
     public void generate() {
-        this.add(FruitTreesBlocks.FRUIT_LEAVES, this.createFruitLeavesDispatchTable());
 
         this.generateFruitWoodBlockLootTables(FruitWoods.MANGO);
-        this.add(FruitTreesBlocks.MANGO_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.MANGO_SAPLING, FruitTreesItems.MANGO));
+        this.add(FruitTreesBlocks.MANGO_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.MANGO_LEAVES, FruitTreesBlocks.MANGO_SAPLING, FruitTreesItems.MANGO));
         this.add(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_MANGO_LEAVES, FruitTreesBlocks.MANGO_SAPLING, FruitTreesItems.MANGO));
         this.dropSelf(FruitTreesBlocks.MANGO_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_MANGO_SAPLING);
 
         this.generateFruitWoodBlockLootTables(FruitWoods.POMEGRANATE);
-        this.add(FruitTreesBlocks.POMEGRANATE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.POMEGRANATE_SAPLING, FruitTreesItems.POMEGRANATE));
+        this.add(FruitTreesBlocks.POMEGRANATE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.POMEGRANATE_LEAVES, FruitTreesBlocks.POMEGRANATE_SAPLING, FruitTreesItems.POMEGRANATE));
         this.add(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_POMEGRANATE_LEAVES, FruitTreesBlocks.POMEGRANATE_SAPLING, FruitTreesItems.POMEGRANATE));
         this.dropSelf(FruitTreesBlocks.POMEGRANATE_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_POMEGRANATE_SAPLING);
 
         this.generateFruitWoodBlockLootTables(FruitWoods.PINEAPPLE);
-        this.add(FruitTreesBlocks.PINEAPPLE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PINEAPPLE_SAPLING, FruitTreesItems.PINEAPPLE));
+        this.add(FruitTreesBlocks.PINEAPPLE_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PINEAPPLE_LEAVES, FruitTreesBlocks.PINEAPPLE_SAPLING, FruitTreesItems.PINEAPPLE));
         this.add(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_PINEAPPLE_LEAVES, FruitTreesBlocks.PINEAPPLE_SAPLING, FruitTreesItems.PINEAPPLE));
         this.dropSelf(FruitTreesBlocks.PINEAPPLE_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_PINEAPPLE_SAPLING);
 
         this.generateFruitWoodBlockLootTables(FruitWoods.DRAGON_FRUIT);
-        this.add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.DRAGON_FRUIT_SAPLING, FruitTreesItems.DRAGON_FRUIT));
+        this.add(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.DRAGON_FRUIT_LEAVES, FruitTreesBlocks.DRAGON_FRUIT_SAPLING, FruitTreesItems.DRAGON_FRUIT));
         this.add(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_DRAGON_FRUIT_LEAVES, FruitTreesBlocks.DRAGON_FRUIT_SAPLING, FruitTreesItems.DRAGON_FRUIT));
         this.dropSelf(FruitTreesBlocks.DRAGON_FRUIT_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_DRAGON_FRUIT_SAPLING);
 
         this.generateFruitWoodBlockLootTables(FruitWoods.PEAR);
-        this.add(FruitTreesBlocks.PEAR_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PEAR_SAPLING, FruitTreesItems.PEAR));
+        this.add(FruitTreesBlocks.PEAR_LEAVES, this.createFruitLeavesDropTable(FruitTreesBlocks.PEAR_LEAVES, FruitTreesBlocks.PEAR_SAPLING, FruitTreesItems.PEAR));
         this.add(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, this.createFloweringFruitLeavesDropTable(FruitTreesBlocks.FLOWERING_PEAR_LEAVES, FruitTreesBlocks.PEAR_SAPLING, FruitTreesItems.PEAR));
         this.dropSelf(FruitTreesBlocks.PEAR_SAPLING);
         this.dropPottedContents(FruitTreesBlocks.POTTED_PEAR_SAPLING);
@@ -78,22 +77,6 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
         this.generateDynamicBushBlockLootTable((DynamicBushBlock) FruitTreesBlocks.HOT_PEPPER_BUSH);
     }
 
-    public LootTable.Builder createFruitLeavesDispatchTable() {
-        return LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                .add(LootItem.lootTableItem(FruitTreesBlocks.FRUIT_LEAVES).when(HAS_SHEARS_OR_SILK_TOUCH)))
-        .withPool(
-                LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0F))
-                        .when(HAS_NO_SHEARS_OR_SILK_TOUCH)
-                        .add(
-                                ((LootPoolSingletonContainer.Builder<?>)this.applyExplosionDecay(
-                                        FruitTreesBlocks.FRUIT_LEAVES, LootItem.lootTableItem(Items.STICK).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
-                                ))
-                                        .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, NORMAL_LEAVES_STICK_CHANCES))
-                        )
-        );
-    }
-
     public LootTable.Builder createFruitLeavesDropTable(Block leavesBlock, Block sapling, Item fruit) {
         return this.createLeavesDrops(leavesBlock, sapling, VanillaBlockLoot.NORMAL_LEAVES_SAPLING_CHANCES)
                 .withPool(
@@ -105,9 +88,6 @@ public class FruitTreesBlockLootTableProvider extends FabricBlockLootTableProvid
                                                 .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, 0.016F, 0.023F, 0.033F, 0.043F, 0.05F))
                                 )
                 );
-    }
-    public LootTable.Builder createFruitLeavesDropTable(Block sapling, Item fruit) {
-        return this.createFruitLeavesDropTable(FruitTreesBlocks.FRUIT_LEAVES, sapling, fruit);
     }
     public LootTable.Builder createFloweringFruitLeavesDropTable(Block leavesBlock, Block sapling, Item fruit) {
         return this.createLeavesDrops(leavesBlock, sapling, VanillaBlockLoot.NORMAL_LEAVES_SAPLING_CHANCES)
