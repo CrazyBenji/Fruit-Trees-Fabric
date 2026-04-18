@@ -1,0 +1,219 @@
+package net.crazybenji.fruittrees.item;
+
+import net.crazybenji.fruittrees.FruitTrees;
+import net.crazybenji.fruittrees.block.FruitTreesBlocks;
+import net.crazybenji.fruittrees.item.custom.EnchantedItem;
+import net.crazybenji.fruittrees.item.custom.FruitJuiceItem;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Rarity;
+
+import java.util.function.Function;
+
+public class FruitTreesItems {
+    // Mango Items
+    public static final Item MANGO = registerItem(
+            "mango",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_FRUIT)
+    );
+    public static final Item GOLDEN_MANGO = registerItem(
+            "golden_mango",
+            Item::new,
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_MANGO)
+    );
+    public static final Item ENCHANTED_GOLDEN_MANGO = registerItem(
+            "enchanted_golden_mango",
+            EnchantedItem::new,
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_MANGO)
+    );
+    public static final Item MANGO_JUICE = registerItem(
+            "mango_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Pomegranate Items
+    public static final Item POMEGRANATE = registerItem(
+            "pomegranate",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_FRUIT)
+    );
+    public static final Item GOLDEN_POMEGRANATE = registerItem(
+            "golden_pomegranate",
+            Item::new,
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_POMEGRANATE)
+    );
+    public static final Item ENCHANTED_GOLDEN_POMEGRANATE = registerItem(
+            "enchanted_golden_pomegranate",
+            EnchantedItem::new,
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_POMEGRANATE)
+    );
+    public static final Item POMEGRANATE_JUICE = registerItem(
+            "pomegranate_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Pineapple Items
+    public static final Item PINEAPPLE = registerItem(
+            "pineapple",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_FRUIT)
+    );
+    public static final Item GOLDEN_PINEAPPLE = registerItem(
+            "golden_pineapple",
+            Item::new,
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_PINEAPPLE)
+    );
+    public static final Item ENCHANTED_GOLDEN_PINEAPPLE = registerItem(
+            "enchanted_golden_pineapple",
+            EnchantedItem::new,
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_PINEAPPLE)
+    );
+    public static final Item PINEAPPLE_JUICE = registerItem(
+            "pineapple_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Dragon Fruit Items
+    public static final Item DRAGON_FRUIT = registerItem(
+            "dragon_fruit",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_FRUIT)
+    );
+    public static final Item GOLDEN_DRAGON_FRUIT = registerItem(
+            "golden_dragon_fruit",
+            Item::new,
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_DRAGON_FRUIT)
+    );
+    public static final Item ENCHANTED_GOLDEN_DRAGON_FRUIT = registerItem(
+            "enchanted_golden_dragon_fruit",
+            EnchantedItem::new,
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_DRAGON_FRUIT)
+    );
+    public static final Item DRAGON_FRUIT_JUICE = registerItem(
+            "dragon_fruit_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Pear Items
+    public static final Item PEAR = registerItem(
+            "pear",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_FRUIT)
+    );
+    public static final Item GOLDEN_PEAR = registerItem(
+            "golden_pear",
+            Item::new,
+            new Item.Properties().rarity(Rarity.RARE).food(FruitTreesFoodProperties.GOLDEN_PEAR)
+    );
+    public static final Item ENCHANTED_GOLDEN_PEAR = registerItem(
+            "enchanted_golden_pear",
+            EnchantedItem::new,
+            new Item.Properties().rarity(Rarity.EPIC).food(FruitTreesFoodProperties.ENCHANTED_GOLDEN_PEAR)
+    );
+    public static final Item PEAR_JUICE = registerItem(
+            "pear_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Honeydew Items
+    public static final Item HONEYDEW_SEEDS = registerItem(
+            "honeydew_seeds",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.HONEYDEW_STEM, properties),
+            new Item.Properties()
+    );
+    public static final Item HONEYDEW_SLICE = registerItem(
+            "honeydew_slice",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_STEM_FRUIT)
+    );
+    public static final Item GLISTENING_HONEYDEW_SLICE = registerItem(
+            "glistening_honeydew_slice",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_GLISTENING_STEM_FRUIT)
+    );
+    public static final Item HONEYDEW_JUICE = registerItem(
+            "honeydew_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Cantaloupe Items
+    public static final Item CANTALOUPE_SEEDS = registerItem(
+            "cantaloupe_seeds",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.CANTALOUPE_STEM, properties),
+            new Item.Properties()
+    );
+    public static final Item CANTALOUPE_SLICE = registerItem(
+            "cantaloupe_slice",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_STEM_FRUIT)
+    );
+    public static final Item GLISTENING_CANTALOUPE_SLICE = registerItem(
+            "glistening_cantaloupe_slice",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_GLISTENING_STEM_FRUIT)
+    );
+    public static final Item CANTALOUPE_JUICE = registerItem(
+            "cantaloupe_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Blueberries
+    public static final Item BLUEBERRIES = registerItem(
+            "blueberries",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.BLUEBERRY_BUSH, properties),
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_BERRY)
+    );
+    public static final Item BLUEBERRY_JUICE = registerItem(
+            "blueberry_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Cranberries
+    public static final Item CRANBERRIES = registerItem(
+            "cranberries",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.CRANBERRY_BUSH, properties),
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_BERRY)
+    );
+    public static final Item CRANBERRY_JUICE = registerItem(
+            "cranberry_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.DEFAULT_JUICE).stacksTo(16)
+    );
+
+    // Hot Peppers
+    public static final Item HOT_PEPPER = registerItem(
+            "hot_pepper",
+            Item::new,
+            new Item.Properties().food(FruitTreesFoodProperties.HOT_PEPPER)
+    );
+    public static final Item HOT_PEPPER_SEEDS = registerItem(
+            "hot_pepper_seeds",
+            properties -> new ItemNameBlockItem(FruitTreesBlocks.HOT_PEPPER_BUSH, properties),
+            new Item.Properties()
+    );
+    public static final Item HOT_PEPPER_JUICE = registerItem(
+            "hot_pepper_juice",
+            FruitJuiceItem::new,
+            new Item.Properties().food(FruitTreesFoodProperties.HOT_PEPPER_JUICE).stacksTo(16)
+    );
+
+    public static Item registerItem(String key, Function<Item.Properties, Item> itemFactory, Item.Properties properties) {
+        return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(FruitTrees.MOD_ID, key), itemFactory.apply(properties));
+    }
+
+    public static void registerItems() {
+        FruitTrees.LOGGER.info("Registering Items for " + FruitTrees.MOD_NAME);
+    }
+}
