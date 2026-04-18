@@ -7,6 +7,7 @@ import net.crazybenji.fruittrees.item.FruitTreesItems;
 import net.crazybenji.fruittrees.util.FruitWoods;
 import net.crazybenji.fruittrees.util.FruitWood;
 import net.crazybenji.fruittrees.util.loot.FruitTreesLootTableModifiers;
+import net.crazybenji.fruittrees.util.loot.FruitTreesTradeOfferModifiers;
 import net.crazybenji.fruittrees.world.gen.FruitTreesWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -31,6 +32,7 @@ public class FruitTrees implements ModInitializer {
 		FruitTreesWorldGeneration.generateWorldGen();
 
 		FruitTreesLootTableModifiers.modifyChestLootTables();
+		FruitTreesTradeOfferModifiers.modifyTradeOffers();
 
 		this.addFruitWoodRegistries(FruitWoods.MANGO);
 		this.addFruitWoodRegistries(FruitWoods.POMEGRANATE);

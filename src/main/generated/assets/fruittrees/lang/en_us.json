@@ -1,4 +1,6 @@
 {
+  "advancements.husbandry.get_fruit.description": "Find some fruit",
+  "advancements.husbandry.get_fruit.title": "A Few Berries Short of a Fruit Basket",
   "block.fruittrees.attached_cantaloupe_stem": "Attached Cantaloupe Stem",
   "block.fruittrees.attached_honeydew_stem": "Attached Honeydew Stem",
   "block.fruittrees.blueberry_bush": "Blueberry Bush",

@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.benji.fruittrees.FruitTrees"
+			"net.crazybenji.fruittrees.FruitTrees"
 		],
 		"client": [
-			"net.benji.fruittrees.FruitTreesClient"
+			"net.crazybenji.fruittrees.FruitTreesClient"
 		],
 		"fabric-datagen": [
-			"net.benji.fruittrees.FruitTreesDataGenerator"
+			"net.crazybenji.fruittrees.FruitTreesDataGenerator"
 		]
 	},
 	"mixins": [

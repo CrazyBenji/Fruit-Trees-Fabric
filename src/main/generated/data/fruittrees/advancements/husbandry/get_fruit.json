@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:husbandry/balanced_diet",
+  "criteria": {
+    "got_fruit": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "fruittrees:fruits"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.husbandry.get_fruit.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "fruittrees:mango"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.husbandry.get_fruit.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_fruit"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

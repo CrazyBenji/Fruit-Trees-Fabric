@@ -94,6 +94,9 @@ public class FruitTreesLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(FruitTreesItems.HOT_PEPPER_JUICE, "Hot Pepper Juice");
 
         translationBuilder.add("creative_mode_tab.fruittrees", "Fruit Trees");
+
+        translationBuilder.add("advancements.husbandry.get_fruit.title", "A Few Berries Short of a Fruit Basket");
+        translationBuilder.add("advancements.husbandry.get_fruit.description", "Find some fruit");
     }
 
     public void generateFruitWoodTranslations(TranslationBuilder translationBuilder, FruitWood fruitWood, String fruitName) {
