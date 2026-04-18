@@ -3,13 +3,13 @@
 	"id": "fruittrees",
 	"version": "${version}",
 	"name": "Fruit Trees",
-	"description": "Adds new fruit to liven up the Minecraft world",
+	"description": "Spice up your diet with new fruits to find around the world",
 	"authors": [
 		"CrazyBenji"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/user/CrazyBenji",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/CrazyBenji/Fruit-Trees-Fabric"
 	},
 	"license": "CC-BY",
 	"icon": "assets/fruittrees/textures/icon.png",
