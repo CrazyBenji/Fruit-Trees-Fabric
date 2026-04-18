@@ -1,6 +1,6 @@
 # Releases available on:
 - ### [Modrinth](https://modrinth.com/mod/fruit-trees)
-- ### [CurseForge](https://www.curseforge.com/minecraft/mc-mods/fruit-trees)
+- ### [CurseForge](https://www.curseforge.com/minecraft/mc-mods/benjis-fruit-trees)
 
 # Code available for:
 - ### [Fabric](https://github.com/CrazyBenji/Fruit-Trees-Fabric)
